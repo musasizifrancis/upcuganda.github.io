@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Google for Developers</ShortName>
+  <Description>Search Google for Developers resources.</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/images/favicon-new.png</Image>
+  <Url type="text/html" method="get" template="https://developers.google.com/s/results?q={searchTerms}"></Url>
+</OpenSearchDescription>

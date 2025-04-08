@@ -1,0 +1,142 @@
+.buffer {
+  color: #000000;
+}
+
+.buffer a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.buffer a:hover {
+  color: var(--secondary-color);
+}
+
+.buffer li > ul {
+  margin: 0;
+}
+
+.buffer fieldset{
+  margin:.7em 0;
+  padding:0.75rem;
+  border:0.0625rem solid #777;
+}
+.buffer fieldset legend{
+  font-weight:bold;
+}
+
+.buffer input[type=text], 
+.buffer input[type=email], 
+.buffer input[type=tel],
+.buffer textarea {
+  border: 1px solid #000000;
+}
+
+body.empty{
+  padding:0;
+  margin:0;
+}
+body.empty .buffer{
+  font-size:0.8125rem;
+  font-family:sans-serif;
+}
+body.empty > h2{
+  display:none;
+}
+
+.inner-header {
+  position: relative;
+  background-color: #1c2a58;
+  min-height: 14.13rem;
+  margin-bottom: 2.1875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.inner-header .section-heading {
+  margin: 9.375rem 0 2.688rem 0;
+  max-width: calc(100% - 6.25rem);
+}
+
+.inner-header .h2 {
+  font-family: "Merriweather", "times new roman", "times", "baskerville", "georgia", serif;
+  font-size: 1.563rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.inner-header .decor {
+    position: absolute;
+    bottom: 1.5625rem;
+    right: -0.1875rem;
+    max-width: 6.25rem;
+    margin: 0 0 -2.9375rem;
+    z-index: 0;
+    text-align: right;
+    width: 100%;
+}
+
+.int .wrapper-inner {
+  min-height: unset;
+}
+
+.int .subscribe-section {
+  padding: 6.25rem 0 4.25rem;
+}
+
+@media (min-width: 768px) {
+  .inner-header {
+    min-height: 26.25rem;
+    margin-bottom: 5.313rem;
+  }
+
+  .inner-header .section-heading {
+    margin: 15.1875rem 0 2.6875rem 0;
+    max-width: calc(100% - 20.625rem);
+  }
+
+  .inner-header .h2 {
+    font-size: 3.125rem;
+    line-height: 1.6;
+  }
+
+  .inner-header .decor {
+    bottom: 0;
+    right: -0.5625rem;
+    max-width: 20.625rem;
+  }
+
+  .int .subscribe-section {
+    padding: 10rem 0 9.0625rem;
+  }
+
+  .news-letter-form:after {
+    top: -1.8125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .inner-header {
+    margin-bottom: 6.25rem;
+  }
+
+  .inner-header .section-heading {
+    max-width: calc(100% - 22.5rem);
+  }
+
+  .inner-header .h2 {
+    font-size: 3.75rem;
+  }
+
+  .inner-header .decor {
+    right: -1.25rem;
+    bottom: -0.3125rem;
+    max-width: 22.5rem;
+  }
+
+  .int .subscribe-section {
+    padding: 8.125rem 0 10.9375rem;
+  }
+
+
+}

@@ -1,0 +1,129 @@
+﻿<!doctype html>
+<head>
+  <title>Request Job Candidate Profiles / Partyline</title>
+  <link rel="icon" type="image/png" href="images/global-logo-favicon.png">
+  <meta name="viewport" content="initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="google" content="notranslate">
+    <link rel="apple-touch-icon" href="https://dfx1kn0n80mx5.cloudfront.net/images/global-logo-web-app-talent-request.png?12871237812387">
+  <meta name="apple-mobile-web-app-title" content="Request Resumes">
+  <meta name="application-name" content="Request Resumes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" href="images/apple-launch/1125x2436.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="images/apple-launch/1125x2436.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="images/apple-launch/750x1334.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)" href="images/apple-launch/1242x2208.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="https://dfx1kn0n80mx5.cloudfront.net/images/apple-launch-640x1136.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" href="https://dfx1kn0n80mx5.cloudfront.net/images/apple-launch-1536x2048.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" href="https://dfx1kn0n80mx5.cloudfront.net/images/apple-launch-1668x2224.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" href="https://dfx1kn0n80mx5.cloudfront.net/images/apple-launch-2048x2732.png">
+  <link rel="stylesheet" href="styles/pl.24.07.09.css?1290813298=91239812398">
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/plugins.jq.24.07.12.js?aHRtbGNhbnZhcyxtYXNrLHRvb2x0aXAsbGlnaHRib3gsY2FsZW5kYXIsdG9rZW5pbnB1dA"></script>
+  <script src="scripts/plugins.pl.25.01.11.js?dWEsZ2xvYmFsLHRva2VuaW5wdXQ"></script>
+</head>
+<body>
+  <div id="container">
+    <div class="printcontent printlogo">
+	    <img src="images/global-logo-print.png" width="300" border="0">
+	  </div>
+    <div id="nav" class="noselect">
+      <div id="logo">
+	    <a href="gopjobsrequest.html"><img src="/images/global-logo.svg" class="brand" border="0"><img src="https://dfx1kn0n80mx5.cloudfront.net/images/global-logo.png" class="brand-mobile lg" border="0"></a>
+	  <div class="clearer"></div>
+	  </div>
+    </div><div id="saved" style="display: none;">Changes Saved Successfully</div>
+	<div id="global-loading-saved">
+      Changes saved successfully
+    </div>
+    <div id="global-loading-transition">
+      <div class="fl-left">Loading</div>
+      <div class="fl-right" data-trigger="close-loading-transition">&#10006;</div>
+      <div class="clearer"></div>    
+    </div>
+<div id="request-form" style="display:none;"></div>
+<link rel="stylesheet" type="text/css" href="gopjobs/partyline.css">
+<form method="post" autocomplete="off" id="load-logon" class="modal-window mfp-hide mfp-50">
+  <div id="house-ssologon-header">
+    <div id="house-ssologon-banner" align="center">
+      <div id="house-ssologon-title">Welcome to House GOP Jobs,<br>a resume bank managed by House Republican Leadership.</div>
+      <div id="house-ssologon-deck">House Republican Chiefs of Staff, Committee Staff Directors and New Member Aides may request resumes after logging in below.<br>Use one form per position; separate forms must be submitted for each position requested.</div>
+      <div id="house-ssologon-help" class="lighter">If you have questions about this service, please contact <a style="color:#9bc7de;" href="mailto:housegopjobs@mail.house.gov">housegopjobs@mail.house.gov</a>.</div>
+    </div>
+  </div>
+  <div class="inform">To continue, please login below using your House of Representatives User ID (not email address) and password.<br><span class="lighter">These are the same credentials used to login to your work computer.</span></div>
+  <div class="error" style="display: none; margin-top: 15px;" id="load-logon-warning">Invalid User ID or Password.</div>
+  <div style="padding:20px 0;">
+      <table width="100%" style="margin-top: 5px;" class="tabledata smtext">
+        <tr class="border nohover">
+          <td class="label label-width">House User ID</td>
+          <td><input type="text" autocomplete="off" name="u" id="load-logon-singleuse-username" class="nomargin expandfull" style="padding:5px;font-size:20px!important;"></td>
+        </tr>
+        <tr class="border nohover">
+          <td class="label">House Password</td>
+          <td><input type="password" autocomplete="new-password" name="p" id="load-logon-singleuse-password" class="nomargin expandfull"></td>
+        </tr>
+      </table>
+  </div>
+  <div class="smtext lighter" style="margin: 15px 0 10px 0;">
+    <div class="fl-left" style="margin-right:25px;height:75px;">
+      <img src="/images/global-logo-gophouseseal-blue.png" height="75">
+    </div>
+    <div style="fl-right" style="width:calc(100% - 100px);">
+      <strong>OFFICIAL USE ONLY &ndash; UNAUTHORIZED USE PROHIBITED.</strong><br>This service, provided by <a href="solutions/congress.html" target="_blank">Gulf Partyline Corporation</a> for House Republican Leadership, is solely for House of Representatives employees authorized to request resumes from the House GOP Jobs resume bank. For assistance with this application, contact the Speaker's Office at (202) 225-4000.
+    </div>
+    <div class="clearer"></div>
+  </div>
+  <div align="center">
+    <input type="submit" value="SECURE LOGIN">
+  </div>
+</form>
+<div class="modal-window mfp-hide" id="load-logon-loading" style="min-width:50%;" align="center">
+  <div style="padding: 20px;">
+    <img src="/images/dashboard-icon-loading-main.gif">
+  </div>
+  <div class="smtext"><em>Please wait while we verify your credentials...</em></div>
+</div>
+<div id="logon-loading" class="modal-window mfp-hide" style="min-width:50%;" align="center">
+  <div style="padding: 20px;">
+    <img src="/images/dashboard-icon-loading-main.gif">
+  </div>
+  <div class="smtext"><em>Loading Application...</em></div>
+</div>
+<div id="load-success" class="modal-window mfp-hide" style="min-width:50%;" align="center">
+  <div style="padding: 20px;">
+    <div class="success-checkmark"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 161.2 161.2" enable-background="new 0 0 161.2 161.2" xml:space="preserve"><path class="path" fill="none" stroke="#83BE53" stroke-miterlimit="10" d="M425.9,52.1L425.9,52.1c-2.2-2.6-6-2.6-8.3-0.1l-42.7,46.2l-14.3-16.4 c-2.3-2.7-6.2-2.7-8.6-0.1c-1.9,2.1-2,5.6-0.1,7.7l17.6,20.3c0.2,0.3,0.4,0.6,0.6,0.9c1.8,2,4.4,2.5,6.6,1.4c0.7-0.3,1.4-0.8,2-1.5 c0.3-0.3,0.5-0.6,0.7-0.9l46.3-50.1C427.7,57.5,427.7,54.2,425.9,52.1z"></path><circle class="path" fill="none" stroke="#83BE53" stroke-width="4" stroke-miterlimit="10" cx="80.6" cy="80.6" r="62.1"></circle><polyline class="path" fill="none" stroke="#83BE53" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="113,52.8 74.1,108.4 48.2,86.4 "></polyline></svg></div>
+  </div>
+  <div class="yes"><strong>Your request has been submitted successfully</strong></div>
+  <div class="smtext" style="margin:25px 0;">
+    <div>Your request will be reviewed by House Republican Leadership and you will receive a personalized link to review matching candidates within two business days.<br><br><em>For questions, contact the Speaker's Office at <a href="mailto:HouseGOPJobs@mail.house.gov">HouseGOPJobs@mail.house.gov</a> or (202) 225-4000.</em></div>
+  </div>
+  <a href="gopjobsrequest.html" class="button-start">Submit Another Request <span class="lighter">(Login Required)</span></a>
+</div>
+<div id="logon-unable-to-connect" class="modal-window mfp-hide modal-error" style="min-width:50%;" align="center">
+  <div style="padding: 60px 0 40px 0;">
+    <div style="margin-bottom:20px;"><img src="/images/icon-status-error.png" height="60"></div>
+    <h1>Unable to continue</h1>
+    <div style="margin-top:20px;"><p>To continue, please first connect to the House of Representatives network via VPN,<br>or return to this page from a device directly connected to the House network.</p></div>
+  </div>
+  <input type="button" value="Refresh" data-trigger="refresh">
+</div>
+<script type="text/javascript" src="/gopjobsrequest/partyline.js?_=3/20/2025 3:56:59 PM"></script>
+
+	<div id="footer" class="noselect">
+      <ul>
+      </ul>
+      <div class="company">
+        <p>Proprietary &amp; Confidential</p>
+      </div>
+	  <div class="clearer"></div>
+	</div>
+	<div id="copyright" class="noselect">
+	  <a href="index-256.htm" target="_blank"><img src="images/global-logo-footer.svg" width="200"></a>
+	  <div class="disclaimer-text">
+	    <strong>PARTYLINE PLATFORM</strong> is owned and distributed by Gulf Partyline Corporation,<br>which provides global marketing and operational support and service for the platform and related products.<br><br>&copy;2025 Gulf Partyline Corporation. All Rights Reserved.<br>Partyline Platform is a registered trademark of Gulf Partyline Corporation.
+	  </div>
+	</div>
+  </div>
+  <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-19022209-3', 'auto');ga('send','pageview');</script>
+ </body>

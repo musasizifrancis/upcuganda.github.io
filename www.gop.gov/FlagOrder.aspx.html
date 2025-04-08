@@ -1,0 +1,1122 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title><link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"><link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"><link href="css/house.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery-ui-1.12.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/customizedDedication.js"></script>
+    <!-- < s c r i p t  s r c="//www.google.com/recaptcha/api.js?hl=en" async="async" defer="defer">< / s c r i p t >  -->
+
+    
+    <script src="https://www.google.com/recaptcha/api.js?onload=onCallbacks&render=explicit">
+    </script>
+     <script type="text/javascript">
+
+        var review_recaptcha_widget;
+        var onCallbacks = function () {
+            try {
+                review_recaptcha_widget = grecaptcha.render('recaptcha-v2', {
+                'sitekey' : '6LdNvSkTAAAAAOyI81TRnGAYYz58AKpPUbWqUSbd'
+                });
+            }
+            catch(error) {
+                // console.error(error);
+                // Note - error messages will vary depending on browser
+            }
+            //            if (jQuery('#recaptcha-v2').length > 0) {
+            //              alert("recaptcha length is" + jQuery('#recaptcha-v2').length);
+            //            }
+        };
+
+    </script>
+
+</head>
+<body>
+
+   <noscript>
+   <div class="page-header">
+      <div id="banner">
+        <a href="FlagOrder.aspx" id="ctl00_A1">                
+          <img src="images/banner-order.png" width="960" height="90" alt="flag order form">                 
+        </a>
+       </div>
+     <style type="text/css">
+         .container {display:none;}
+     </style>
+     <div class="noscriptmsg">
+         You don't have javascript enabled.Please enable javascript to view the content.
+     </div>
+    </div>
+</noscript>
+    <div class="container">
+     <div class="page-header">
+            <div id="banner">
+                <a href="FlagOrder.aspx.html?ssdd=MI09" id="ctl00_headerLink">                
+                    <img src="images/banner-order.png" width="960" height="90" alt="flag order form">                 
+                </a>
+            </div>
+         
+            <h1><span id="ctl00_lblMemberName" style="display: none;">Honorable Lisa C. McClain</span> <span class="stateDistrict">(MI09)</span></h1>
+        </div>
+        
+    <div>
+        <div id="foo" style="display: none">
+            Pay.gov is a government website that provides secure and centralized bank account e-Check(ACH) or credit card 
+        processing for government agencies.
+        </div>
+        <div id="ctl00_ContentPlaceHolder1_pnlOrder">
+	
+            <form name="aspnetForm" method="post" action="./FlagOrder.aspx?ssdd=MI09" id="aspnetForm" onsubmit="return ValidationSuccessful();" autocomplete="off">
+	<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="7HPi756HnWtWvwYLonjVcVXkK98HDHCtLI5twyovCWIBHd9duoYWflNypHVNvomxq9tfaQsF/INE28l9zgKMZO1oEwIIrjZjfz3oxnYOQQGBItvc4X9k8aBp47q6g0VGSCxXxxxZVDswEArTbHb3QztccOjDSr5+mmeKs9lqLgrvf74jWvikN9DKnY3RpqZp4m+vdN1RWq3mrZQEZuMXLKwESSyFwUjRtQryFbl7lQVP0O6v4noxhpg+HW2IQDBwtf1+AmZc8jd0DD8NyRMuKxhLxFFAeYgbPhMnDC+h92+1ZcoA+wE5iUARWRC/HmWEjP7c9AiWwS8G92504kx8AdPT5pkscslqabFxlBk7QTiAh9oKv7jZDzB/bB5mJDFTyrn3S1J5NQEbSMwLz37xvFgZFmhKfTuF24gyZDXVFH8ycrj4+WVgFwbywrcDx2C2R5WkHz3hUG2fH+0tPDnZKoLt+yY0ITYr4bnpR4/MgHk59o4WKlZRcLSlgotXnhwK8EK4NEn2XuqIqaTU/foX18uDBLVzcspllVLDrZRjwJFX98KiQN6to0p+lBZbI50QNabfqa8LFMGJejON8afVg+ql4HAFzEWbP2JKdn41fAlvINh1xizh+B9oW42Se7kobuPs/jc1zFGti9UTiNhaZpnBSOme+y7W2wiEHj4STa+rKBmAT6kAOF9QaKPUDIQm0zgybAozP3Dpg/KZNU1e7Ql7kMdJWnEdBVq5/BBJh9/6WF6xrlVTBMYwS5gIbv84Pa66RxnmtzYq3idpmGSWkS+Z/CBTDbN4cjkwGPaV+PFYTChcGbqQqvF6T16tCl5cgm84FoyGU/sZ+UCHiOiRPkW+y6JRx63xAgc50GSdCYk8nJNa+jdFs1veY9lMS59vlNHDUDsChJAXAXDJcgcYN0Ko+PtfszOa9RYwmHcq5D9Vlhe8zwb9WGg6O0PkW4WcWTOLh7rGPtTOkHKIx/yH3AXHOQYW4cQIMLCMCInNT/+29UQfC2nZuTB9PNobIlYf9/PzHKfeCZZRVzYsLAcmn3T3hYJZzm0CzF30uzFcCbPvgAuSlc1J/Q4p0WeaL+bje77lWKrOG3dP2CKpCUFzVRslSk+p/9SzgdXdzEB43WH3m9+s0GsEdgqyZSJKIhr8bSxGTEFXP+PNQgAXCMY7acuAFabqU0mja8gzBDx7TpyPPDqLfYW5/Yp2VRsNEak7E9EDLK0GB4nlTDYUBxY3KRozuSxnj8FhgmcFV819ELa6X08w+eikVy3ohoe5aISquKKW2vQHJN0dkmhpQQWwJf1JS6cUo3PyvkuBXazhPjzHjl3IouYHRmHJh/5T4tTJENjq6sxKqmjHasR5dQJ6XXbdoVS0mUF+F4AzDMa6NbjfPZBP5IzpCL9ABfFutO4D9m2C4MVRjaFKIymdJ1yaIkmUUwG5SPKT4lIaio1jk3ESv1ZRjfuyHJOg2gJmiN0Iz/CHVpCNvw4sqQKTK4jXNI1/ZLyeW40VJu0T7WK34XmgaoZXBBpovpk/wXxi+jf7cYIu5I9Bw8ow3IxlHz0p6ZYPYsMegmdV/dsUYVRoqMuGRkRWqGuZVxZ2H/q0IUOHHCWLo8nL2vd54QkKPHzTY9WsyPjLI2jqlAMav3ayUEeQs5iM01e7JX8rolzYpIEpUWn0aiU89Ej0za8Xdmh4c/41sDtJd4/u/gZxPysmo9nfDxj4Noo9OtaY84Zo70RC39kXuZyWABQmyyXZw0MLguMUUl0v5n8xmsvUvzXtHh037mslyMKkm4Q83RiINeSl+8u3Iu7U+wPGEVw0DhET1TmI8b2yAbeWpgRgade45aiJkIEs0Sd/Fs43olKM6sO6vctcrRosNTbqPym1SHCHgA==">
+
+	
+<script src="/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvhCKBXlyEVvUr1blu3v8JS_zRFJM1YMOcdP12RpwVOlzJtM7Xg8Bj11OyZg12IZQc3Hulhm8StFzDB0X96jlHHIpwUFIG1j1GsmSSo4RmKBESkcxR0LnzA62879n0OFlb2N9dcEak0Sj__XyaUTm-0Y1&t=2a9d95e3" type="text/javascript"></script>
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="304EB1C3">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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">
+                
+                <div class="row">
+                    <div class="span12">
+                        <span id="ctl00_ContentPlaceHolder1_lblStatusWarning"><b><font color="Maroon"></font></b></span>
+
+                        <p>
+                            Flags are available in different sizes and fabrics.  You may choose to
+                    have your new flag flown over the Capitol for an additional charge. You may request
+                    a specific flying date, but due to weather and varying demand, no dates can be guaranteed.
+                    Flags flown over the Capitol include a certificate, which may be personalized for
+                    a particular person, event, or organization.
+                        </p>
+                        <p>
+                            Please designate the flags you wish to purchase and provide any certificate and dedication
+                    information. Successful order completion also requires the billing and shipping
+                    information.
+                        </p>
+                        <div id="ctl00_ContentPlaceHolder1_pnlCreditCardInfo">
+		
+                            <h2>Paying with a Bank Account e-Check (ACH) or Credit Card</h2>
+                            <p>
+                                 Bank Account e-Check (ACH) or Credit card orders are processed by Pay.gov (<a class="paygovexplain">what&rsquo;s
+                        this?</a>). To pay with a Bank Account e-Check (ACH) or credit card, click on "Calculate Prices", review the order
+                        details, and then click &ldquo;Pay via Bank Account e-Check (ACH) or Credit Card &rdquo; button.  Your credit
+                        card will be charged immediately, even though your flag may not be mailed until
+                        after the requested date.</p>
+                        
+	</div>
+                        <div id="ctl00_ContentPlaceHolder1_pnlCheckInfo">
+		
+                            <h2>Paying with a Check</h2>
+                            <p>
+                                Checks may be mailed to my office with the completed order form. Click on &ldquo;Calculate
+                        Prices&rdquo;, review the order details, and then click on &ldquo;Mail a Check&rdquo;
+                        to view the printable order form with mailing instructions.
+                            </p>
+                        
+	</div>
+                        <p class="form-info">
+                            <span class="required-field" title="required information">*</span>
+                            indicates required fields.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="span12">
+                        <fieldset class="clearfix">
+                            <legend>Flag Selection <span style="font-size: 9pt">(Select only one type of Flag)</span></legend>
+                            <div>
+		<table class="table table-striped table-bordered" cellspacing="0" rules="all" border="1" id="ctl00_ContentPlaceHolder1_gvFlagSelection">
+			<tr>
+				<th scope="col">Size</th><th scope="col">Material</th><th scope="col">Quantity Flown Over the Capitol</th><th scope="col">Quantity NOT Flown Over the Capitol</th>
+			</tr><tr>
+				<td>3x5</td><td>Cotton</td><td>
+                                            <span>
+                                                <input name="ctl00$ContentPlaceHolder1$gvFlagSelection$ctl02$tbQuantityFlown" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_gvFlagSelection_ctl02_tbQuantityFlown" class="input-mini quantityFlown">
+                                                @ $24.00</span>&nbsp;
+                                        </td><td>
+                                            <span>
+                                                <input name="ctl00$ContentPlaceHolder1$gvFlagSelection$ctl02$tbQuantityNotFlown" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_gvFlagSelection_ctl02_tbQuantityNotFlown" class="input-mini quantityNotFlown">
+                                                @ $15.00</span>&nbsp;
+                                        </td>
+			</tr><tr>
+				<td>3x5</td><td>Nylon</td><td>
+                                            <span>
+                                                <input name="ctl00$ContentPlaceHolder1$gvFlagSelection$ctl03$tbQuantityFlown" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_gvFlagSelection_ctl03_tbQuantityFlown" class="input-mini quantityFlown">
+                                                @ $23.00</span>&nbsp;
+                                        </td><td>
+                                            <span>
+                                                <input name="ctl00$ContentPlaceHolder1$gvFlagSelection$ctl03$tbQuantityNotFlown" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_gvFlagSelection_ctl03_tbQuantityNotFlown" class="input-mini quantityNotFlown">
+                                                @ $14.00</span>&nbsp;
+                                        </td>
+			</tr><tr>
+				<td>4x6</td><td>Nylon</td><td>
+                                            <span>
+                                                <input name="ctl00$ContentPlaceHolder1$gvFlagSelection$ctl04$tbQuantityFlown" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_gvFlagSelection_ctl04_tbQuantityFlown" class="input-mini quantityFlown">
+                                                @ $27.00</span>&nbsp;
+                                        </td><td>
+                                            <span>
+                                                <input name="ctl00$ContentPlaceHolder1$gvFlagSelection$ctl04$tbQuantityNotFlown" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_gvFlagSelection_ctl04_tbQuantityNotFlown" class="input-mini quantityNotFlown">
+                                                @ $18.00</span>&nbsp;
+                                        </td>
+			</tr><tr>
+				<td>5x8</td><td>Cotton</td><td>
+                                            <span>
+                                                <input name="ctl00$ContentPlaceHolder1$gvFlagSelection$ctl05$tbQuantityFlown" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_gvFlagSelection_ctl05_tbQuantityFlown" class="input-mini quantityFlown">
+                                                @ $39.00</span>&nbsp;
+                                        </td><td>
+                                            <span>
+                                                <input name="ctl00$ContentPlaceHolder1$gvFlagSelection$ctl05$tbQuantityNotFlown" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_gvFlagSelection_ctl05_tbQuantityNotFlown" class="input-mini quantityNotFlown">
+                                                @ $30.00</span>&nbsp;
+                                        </td>
+			</tr><tr>
+				<td>5x8</td><td>Nylon</td><td>
+                                            <span>
+                                                <input name="ctl00$ContentPlaceHolder1$gvFlagSelection$ctl06$tbQuantityFlown" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_gvFlagSelection_ctl06_tbQuantityFlown" class="input-mini quantityFlown">
+                                                @ $34.00</span>&nbsp;
+                                        </td><td>
+                                            <span>
+                                                <input name="ctl00$ContentPlaceHolder1$gvFlagSelection$ctl06$tbQuantityNotFlown" type="text" maxlength="3" id="ctl00_ContentPlaceHolder1_gvFlagSelection_ctl06_tbQuantityNotFlown" class="input-mini quantityNotFlown">
+                                                @ $25.00</span>&nbsp;
+                                        </td>
+			</tr>
+		</table>
+	</div>
+                            <button id="btnReset" class="btn btn-primary offset10">Reset Fields</button>
+                            &nbsp;
+                            
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span6">
+                        <div id="pnlCertificateInfo" style="display:none;">
+		
+                            <fieldset>
+                            <legend>Certificate Information for Flags Flown Over the Capitol</legend>
+                            <p>
+                                If you choose to have your flag flown over the United States Capitol, please complete
+                        the following information for the certificate. If you have multiple flags to fly,
+                        they must all be flown on the same date.
+                            </p>
+                            <div class="row">
+                                <div class="span6">
+                                    <label for="cert-date">Preferred date for flag to be flown (leave blank for first available):</label>
+                                    <input name="ctl00$ContentPlaceHolder1$tbCertFlownDate" type="text" maxlength="15" id="tbCertFlownDate" class="span6 datepicker">
+                                    <p>
+                                        Please submit your request between 1 week and 3 months from the current date. Due to weather and varying demand,
+                                no dates can be guaranteed.
+                                    </p>
+                                    &nbsp;
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div id="dateErrorMessage" style="color: red; margin-left: 20px;"></div>
+                            </div>
+                            <div class="row">
+                                <div class="span6">
+                                    <label for="ddlDedicationList">Dedication:</label>
+                                    <select name="ctl00$ContentPlaceHolder1$ddlDedicationList" id="ddlDedicationList" class="span6">
+			<option value="1">Standard</option>
+			<option value="2">Customized</option>
+
+		</select>
+                                </div>
+                            </div>
+                            <div class="row dedicationMessage" style="position: relative; display: inline-block;">
+                                <div class="span6">
+                                    <fieldset>
+                                        <div class="row">
+                                            <div class="span6">
+                                                <label for="cert-dedication-message">Dedication Message:</label>
+                                                <textarea name="ctl00$ContentPlaceHolder1$tbCertDedicationMessage" rows="7" cols="20" id="tbCertDedicationMessage" class="span6" oncopy="return false" onpaste="return false" oncut="return false" style="height: 140px;">
+</textarea>
+                                                &nbsp;
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>  
+                             <div class="row" id="additionalSpanText">
+                                <div class="span6">
+                                    <span>If you would like different individual names to appear on each flag certificate, please type RECIPIENT in lieu of their name. 
+                                    </span>
+                                </div>
+                            </div> 
+                            <br>                       
+                            <div class="row">
+                                <div class="span6" id="additionalTextDiv">
+                                    <label for="tbAdditionalText">Additional Text:</label>
+                                    <textarea name="ctl00$ContentPlaceHolder1$tbAdditionalText" rows="3" cols="20" id="tbAdditionalText" oncopy="return false" onpaste="return false" oncut="return false" class="span6" placeholder="Any text added will be joined with the second paragraph, including punctuation, on the flag certificate (300 CHARACTER LIMIT)">
+</textarea>
+                                    &nbsp;
+
+                                </div>
+                            </div>
+                              <div class="row">
+                                <div id="additionalDedicationErrorMessage" style="color: red; margin-left: 20px;"></div>
+                            </div>
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$ddlDedicationMessage" id="ddlDedicationMessage">
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$dedicationMessageFromCodeBehind" id="dedicationMessageFromCodeBehind">
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$membersName" id="membersName" value="Honorable Lisa C. McClain">
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$officeType" id="officeType" value="M">
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$sponsor_leg" id="sponsor_leg" value="Y">
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$office_id" id="office_id" value="MI09">
+                            <input type="hidden" name="ctl00$ContentPlaceHolder1$additionalTextInDedicationField" id="additionalTextInDedicationField">
+                             <input type="hidden" name="ctl00$ContentPlaceHolder1$preferredDateFromBackend" id="preferredDateFromBackend">
+                            <div class="row">
+                                <div class="span6">
+                                    <span id="recipientsNameMessageSpan">Each flag certificate you receive will have the word RECIPIENT replaced with the name you provide below.
+                                    </span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row" id="showHideNameColumn">
+                                <div class="span6">
+                                    <label for="tbCertName">Flag will be presented to (name as it should appear on the certificate):</label>
+                                    <div data-bind="foreach: lines" style="float: left;">
+                                        <input name="ctl00$ContentPlaceHolder1$tbCertName" type="text" maxlength="80" id="tbCertName" class="span6" data-bind="textInput: names, uniqueName: true">
+                                        <div style="float: right" data-bind="visible: $parent.lines().length > 1"><a href='#' data-bind='    click: $parent.removeLine'>Remove</a></div>
+                                    </div>
+                                    <input type="button" value="Add Names" data-bind="click: addLine">
+                                </div>
+                                <input type="hidden" name="ctl00$ContentPlaceHolder1$valueOfCustomerField" id="valueOfCustomerField">
+                                <div id="namePresentedToErrorMessage" style="color: red; margin-left: 20px;"></div>
+                            </div>
+                        </fieldset>
+                        
+	</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span6">
+                        <fieldset>
+                            <legend>Billing Address</legend>
+                            <p>
+                                This address <strong>must</strong> match your billing address with the account you
+                        are using to make payment.
+
+                            </p>
+                            <div class="row">
+                                <div class="span1">
+                                    <label for="tbBillingNamePrefix">
+                                        Prefix:<span class="required-field" title="required information">*</span>&nbsp;</label>
+                                    <input name="ctl00$ContentPlaceHolder1$tbBillingNamePrefix" type="text" maxlength="10" id="ctl00_ContentPlaceHolder1_tbBillingNamePrefix" class="span1">
+                                </div>
+                                <div class="span2">
+                                    <label for="tbBillingNameFirst">
+                                        First Name:<span class="required-field" title="required information">*</span>&nbsp;</label>
+                                    <input name="ctl00$ContentPlaceHolder1$tbBillingNameFirst" type="text" maxlength="50" id="ctl00_ContentPlaceHolder1_tbBillingNameFirst" class="span2">
+                                </div>
+                                <div class="span1">
+                                    <label for="tbBillingNameMI">Middle:</label>
+                                    <input name="ctl00$ContentPlaceHolder1$tbBillingNameMI" type="text" maxlength="1" id="ctl00_ContentPlaceHolder1_tbBillingNameMI" class="span1">
+                                </div>
+                                <div class="span2">
+                                    <label for="tbBillingNameLast">
+                                        Last Name:<span class="required-field" title="required information">*</span>&nbsp;</label>
+                                    <input name="ctl00$ContentPlaceHolder1$tbBillingNameLast" type="text" maxlength="50" id="ctl00_ContentPlaceHolder1_tbBillingNameLast" class="span2">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="span6">
+                                    <label for="tbBillingAddress1">
+                                        Street Address: <span class="required-field" title="required information">*</span>&nbsp;</label>
+                                    <input name="ctl00$ContentPlaceHolder1$tbBillingAddress1" type="text" maxlength="80" id="ctl00_ContentPlaceHolder1_tbBillingAddress1" class="span6">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="span6">
+                                    <label for="tbBillingAddress2">Street Address Continued:</label>
+                                    <input name="ctl00$ContentPlaceHolder1$tbBillingAddress2" type="text" maxlength="80" id="ctl00_ContentPlaceHolder1_tbBillingAddress2" class="span6">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="span6">
+                                    <label for="tbBillingCompany">Company/Organization (optional):</label>
+                                    <input name="ctl00$ContentPlaceHolder1$tbBillingCompany" type="text" maxlength="80" id="ctl00_ContentPlaceHolder1_tbBillingCompany" class="span6">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="span6">
+                                    <label for="tbBillingCity">
+                                        City: <span class="required-field" title="required information">*</span>&nbsp;</label>
+                                    <input name="ctl00$ContentPlaceHolder1$tbBillingCity" type="text" maxlength="40" id="ctl00_ContentPlaceHolder1_tbBillingCity" class="span6">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="span3">
+                                    <label for="ddlBillingState">
+                                        State:<span class="required-field" title="required information">*</span>&nbsp;</label>
+                                    <select name="ctl00$ContentPlaceHolder1$ddlBillingState" id="ctl00_ContentPlaceHolder1_ddlBillingState" class="span3">
+		<option value="">Select...</option>
+		<option value="AL">Alabama</option>
+		<option value="AK">Alaska</option>
+		<option value="AS">American Samoa</option>
+		<option value="AZ">Arizona</option>
+		<option value="AR">Arkansas</option>
+		<option value="CA">California</option>
+		<option value="CO">Colorado</option>
+		<option value="CT">Connecticut</option>
+		<option value="DE">Delaware</option>
+		<option value="DC">District of Columbia</option>
+		<option value="FM">Fed. States of Micronesia</option>
+		<option value="FL">Florida</option>
+		<option value="GA">Georgia</option>
+		<option value="GU">Guam</option>
+		<option value="HI">Hawaii</option>
+		<option value="ID">Idaho</option>
+		<option value="IL">Illinois</option>
+		<option value="IN">Indiana</option>
+		<option value="IA">Iowa</option>
+		<option value="KS">Kansas</option>
+		<option value="KY">Kentucky</option>
+		<option value="LA">Louisiana</option>
+		<option value="ME">Maine</option>
+		<option value="MH">Marshall Islands</option>
+		<option value="MD">Maryland</option>
+		<option value="MA">Massachusetts</option>
+		<option value="MI">Michigan</option>
+		<option value="MN">Minnesota</option>
+		<option value="MS">Mississippi</option>
+		<option value="MO">Missouri</option>
+		<option value="MT">Montana</option>
+		<option value="NE">Nebraska</option>
+		<option value="NV">Nevada</option>
+		<option value="NH">New Hampshire</option>
+		<option value="NJ">New Jersey</option>
+		<option value="NM">New Mexico</option>
+		<option value="NY">New York</option>
+		<option value="NC">North Carolina</option>
+		<option value="ND">North Dakota</option>
+		<option value="MP">Northern Mariana Is.</option>
+		<option value="OH">Ohio</option>
+		<option value="OK">Oklahoma</option>
+		<option value="OR">Oregon</option>
+		<option value="PW">Palau</option>
+		<option value="PA">Pennsylvania</option>
+		<option value="PR">Puerto Rico</option>
+		<option value="RI">Rhode Island</option>
+		<option value="SC">South Carolina</option>
+		<option value="SD">South Dakota</option>
+		<option value="TN">Tennessee</option>
+		<option value="TX">Texas</option>
+		<option value="UT">Utah</option>
+		<option value="VT">Vermont</option>
+		<option value="VA">Virginia</option>
+		<option value="VI">Virgin Islands</option>
+		<option value="WA">Washington</option>
+		<option value="WV">West Virginia</option>
+		<option value="WI">Wisconsin</option>
+		<option value="WY">Wyoming</option>
+		<option value="AA">Armed Forces Americas</option>
+		<option value="AE">Armed Forces Europe</option>
+		<option value="AP">Armed Forces Pacific</option>
+
+	</select>
+                                </div>
+                                <div class="span2">
+                                    <label for="zip5">
+                                        Zip:<span class="required-field" title="required information">*</span>&nbsp;</label>
+                                    <input name="ctl00$ContentPlaceHolder1$tbBillingZip5" type="text" maxlength="5" id="ctl00_ContentPlaceHolder1_tbBillingZip5" class="span2">
+                                </div>
+                                <div class="span1">
+                                    <label for="tbBillingZip4">+4:</label>
+                                    <input name="ctl00$ContentPlaceHolder1$tbBillingZip4" type="text" maxlength="4" id="ctl00_ContentPlaceHolder1_tbBillingZip4" class="span1">
+                                </div>
+                                <div class="span6">
+                                    
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="span6">
+                                    <label for="tbBillingPhone">
+                                        Phone Number (for <strong>order</strong> questions) <span class="required-field" title="required information">*</span>:&nbsp;</label>
+                                    <input name="ctl00$ContentPlaceHolder1$tbBillingPhone" type="text" maxlength="15" id="ctl00_ContentPlaceHolder1_tbBillingPhone" class="span6">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="span1">
+                                    <input id="ctl00_ContentPlaceHolder1_rbBillingPhoneTypeVoice" type="radio" name="ctl00$ContentPlaceHolder1$billingPhone" value="rbBillingPhoneTypeVoice" checked="checked">
+                                    <label for="rbBillingPhoneTypeVoice">Voice</label>
+                                </div>
+                                <div class="span1">
+                                    <input id="ctl00_ContentPlaceHolder1_rbBillingPhoneTypeVP" type="radio" name="ctl00$ContentPlaceHolder1$billingPhone" value="rbBillingPhoneTypeVP">
+                                    <label for="rbBillingPhoneTypeVP">
+                                        <abbr title="Video Phone">VP</abbr></label>
+                                </div>
+                                <div class="span1">
+                                    <input id="ctl00_ContentPlaceHolder1_rbBillingPhoneTypeTDD" type="radio" name="ctl00$ContentPlaceHolder1$billingPhone" value="rbBillingPhoneTypeTDD">
+                                    <label for="rbBillingPhoneTypeTDD">
+                                        <abbr title="Telecommunications Device for the Deaf">TTD</abbr>
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="span6">
+                        <fieldset class="clearfix">
+                            <legend>Shipping Address</legend>
+                            <p style="margin-bottom: 7px;">
+                                <input id="ckbShippingAddress" type="checkbox" name="ctl00$ContentPlaceHolder1$ckbShippingAddress" checked="checked">
+                                <label for="ckbShippingAddress" id="ctl00_ContentPlaceHolder1_Label1" style="display: inline">Same as billing address</label><br>
+                                &nbsp;
+                            </p>
+                            <div id="pnlShippingAddress" style="display:none;">
+		
+                                <div class="row">
+                                    <div class="span1">
+                                        <label for="tbShippingNamePrefix">Prefix:</label>
+                                        <input name="ctl00$ContentPlaceHolder1$tbShippingNamePrefix" type="text" maxlength="10" id="ctl00_ContentPlaceHolder1_tbShippingNamePrefix" class="span1">
+                                    </div>
+                                    <div class="span2">
+                                        <label for="tbShippingNameFirst">
+                                            First Name:<span class="required-field" title="required information">*</span>&nbsp;</label>
+                                        <input name="ctl00$ContentPlaceHolder1$tbShippingNameFirst" type="text" maxlength="50" id="tbShippingNameFirst" class="span2">
+                                    </div>
+                                    <div class="span1">
+                                        <label for="tbShippingNameMI">Middle:</label>
+                                        <input name="ctl00$ContentPlaceHolder1$tbShippingNameMI" type="text" maxlength="1" id="ctl00_ContentPlaceHolder1_tbShippingNameMI" class="span1">
+                                    </div>
+                                    <div class="span2">
+                                        <label for="tbShippingNameLast">
+                                            Last Name:<span class="required-field" title="required information">*</span>&nbsp;</label>
+                                        <input name="ctl00$ContentPlaceHolder1$tbShippingNameLast" type="text" maxlength="50" id="ctl00_ContentPlaceHolder1_tbShippingNameLast" class="span2">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="span6">
+                                        <label for="tbShippingAddress1">
+                                            Street Address: <span class="required-field" title="required information">*</span>&nbsp;</label>
+                                        <input name="ctl00$ContentPlaceHolder1$tbShippingAddress1" type="text" maxlength="80" id="ctl00_ContentPlaceHolder1_tbShippingAddress1" class="span6">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="span6">
+                                        <label for="tbShippingAddress2">Street Address Continued:</label>
+                                        <input name="ctl00$ContentPlaceHolder1$tbShippingAddress2" type="text" maxlength="80" id="ctl00_ContentPlaceHolder1_tbShippingAddress2" class="span6">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="span6">
+                                        <label for="tbShippingCompany">Company/Organization (optional):</label>
+                                        <input name="ctl00$ContentPlaceHolder1$tbShippingCompany" type="text" maxlength="80" id="ctl00_ContentPlaceHolder1_tbShippingCompany" class="span6">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="span6">
+                                        <label for="tbShippingCity">
+                                            City: <span class="required-field" title="required information">*</span>&nbsp;</label>
+                                        <input name="ctl00$ContentPlaceHolder1$tbShippingCity" type="text" maxlength="40" id="ctl00_ContentPlaceHolder1_tbShippingCity" class="span6">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="span3">
+                                        <label for="ddlShippingState">
+                                            State:<span class="required-field" title="required information">*</span>&nbsp;</label>
+                                        <select name="ctl00$ContentPlaceHolder1$ddlShippingState" id="ctl00_ContentPlaceHolder1_ddlShippingState" class="span3">
+			<option value="">Select...</option>
+			<option value="AL">Alabama</option>
+			<option value="AK">Alaska</option>
+			<option value="AS">American Samoa</option>
+			<option value="AZ">Arizona</option>
+			<option value="AR">Arkansas</option>
+			<option value="CA">California</option>
+			<option value="CO">Colorado</option>
+			<option value="CT">Connecticut</option>
+			<option value="DE">Delaware</option>
+			<option value="DC">District of Columbia</option>
+			<option value="FM">Fed. States of Micronesia</option>
+			<option value="FL">Florida</option>
+			<option value="GA">Georgia</option>
+			<option value="GU">Guam</option>
+			<option value="HI">Hawaii</option>
+			<option value="ID">Idaho</option>
+			<option value="IL">Illinois</option>
+			<option value="IN">Indiana</option>
+			<option value="IA">Iowa</option>
+			<option value="KS">Kansas</option>
+			<option value="KY">Kentucky</option>
+			<option value="LA">Louisiana</option>
+			<option value="ME">Maine</option>
+			<option value="MH">Marshall Islands</option>
+			<option value="MD">Maryland</option>
+			<option value="MA">Massachusetts</option>
+			<option value="MI">Michigan</option>
+			<option value="MN">Minnesota</option>
+			<option value="MS">Mississippi</option>
+			<option value="MO">Missouri</option>
+			<option value="MT">Montana</option>
+			<option value="NE">Nebraska</option>
+			<option value="NV">Nevada</option>
+			<option value="NH">New Hampshire</option>
+			<option value="NJ">New Jersey</option>
+			<option value="NM">New Mexico</option>
+			<option value="NY">New York</option>
+			<option value="NC">North Carolina</option>
+			<option value="ND">North Dakota</option>
+			<option value="MP">Northern Mariana Is.</option>
+			<option value="OH">Ohio</option>
+			<option value="OK">Oklahoma</option>
+			<option value="OR">Oregon</option>
+			<option value="PW">Palau</option>
+			<option value="PA">Pennsylvania</option>
+			<option value="PR">Puerto Rico</option>
+			<option value="RI">Rhode Island</option>
+			<option value="SC">South Carolina</option>
+			<option value="SD">South Dakota</option>
+			<option value="TN">Tennessee</option>
+			<option value="TX">Texas</option>
+			<option value="UT">Utah</option>
+			<option value="VT">Vermont</option>
+			<option value="VA">Virginia</option>
+			<option value="VI">Virgin Islands</option>
+			<option value="WA">Washington</option>
+			<option value="WV">West Virginia</option>
+			<option value="WI">Wisconsin</option>
+			<option value="WY">Wyoming</option>
+			<option value="AA">Armed Forces Americas</option>
+			<option value="AE">Armed Forces Europe</option>
+			<option value="AP">Armed Forces Pacific</option>
+
+		</select>
+                                    </div>
+                                    <div class="span2">
+                                        <label for="zip5">
+                                            Zip:<span class="required-field" title="required information">*</span>&nbsp;</label>
+                                        <input name="ctl00$ContentPlaceHolder1$tbShippingZip5" type="text" maxlength="5" id="ctl00_ContentPlaceHolder1_tbShippingZip5" class="span2">
+                                    </div>
+                                    <div class="span1">
+                                        <label for="tbShippingZip4">+4:</label>
+                                        <input name="ctl00$ContentPlaceHolder1$tbShippingZip4" type="text" maxlength="4" id="ctl00_ContentPlaceHolder1_tbShippingZip4" class="span1">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="span6">
+                                        <label for="tbShippingPhone">
+                                            Phone Number (for questions regarding <strong>delivery</strong>
+                                            problems):<span class="required-field" title="required information">*</span>&nbsp;</label>
+                                        <input name="ctl00$ContentPlaceHolder1$tbShippingPhone" type="text" maxlength="15" id="ctl00_ContentPlaceHolder1_tbShippingPhone" class="span6">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="span1">
+                                        <input id="ctl00_ContentPlaceHolder1_rbShippingPhoneTypeVoice" type="radio" name="ctl00$ContentPlaceHolder1$ShippingPhone" value="rbShippingPhoneTypeVoice" checked="checked">
+                                        <label for="rbShippingPhoneTypeVoice">Voice</label>
+                                    </div>
+                                    <div class="span1">
+                                        <input id="ctl00_ContentPlaceHolder1_rbShippingPhoneTypeVP" type="radio" name="ctl00$ContentPlaceHolder1$ShippingPhone" value="rbShippingPhoneTypeVP">
+                                        <label for="rbShippingPhoneTypeVP">
+                                            <abbr title="Video Phone">VP</abbr></label>
+                                    </div>
+                                    <div class="span1">
+                                        <input id="ctl00_ContentPlaceHolder1_rbShippingPhoneTypeTDD" type="radio" name="ctl00$ContentPlaceHolder1$ShippingPhone" value="rbShippingPhoneTypeTDD">
+                                        <label for="rbShippingPhoneTypeTDD">
+                                            <abbr title="Telecommunications Device for the Deaf">TTD</abbr>
+                                        </label>
+                                    </div>
+                                </div>
+                            
+	</div>
+                            <!-- end pnlShippingAddress -->
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span12">
+                        <fieldset>
+                            <legend>Purchaser Information</legend>
+                            <div class="row">
+                                <div class="span6">
+                                    <label for="tbEmailAddress">
+                                        Please enter an email address where we may contact you with
+                                questions: <span class="required-field" title="required information">*</span></label>
+                                    <input name="ctl00$ContentPlaceHolder1$tbEmailAddress" type="text" maxlength="100" id="ctl00_ContentPlaceHolder1_tbEmailAddress" class="span6" title="Enter an email address that can be used to confirm your order">
+                                    &nbsp;
+                                </div>
+                                <div class="span6">
+                                    <label for="tbSpecialInstructions">Special instructions  (500 Characters Maximum):</label>
+                                    <textarea name="ctl00$ContentPlaceHolder1$tbSpecialInstructions" rows="4" cols="20" id="ctl00_ContentPlaceHolder1_tbSpecialInstructions" class="span6" maximumlength="500" oncopy="return false" onpaste="return false" oncut="return false" title="Enter any special instructions that the Member office needs to process your order properly (500 character maximum)">
+</textarea>
+                                    &nbsp;
+                                </div>
+                            </div>
+                            
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                      <div id="html_element"></div>
+                      <div id="recaptcha-v2" class="g-recaptcha" data-sitekey="6LdNvSkTAAAAAOyI81TRnGAYYz58AKpPUbWqUSbd"></div>
+                      <!--  < d i v  i d = "recaptcha-v2" > < / d i v > -->
+                      &nbsp;
+
+                </div>
+                <div class="row">
+                    <div class="span12">
+                        <p>
+                            Clicking on &quot;Calculate Prices&quot; will calculate shipping costs and the total
+                    amount due.
+                        </p>
+                        <p>
+                            
+
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span12">
+                        <div class="form-actions">
+                            <div class="span2 offset5" onclick="ValidateSelection();">
+                                <input id="uspsservice" name="uspsservice" type="hidden" value="PARCEL">
+                                <input type="submit" name="ctl00$ContentPlaceHolder1$btnPreview" value="Calculate Prices" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btnPreview&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ContentPlaceHolder1_btnPreview" class="btn btn-primary">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </form>
+        
+</div>
+        <!-- end pnlOrder-->
+        
+        
+    </div>
+    <script type="text/javascript" src="Scripts/knockout-3.5.1.js"></script>
+    <script type="text/javascript" src="Scripts/convertAppreviationToStateName.js"></script>
+    <script type="text/javascript" src="Scripts/convertnumbersToWords.js"></script>
+    <script type="text/javascript" src="Scripts/customizedDedication.js"></script>
+    <script language="javascript" type="text/javascript">
+
+        const KEY_EVENT_LEFT_ARROW = 37;
+        const KEY_EVENT_RIGHT_ARROW = 39;
+        const KEY_EVENT_BACKSPACE = 8;
+        const KEY_EVENT_ENTER = 13;
+        const STANDARD_DEDICATION = 1;
+        const CUSTOMIZED_DEDICATION = 2;
+        const MAXIMUM_NUMBER_OF_CHARACTERS_ADDITIONAL_DEDICATION_MESSAGE = 300;
+        var arrayOfNames = "";
+        const THANKSGIVING_DAY = ["2017-11-23", "2018-11-22", "2019-11-28", "2020-11-26", "2021-11-25", "2022-11-24", "2023-11-23",
+            "2024-11-28", "2025-11-27", "2026-11-26"];
+        var FlagLine = function () {
+            var self = this;
+            self.names = ko.observable();
+        };
+        var Flag = function () {
+            var self = this;
+            self.lines = ko.observableArray([]);
+            self.presentedToNames = ko.observableArray([]);
+            self.existingValues = function () {
+                for (i = 0; i < arrayOfNames.length; ++i) {
+                    self.lines.push({ names: ko.observable(arrayOfNames[i]) });
+                }
+            };
+            self.addLine = function () {
+                self.lines.push(new FlagLine());
+            }
+            self.removeLine = function (line) { self.lines.remove(line) };
+            self.save = function () {
+                self.presentedToNames([]);
+                ko.utils.arrayForEach(self.lines(), function (item) {
+                    if ((item.names() != undefined) && (item.names() != "")) {
+                        self.presentedToNames.push(item.names());
+                    }
+                    
+                });
+                var listSeperator = self.presentedToNames().join('|');
+                return ko.toJS(listSeperator);
+            };
+        };
+
+        flagPresentedTo = new Flag();
+        ko.applyBindings(flagPresentedTo);
+        var recipients = $('#valueOfCustomerField').val();
+        $(document).ready(function () {
+            $('#ddlDedicationList').trigger("change");
+            $('#tbCertDedicationMessage').attr('readonly', 'readonly');
+            $('#ckbShippingAddress').trigger("change");
+            if (recipients != undefined) {
+                if (recipients.length != 0) {
+                    arrayOfNames = recipients.split('|');
+                    arrayOfNames = $.grep(arrayOfNames, function (n) {
+                        return (n);
+                    });
+                    flagPresentedTo.existingValues();
+                }
+                else {
+                    flagPresentedTo.addLine();
+                }
+            }
+            if ($("#ctl00_ContentPlaceHolder1_flagOrderedValidator").text() != "") {
+                $("#btnReset").trigger("click");
+                return false;
+            }
+            //if it is in edit mode
+            if ($("#ctl00_ContentPlaceHolder1_tbBillingNameFirst").val() != '') {
+                $(".quantityFlown").trigger("focusout");
+                $('#ddlDedicationList').trigger("change");
+            }
+        });
+        $(function () {
+            $(".datepicker").datepicker({
+                maxDate: 90,
+                minDate: 7,
+                beforeShowDay: DisableCertainHolidaysFromCalendar,
+                onClose: function () {
+                    if (selectedDedicationValue == CUSTOMIZED_DEDICATION) {
+                     $('#ddlDedicationList').trigger("change");
+                     $('#tbAdditionalText').keyup();
+                     }
+                     else{
+                     $('#ddlDedicationList').trigger("change");
+                    }
+                },
+            });
+            $('textarea[maximumlength]').each(function () {
+
+                // Store the jQuery object to be more efficient...
+                var $textarea = $(this);
+
+                // Store the maxlength and value of the field.
+                var maxlength = $textarea.attr('maximumlength');
+                var val = $textarea.val();
+
+                // Trim the field if it has content over the maxlength.
+                $textarea.val(val.slice(0, maxlength));
+
+                // Bind the trimming behavior to the "keyup" event.
+                $textarea.bind('keyup', function () {
+                    $textarea.val($textarea.val().slice(0, maxlength));
+                });
+
+            });
+            $('#foo').dialog({ title: 'About Pay.gov', autoOpen: false })
+            $('.paygovexplain').click(function () {
+                $('#foo').dialog("open");
+            });
+            var originalValidationSummaryOnSubmit = window.ValidationSummaryOnSubmit;
+            window.ValidationSummaryOnSubmit = function (validationGroup) {
+                var originalScrollTo = window.scrollTo;
+                window.scrollTo = function () { };
+                originalValidationSummaryOnSubmit(validationGroup);
+                window.scrollTo = originalScrollTo;
+            }
+            $("#LinkpayByCheck").click(function () {
+                window.print();
+                return false;
+
+            });
+        });
+        var arrayOfErrorMessages = new Array();
+        function DisplayErrorMessage() {
+            if (Page_IsValid) {
+                $('#ctl00_ContentPlaceHolder1_validationSummaryOrder').empty();
+                $('#ctl00_ContentPlaceHolder1_validationSummaryOrder').css('display', 'block');
+                $("#ctl00_ContentPlaceHolder1_validationSummaryOrder").append("There were errors in your input. Please correct any error messages before continuing.");
+                if (arrayOfErrorMessages.length == 1) {
+                    $("#ctl00_ContentPlaceHolder1_validationSummaryOrder").append('<ul><li>' + arrayOfErrorMessages + '</li></ul>');
+                }
+                else {
+                    for (var i in arrayOfErrorMessages) {
+                        $("#ctl00_ContentPlaceHolder1_validationSummaryOrder").append('<ul><li>' + arrayOfErrorMessages[i] + '</li></ul>');
+                    }
+                }
+            }
+            else {
+                if (arrayOfErrorMessages.length == 1) {
+                    $("#ctl00_ContentPlaceHolder1_validationSummaryOrder ul").append('<li>' + arrayOfErrorMessages + '</li>');
+                }
+                else {
+                    for (var i in arrayOfErrorMessages) {
+                        $("#ctl00_ContentPlaceHolder1_validationSummaryOrder ul").append('<li>' + arrayOfErrorMessages[i] + '</li>');
+                    }
+                }
+            }
+        }
+        $('#btnReset').click(function () {
+            $("#ctl00_ContentPlaceHolder1_gvFlagSelection").find('tr').each(function () {
+                $(this).closest('tr').find("td:eq(3) input[type='text']").prop('disabled', false);
+                $(this).closest('tr').find("td:eq(2) input[type='text']").prop('disabled', false);
+                $(this).closest('tr').find("td:eq(2) input[type='text']").val('');
+                $(this).closest('tr').find("td:eq(3) input[type='text']").val('');
+            });
+            // Un-display certificate info
+            DisplayCertificateInfo(0);
+            return false;
+        });
+        $('.input-mini').keypress(function (e) {
+            if (e.which == KEY_EVENT_ENTER) {
+                return false;
+            }
+        });
+        function CheckNumberOfRecipients(numberOfFlagsRequested) {
+            var numOfFlags = parseInt(numberOfFlagsRequested) || 0;
+            if (numOfFlags <= 1) {
+                    $('#recipientsNameMessageSpan').hide();
+                    $('#showHideNameColumn').hide();
+                    $('#additionalSpanText').hide();
+                    flagPresentedTo.lines([]);
+                }
+                else {
+                    $('#recipientsNameMessageSpan').show();
+                    $('#showHideNameColumn').show();
+                    $('#additionalSpanText').show();
+                    if (flagPresentedTo.lines().length == 0) {
+                        flagPresentedTo.addLine();
+
+                    }
+            }
+
+        }
+        var haveShownAlert = false;
+        var AlertMsg2Show = "";
+        $('.quantityFlown').focusin(function () {
+            displayAlert();
+        });
+        $('.quantityNotFlown').focusin(function () {
+            displayAlert();
+        });
+        function displayAlert() {
+            if (AlertMsg2Show.length > 2) {
+                if (!haveShownAlert) {
+                    custom_alert(AlertMsg2Show);
+                    haveShownAlert = true;
+                }
+            }
+        }
+        function custom_alert(message, title) {
+            if (!title)
+                title = 'Alert';
+
+            if (!message)
+                message = 'No message to display.';
+
+            $('<div></div>').html(message).dialog({
+                title: title,
+                resizable: false,
+                modal: true,
+                buttons: {
+                    'Ok': function () {
+                        $(this).dialog('close');
+                    }
+                }
+            });
+        }
+
+        var valueOfQuantityFlownOverTheCapitol = "";
+        $('.quantityFlown').focusout(function () {
+            var hasValueInTextField = false;
+            $("#ctl00_ContentPlaceHolder1_gvFlagSelection").find('tr').each(function () {
+                if ($(this).closest('tr').find("td:eq(2) input[type='text']").val() == "0") {
+                    $(this).closest('tr').find("td:eq(2) input[type='text']").val('');
+                }
+                if (($(this).closest('tr').find("td:eq(2) input[type='text']").val() != "") && ($(this).closest('tr').find("td:eq(2) input[type='text']").val() != undefined)) {
+                    hasValueInTextField = true;
+                }
+            });
+            if (hasValueInTextField) {
+                $("#ctl00_ContentPlaceHolder1_gvFlagSelection").find('tr').each(function () {
+                    if ($(this).closest('tr').find("td:eq(2) input[type='text']").val() != "") {
+                        valueOfQuantityFlownOverTheCapitol = $(this).closest('tr').find("td:eq(2) input[type='text']").val();
+                    }
+                    else {
+                        $(this).closest('tr').find("td:eq(2) input[type='text']").prop('disabled', true);
+                    }
+                });
+                if ($('#ddlDedicationList option:selected').val() == CUSTOMIZED_DEDICATION) {
+                    CheckNumberOfRecipients(valueOfQuantityFlownOverTheCapitol);
+                }
+                DisplayCertificateInfo(valueOfQuantityFlownOverTheCapitol);
+            }
+            else {
+                $("#ctl00_ContentPlaceHolder1_gvFlagSelection").find('tr').each(function () {
+                    $(this).closest('tr').find("td:eq(3) input[type='text']").prop('disabled', false);
+                    $(this).closest('tr').find("td:eq(2) input[type='text']").prop('disabled', false);
+                });
+                DisplayCertificateInfo(0);
+            }
+        });
+        var selectionIsValid = true;
+        function ValidateSelection() {
+            $('#valueOfCustomerField').val(flagPresentedTo.save());
+            DifferentShippingAddressValidators();
+            CheckErrorsInForm();
+            CheckHolidayDates();
+            return selectionIsValid;
+        }
+        
+        function ValidationSuccessful() {
+            if (selectionIsValid != true) {
+                return false;
+            }
+            else
+                return true;
+        }
+        function DifferentShippingAddressValidators() {
+            var requiredFieldValidators = ["RequiredFieldValidator7", "RequiredFieldValidator9", "RequiredFieldValidator11",
+            "RequiredFieldValidator14", "RequiredFieldValidator8", "RequiredFieldValidator10", "RequiredFieldValidator12"];
+            if ($('#ckbShippingAddress').is(":checked")) {
+                $.each(requiredFieldValidators, function (index, idOfValidator) {
+                    ValidatorEnable(document.getElementById(idOfValidator), false);
+                });
+           
+            }
+            else {
+                $.each(requiredFieldValidators, function (index, idOfValidator) {
+                    ValidatorEnable(document.getElementById(idOfValidator), true);
+                    Page_ClientValidate();
+                });
+            }
+        }
+        $('#ckbShippingAddress').change(function () {
+            if ($(this).is(":checked")) {                
+                $('#pnlShippingAddress').hide();
+           }            
+            else {
+                $('#pnlShippingAddress').show();
+            }
+        });
+
+        function DisplayCertificateInfo(numOfFlags) {
+            if (parseInt(numOfFlags) > 0) {                
+                $('#pnlCertificateInfo').show();
+            }            
+            else {
+                $('#pnlCertificateInfo').hide();
+            }
+        }
+
+        function DisableCertainHolidaysFromCalendar(date) {
+            var calenderMonth = date.getMonth() + 1;
+            var calendarDay = date.getDate();
+            var dayOfTheWeek = date.getDay();
+            var weekOfMonth = Math.ceil((calendarDay - 1 - dayOfTheWeek) / 7);
+            if (calenderMonth == 12 && calendarDay == 25) {
+                return [false];
+            }
+            if (calenderMonth == 1 && calendarDay == 1) {
+                return [false];
+            }
+            //Thanksgiving Day
+            var dateOfThanksgiving = jQuery.datepicker.formatDate('yy-mm-dd', date);
+            if (jQuery.inArray(dateOfThanksgiving, THANKSGIVING_DAY) != -1) {
+                return [false];
+            } 
+            else {
+                return [true];
+            }
+        }
+        function CheckHolidayDates() {
+            var dateValid = true;
+            var dateSelected = $('.datepicker').datepicker('getDate');
+            var calenderMonth = dateSelected.getMonth() + 1;
+            var calendarDay = dateSelected.getDate();
+            //Christmas Day
+            if (calenderMonth == 12 && calendarDay == 25) {
+                dateValid = false;
+            }
+            //New Years Day
+            if (calenderMonth == 1 && calendarDay == 1) {
+                dateValid = false;
+            }
+            //Thanksgiving Day
+            var dateOfThanksgiving = jQuery.datepicker.formatDate('yy-mm-dd', dateSelected);
+            $.each(THANKSGIVING_DAY, function (index, value) {
+                if (value == dateOfThanksgiving) {
+                    dateValid = false;
+                }
+            });
+
+            return dateValid;
+        }
+        
+        function CheckErrorsInForm() {
+            arrayOfErrorMessages = [];
+            selectionIsValid = true;
+            var dateSelected = $('.datepicker').datepicker('getDate');
+            document.getElementById('dateErrorMessage').innerText = "";
+            document.getElementById('namePresentedToErrorMessage').innerText = "";
+            document.getElementById('additionalDedicationErrorMessage').innerText = "";
+            var today = new Date();
+            if (dateSelected != null) {
+                if (dateSelected > new Date(today.getFullYear(), today.getMonth(), today.getDate() + 90)) {
+                    arrayOfErrorMessages.push('Preferred date for flag date to be flown should be between 1 week and 3 months from today');
+                    document.getElementById('dateErrorMessage').innerText = "Preferred date for flag date to be flown should be between 1 week and 3 months from today";
+                    selectionIsValid = false;
+                }
+                if (dateSelected < new Date(today.getFullYear(), today.getMonth(), today.getDate() + 7)) {
+                    arrayOfErrorMessages.push('Preferred date for flag date to be flown should be between 1 week and 3 months from today');
+                    document.getElementById('dateErrorMessage').innerText = "Preferred date for flag date to be flown should be between 1 week and 3 months from today";
+                    selectionIsValid = false;
+                }               
+            }
+            if ($('#ddlDedicationList option:selected').val() == CUSTOMIZED_DEDICATION) {
+                if (valueOfQuantityFlownOverTheCapitol > 1) {
+                    if (valueOfQuantityFlownOverTheCapitol != flagPresentedTo.presentedToNames().length) {
+                        arrayOfErrorMessages.push('Total Quantity Flown over the Capitol should be the same number of names who will be presented to');
+                        document.getElementById('namePresentedToErrorMessage').innerText = "Total Quantity Flown over the Capitol should be the same number of names who will be presented to";
+                        selectionIsValid = false;
+                    }
+                }
+            }
+            if (CheckHolidayDates() == false) {
+                arrayOfErrorMessages.push('The Holiday that was chosen is not accepted.  Please change your preferred date. ');
+                document.getElementById('dateErrorMessage').innerText = "The Holiday that was chosen is not accepted.  Please change your preferred date. ";
+                selectionIsValid = false;
+            }
+            if ($('#tbAdditionalText').val().length > MAXIMUM_NUMBER_OF_CHARACTERS_ADDITIONAL_DEDICATION_MESSAGE) {
+                arrayOfErrorMessages.push('Cannot exceed 300 characters for additional text');
+                document.getElementById('additionalDedicationErrorMessage').innerText = "Cannot exceed total 300 characters for dedication message (including the standard text)";
+                selectionIsValid = false;
+            }
+
+            if (arrayOfErrorMessages.length > 0) {
+                DisplayErrorMessage();
+                return false;
+            }
+            return selectionIsValid;
+        }
+
+    </script>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+//jQuery(document).ready(function() {
+//    if (jQuery("#recaptcha-v2").length > 0) {
+//        jQuery("#recaptcha-v2").append(jQuery("<div class=\"g-recaptcha\" data-sitekey=\"6LdNvSkTAAAAAOyI81TRnGAYYz58AKpPUbWqUSbd\"></div>"));
+//    }
+//    else {
+//        jQuery("#recaptcha-v2").append(jQuery("<div class=\"g-recaptcha\" data-sitekey=\"6LdNvSkTAAAAAOyI81TRnGAYYz58AKpPUbWqUSbd\"></div>"));
+//    }
+// })
+//--><!]]>
+</script>
+
+     </div> <!-- end container -->
+</body>
+</html>
+    <script type="text/javascript" src="Scripts/convertAppreviationToStateName.js"></script>
+    <script type="text/javascript" src="Scripts/numberToWords.js"></script>
+    <script language="javascript" type="text/javascript">
+        function capitalizeFirstLetter(string) {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+
+        $(document).ready(function () {
+            var state = $('.stateDistrict').text();
+            var district = $('.stateDistrict').text();
+            state = state.slice(1, 3);
+            district = district.slice(3, 5);
+            if ($("#sponsor_leg").val() == 'N' || $("#sponsor_leg_edit").val() == 'N') {
+                if (district == '00') {
+                    document.getElementById('ctl00_lblMemberName').innerHTML = "Office of the At Large Congressional District of " + abbrState(state, 'name');
+                }
+                else {
+                    document.getElementById('ctl00_lblMemberName').innerHTML = "Office of the " + capitalizeFirstLetter(numberToWords.toWordsOrdinal(district)) + " Congressional District of " + abbrState(state, 'name');
+                }
+            }
+        document.getElementById('ctl00_lblMemberName').style.display = "inline";
+        });
+    </script>

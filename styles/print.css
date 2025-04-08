@@ -1,0 +1,39 @@
+#wrapper .visual,
+#sidebar,
+.top-bar,
+.social,
+.action-btns,
+.fileitem,
+.reldochead,
+.relatedochead,
+.news-related-news,
+.news-related-files,
+.blockquote,
+.topshare,
+.audiojs,
+.SocialTagsTable
+.hero-section,
+.fb-comments,
+.share-icons,
+.subscribe-section {
+    display:none;
+}
+.pictureholder img {max-width: 300px;float:left;margin: 0 10px 10px 0;}
+.main-newscopy {margin: 30px 0;}
+.printdoc {font-family:arial; line-height: 1.5;}
+.logo{text-align:center;}
+.printlogo
+{
+    margin:0 10px 0 0;
+    vertical-align:bottom;
+}
+.logo a{color:#000;}
+
+.middleheadline
+{
+    font-weight:bold;
+    font-size:1.2em;
+}
+.person-agency {
+    background: none !important;
+}

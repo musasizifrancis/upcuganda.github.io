@@ -1,0 +1,336 @@
+.validator {
+    color: #a90000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#aspnetForm {
+	margin: 0;
+	padding: 0;
+}
+
+#__VIEWSTATE, #__EVENTVALIDATION, #__EVENTTARGET, #__EVENTARGUMENT {
+	margin: 0;
+	padding: 0;
+	width: 10px;
+	display: none;
+}
+
+#aspnetForm pre {
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+#aspnetForm .zip-auth {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#aspnetForm .zip-auth > div {
+    margin: .25rem;
+}
+
+#aspnetForm .zip-auth input, 
+#aspnetForm .zip-auth label {
+    width: initial;
+    height: initial;
+    max-width: initial;
+    min-width: initial;
+    max-height: initial;
+    min-height: initial;
+    display: inline;
+}
+
+.buffer fieldset legend[for] {
+    font-weight: inherit;
+}
+
+.inline {
+    display: inline;
+}
+
+.tourform .ticket-intro-legend {
+    text-decoration: underline;
+}
+
+.description .art-header {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    line-height: initial;
+}
+
+.fs-checkbox label,
+.fs-radio label {
+    display: inline;
+}
+
+#aspnetForm input[type="checkbox"],
+#aspnetForm input[type="radio"] {
+    margin: 3px 0.5ex;
+}
+
+/* Custom and aspenet Form */
+.customform .formfield,
+#aspnetForm .formfield {
+    margin-bottom: 1em;
+}
+
+.customform .formfield:last-child,
+#aspnetForm .formfield:last-child {
+    margin-bottom: 0;
+}
+
+.customform abbr[title],
+.customform abbr,
+abbr.req,
+abbr[title].req { 
+    border-bottom: none; 
+    text-decoration: none;
+    color: #000;
+}
+
+.customform input[type="submit"],
+.customform input[type="button"], 
+.customform input[type="reset"],
+#aspnetForm input[type="submit"],
+#aspnetForm input[type="button"], 
+#aspnetForm input[type="reset"] {
+    background: #666;
+    background: var(--secondary-color, #666);
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #666;
+    border: 2px solid var(--secondary-color, #666);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+}
+
+.customform input[type="submit"]:hover,
+.customform input[type="button"]:hover,
+.customform input[type="reset"]:hover,
+#aspnetForm input[type="submit"]:hover,
+#aspnetForm input[type="button"]:hover,
+#aspnetForm input[type="reset"]:hover
+ {
+    background: #fff;
+    color: #666;
+    color: var(--secondary-color, #666);
+}
+
+#aspnetForm .checkbox-group {
+    display: block;
+}
+
+#aspnetForm select,
+.contactform select {
+    max-width: 60vw;
+}
+
+#aspnetform select {
+    background-color: #fff;
+}
+
+/*EMANAGER FORM*/
+
+.formFieldContainer {
+    padding: 2px 0px;
+    clear: both;
+}
+
+.formAddress {
+    clear: both;
+}
+
+.formAddress label {
+    font-weight: bold;
+    width: 100px;
+    text-align: right;
+    margin: 8px 10px 0px 0px;
+    display: block;
+    padding: 0px 5px 0px 10px;
+}
+
+.formAddress input {
+    float: left;
+    display: inline;
+    width: 300px;
+    text-align: left;
+    margin: 5px 5px 5px 0px;
+    float: left;
+    display: block;
+    padding: 5px 5px 0px 10px;
+}
+.formAddress select {
+    float: left;
+    display: inline;
+    width: 220px;
+    text-align: left;
+    margin: 3px 50px 0px 0px;
+    float: left;
+    display: block;
+    padding: 5px 5px 0px 10px;
+}
+
+#submitbutton
+{
+    clear: both;
+    display: block;
+}
+
+#submitbutton a {
+	margin: 0 0 10px;
+	padding: 3px 7px;
+	border: 1px solid #999;
+	display: inline-block;
+}
+
+.FieldContainerVert {
+    width: 100%;
+}
+
+.FieldContainerVert label {
+    font-weight: bold;
+    font-size: 1em;
+    width: 200px;
+    text-align: right;
+    vertical-align: top;
+    margin: 3px 10px 10px 0px;
+    float: left;
+    clear: both;
+    padding: 1px 5px 5px 10px;
+}
+
+.FieldContainerHori {
+    width: 100%;
+}
+
+.FieldContainerHori label
+{
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    vertical-align: top;
+    display: block;
+    padding: 1px 5px 5px 0px;
+}
+
+.FieldContainerHori .formFieldContainer:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inputText {
+    width: 300px;
+}
+
+.formRadio label {
+    font-weight: normal;
+    text-align: left;
+    display: inline;
+    float: none;
+}
+
+.formRadio input {
+    display: inline;
+    float: none;
+    margin: 0 5px 0 0;
+}
+
+.formFieldError {
+    display: block;
+    color: #a90000;
+}
+
+.formfieldheader {
+ 	margin: 0;
+	padding: 0;
+}
+
+.formheader {
+    display: block;
+}
+
+/* Safari reCaptcha fix */
+.g-recaptcha {
+    /* 3x3 9-cell reCaptcha */
+    display: inline-block;
+    transition: auto !important;
+}
+.g-recaptcha-bubble-arrow + div:not([class]) {
+    /* 4x4 16-cell reCaptcha */
+    transform: translate3d(0,0,0) !important;
+}
+
+/*Art Competition Form Gallery*/
+.competition-gallery {
+  padding: 1.25rem;
+  background: #ddd;
+  columns: 15.625rem;
+  column-gap: 1.25rem;
+}
+
+.entry-wrap {
+  transition: box-shadow 0.3s ease-in-out;
+  break-inside: avoid-column;
+  margin-bottom: 1rem; 
+  padding: 0.625rem;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.entry-wrap:hover {
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, .3);
+}
+
+.entry-wrap .entry-title {
+  color: #000;
+  padding: .5rem 0;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.entry-wrap a,
+.entry-wrap a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-height: 575px){
+    #rc-imageselect, 
+    .g-recaptcha {
+        transform:scale(0.77);
+        -webkit-transform:scale(0.77);
+        transform-origin:0 0;
+        -webkit-transform-origin:0 0;
+        max-width: calc(100vw - 4rem);
+        /*overflow: scroll;*/
+    }
+}
+
+@media (max-width: 767px) {
+    #aspnetForm .zip-auth input, 
+    #aspnetForm .zip-auth label,
+    #aspnetForm .zip-auth > div {
+        width: 100%;
+        display: block;
+    }
+
+    .entry-wrap img {
+        width: 100%;
+    }
+}

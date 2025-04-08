@@ -1,0 +1,13 @@
+.intro-text{margin-bottom: 15px;width: 50%;padding: 20px;margin: 20px auto 20px auto;background: #f7f8fa;line-height: 24px;color: #4c4c4c;}
+.add-state{margin-top:10px;}
+#leadership-logos{background:#f9f9f9;display:block;padding:60px 20px;text-align:center;}
+#leadership-logos img{display:inline-block;margin:0 30px;opacity:.6;transition:all ease-in-out .2s;height:60px;}
+#leadership-logos img:hover{opacity:1;}
+.form-validation{margin-bottom:10px;}
+#nav-menu{display:none!important;}
+#house-ssologon-header {margin:-20px -20px 20px -20px;padding:75px 0;vertical-align:middle;background-image: url(/images/events/cities/dc-06.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;margin-bottom:15px;}
+#house-ssologon-header #house-ssologon-banner{background-color:#16232cf2;padding:20px;}
+#house-ssologon-header #house-ssologon-banner #house-ssologon-title{color:#fff;font-size:24px;margin-bottom:10px;}
+#house-ssologon-header #house-ssologon-banner #house-ssologon-deck{color:#67a6d2;font-size:16px;margin:15px 0;}
+#house-ssologon-header #house-ssologon-banner #house-ssologon-help{color:#67a6d2;font-size:16px;font-style:italic;}
+@media (max-width:1050px){.intro-text{width:100%;}#nav-menu{display:none!important;}}

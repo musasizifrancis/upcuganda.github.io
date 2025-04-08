@@ -1,0 +1,2484 @@
+<!doctype html>
+<html 
+      lang="he-x-mtfrom-en"
+      dir="rtl">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope"
+          content="profile email https://www.googleapis.com/auth/developerprofiles https://www.googleapis.com/auth/developerprofiles.award">
+    <meta property="og:site_name" content="Google for Developers">
+    <meta property="og:type" content="website"><meta name="theme-color" content="#ff0000"><meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="//apis.google.com" crossorigin>
+    <link rel="preconnect" href="//www.google-analytics.com" crossorigin><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap">
+      <link rel="stylesheet"
+            href="//fonts.googleapis.com/css2?family=Material+Icons&family=Material+Symbols+Outlined&display=block"><link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanshebrew.css"><link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/css/app.css">
+      <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/images/favicon-new.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/images/touchicon-180-new.png"><link rel="canonical" href="https://developers.google.com/youtube?hl=he"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google for Developers" href="https://developers.google.com/s/opensearch.xml?hl=he">
+      <link rel="alternate" hreflang="en"
+          href="https://developers.google.com/youtube" /><link rel="alternate" hreflang="x-default" href="https://developers.google.com/youtube" /><link rel="alternate" hreflang="ar"
+          href="https://developers.google.com/youtube?hl=ar" /><link rel="alternate" hreflang="bn"
+          href="https://developers.google.com/youtube?hl=bn" /><link rel="alternate" hreflang="zh-Hans"
+          href="https://developers.google.com/youtube?hl=zh-cn" /><link rel="alternate" hreflang="zh-Hant"
+          href="https://developers.google.com/youtube?hl=zh-tw" /><link rel="alternate" hreflang="fa"
+          href="https://developers.google.com/youtube?hl=fa" /><link rel="alternate" hreflang="fr"
+          href="https://developers.google.com/youtube?hl=fr" /><link rel="alternate" hreflang="de"
+          href="https://developers.google.com/youtube?hl=de" /><link rel="alternate" hreflang="he"
+          href="https://developers.google.com/youtube?hl=he" /><link rel="alternate" hreflang="hi"
+          href="https://developers.google.com/youtube?hl=hi" /><link rel="alternate" hreflang="id"
+          href="https://developers.google.com/youtube?hl=id" /><link rel="alternate" hreflang="it"
+          href="https://developers.google.com/youtube?hl=it" /><link rel="alternate" hreflang="ja"
+          href="https://developers.google.com/youtube?hl=ja" /><link rel="alternate" hreflang="ko"
+          href="https://developers.google.com/youtube?hl=ko" /><link rel="alternate" hreflang="pl"
+          href="https://developers.google.com/youtube?hl=pl" /><link rel="alternate" hreflang="pt-BR"
+          href="https://developers.google.com/youtube?hl=pt-br" /><link rel="alternate" hreflang="ru"
+          href="https://developers.google.com/youtube?hl=ru" /><link rel="alternate" hreflang="es-419"
+          href="https://developers.google.com/youtube?hl=es-419" /><link rel="alternate" hreflang="th"
+          href="https://developers.google.com/youtube?hl=th" /><link rel="alternate" hreflang="tr"
+          href="https://developers.google.com/youtube?hl=tr" /><link rel="alternate" hreflang="vi"
+          href="https://developers.google.com/youtube?hl=vi" /><title>YouTube &nbsp;|&nbsp; Google for Developers</title>
+
+<meta property="og:title" content="YouTube &nbsp;|&nbsp; Google for Developers"><meta name="description" content="הוספת פונקציונליות של YouTube לאתרים ולאפליקציות.">
+  <meta property="og:description" content="הוספת פונקציונליות של YouTube לאתרים ולאפליקציות."><meta property="og:url" content="https://developers.google.com/youtube?hl=he"><meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/images/opengraph/youtube-theme.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675"><meta property="og:locale" content="he"><meta name="twitter:card" content="summary_large_image"><link rel="alternate machine-translated-from" hreflang="en"
+        href="https://developers.google.com/youtube?hl=en">
+    
+      <link rel="stylesheet" href="/extras.css"></head>
+  <body class=""
+        template="landing"
+        theme="youtube-theme"
+        type="product"
+        
+        
+        
+        layout="full"
+        
+        
+        
+        
+          
+            concierge='hide'
+          
+        
+        
+        pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+  
+    <a href="#main-content" class="skip-link button">
+      
+      דילוג לתוכן הראשי
+    </a>
+    <section class="devsite-wrapper">
+      <devsite-cookie-notification-bar></devsite-cookie-notification-bar><devsite-header role="banner">
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-header--inner" data-nosnippet>
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="פתיחת התפריט">
+        </button>
+        <div class="devsite-product-name-wrapper">
+
+  
+    
+  
+  <a href="https://developers.google.com/youtube?hl=he">
+    
+  <div class="devsite-product-logo-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <picture>
+      
+      <img class="devsite-product-logo"
+           alt="YouTube"
+           src="https://developers.google.com/static/site-assets/logo-youtube.svg?hl=he"
+           srcset=" /static/site-assets/logo-youtube.svg"
+           sizes="64px"
+           loading="lazy"
+           >
+    </picture>
+  
+  </div>
+  
+  </a>
+  
+
+  
+
+
+
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list"
+  >
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+      
+        
+  <a href="https://developers.google.com/youtube?hl=he"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Upper Header"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail="YouTube"
+      
+    >
+    
+          <h1 class="devsite-product-name">YouTube</h1>
+        
+  </a>
+  
+      
+    
+  </li>
+  
+</ul>
+  </span>
+
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+            
+           </div>
+          
+<devsite-search
+    enable-signin
+    enable-search
+    enable-suggestions
+      enable-query-completion
+    
+    
+    project-name="YouTube"
+    tenant-name="Google for Developers"
+    project-scope="/youtube"
+    url-scoped="https://developers.google.com/s/results/youtube?hl=he"
+    
+    
+    
+    >
+  <form class="devsite-search-form" action="https://developers.google.com/s/results?hl=he" method="GET">
+    <div class="devsite-search-container">
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              
+              aria-label="פתיחת החיפוש"></button>
+      <div class="devsite-searchbox">
+        <input
+          aria-activedescendant=""
+          aria-autocomplete="list"
+          
+          aria-label="חיפוש"
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          autocomplete="off"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          
+          placeholder="חיפוש"
+          role="combobox"
+          type="text"
+          value=""
+          >
+          <div class="devsite-search-image material-icons" aria-hidden="true">
+            
+          </div>
+          <div class="devsite-search-shortcut-icon-container" aria-hidden="true">
+            <kbd class="devsite-search-shortcut-icon">/</kbd>
+          </div>
+      </div>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          
+          aria-label="סגירת החיפוש"></button>
+</devsite-search>
+
+        </div>
+
+        
+
+          
+
+          
+
+          
+
+          
+<devsite-language-selector>
+  <ul role="presentation">
+    
+    
+    <li role="presentation">
+      <a role="menuitem" lang="en"
+        >English</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="de"
+        >Deutsch</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es"
+        >Español</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es_419"
+        >Español – América Latina</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fr"
+        >Français</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="id"
+        >Indonesia</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="it"
+        >Italiano</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pl"
+        >Polski</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt_br"
+        >Português – Brasil</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="vi"
+        >Tiếng Việt</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="tr"
+        >Türkçe</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ru"
+        >Русский</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="he"
+        >עברית</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ar"
+        >العربيّة</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fa"
+        >فارسی</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="hi"
+        >हिंदी</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="bn"
+        >বাংলা</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="th"
+        >ภาษาไทย</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_cn"
+        >中文 – 简体</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_tw"
+        >中文 – 繁體</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ja"
+        >日本語</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ko"
+        >한국어</a>
+    </li>
+    
+  </ul>
+</devsite-language-selector>
+
+
+          
+
+        
+
+        
+          <devsite-user 
+                        
+                        
+                          enable-profiles
+                        
+                        
+                          fp-auth
+                        
+                        id="devsite-user">
+            
+              
+              <span class="button devsite-top-button" aria-hidden="true" visually-hidden>היכנס</span>
+            
+        </devsite-user>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+      
+        
+          <div class="devsite-product-id-row"
+           >
+            <div class="devsite-product-description-row">
+              
+                
+              
+              
+              <div class="devsite-product-description">
+                הוספת פונקציונליות של YouTube לאתרים ולאפליקציות.
+              </div>
+              
+            </div>
+            
+          </div>
+          
+        
+      
+      
+        <div class="devsite-doc-set-nav-row">
+          
+          
+            
+            
+  <devsite-tabs class="lower-tabs">
+
+    <nav class="devsite-tabs-wrapper" aria-label="הכרטיסיות התחתונות">
+      
+        
+          <tab  class="devsite-active">
+            
+    <a href="https://developers.google.com/youtube?hl=he"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://developers.google.com/youtube?hl=he"
+    
+       track-type="nav"
+       track-metadata-position="nav - home"
+       track-metadata-module="primary nav"
+       aria-label="דף הבית, selected" 
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: דף הבית"
+         
+           track-name="home"
+         
+       >
+    דף הבית
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/youtube/documentation?hl=he"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://developers.google.com/youtube/documentation?hl=he"
+    
+       track-type="nav"
+       track-metadata-position="nav - מדריכים"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: מדריכים"
+         
+           track-name="מדריכים"
+         
+       >
+    מדריכים
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/youtube/code_samples?hl=he"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://developers.google.com/youtube/code_samples?hl=he"
+    
+       track-type="nav"
+       track-metadata-position="nav - דוגמאות"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: דוגמאות"
+         
+           track-name="דוגמאות"
+         
+       >
+    דוגמאות
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service?hl=he"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://developers.google.com/youtube/terms/api-services-terms-of-service?hl=he"
+    
+       track-type="nav"
+       track-metadata-position="nav - מונחים"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: מונחים"
+         
+           track-name="מונחים"
+         
+       >
+    מונחים
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+    </nav>
+
+  </devsite-tabs>
+
+          
+          
+        </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+  
+</devsite-header>
+      <devsite-book-nav scrollbars hidden>
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-book-nav-filter"
+     hidden>
+  <span class="filter-list-icon material-icons" aria-hidden="true"></span>
+  <input type="text"
+         placeholder="סינון"
+         
+         aria-label="כאן כותבים את הטקסט לסינון התוצאות"
+         role="searchbox">
+  
+  <span class="filter-clear-button hidden"
+        data-title="ניקוי הסינון"
+        aria-label="ניקוי הסינון"
+        role="button"
+        tabindex="0"></span>
+</div>
+
+<nav class="devsite-book-nav devsite-nav nocontent"
+     aria-label="תפריט צד">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="סגירת הניווט">
+    </button>
+    <div class="devsite-product-name-wrapper">
+
+  
+    
+  
+  <a href="https://developers.google.com/youtube?hl=he">
+    
+  <div class="devsite-product-logo-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <picture>
+      
+      <img class="devsite-product-logo"
+           alt="YouTube"
+           src="https://developers.google.com/static/site-assets/logo-youtube.svg?hl=he"
+           srcset=" /static/site-assets/logo-youtube.svg"
+           sizes="64px"
+           loading="lazy"
+           >
+    </picture>
+  
+  </div>
+  
+  </a>
+  
+
+  
+
+
+  
+      <span class="devsite-product-name">
+        
+        
+        <ul class="devsite-breadcrumb-list"
+  >
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+      
+        
+  <a href="https://developers.google.com/youtube?hl=he"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Upper Header"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail="YouTube"
+      
+    >
+    
+          YouTube
+        
+  </a>
+  
+      
+    
+  </li>
+  
+</ul>
+      </span>
+    
+
+</div>
+  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+      
+        <ul class="devsite-nav-list">
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/youtube"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              devsite-nav-active"
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: דף הבית"
+      
+        track-name="home"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: דף הבית"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      דף הבית
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/youtube/documentation"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: מדריכים"
+      
+        track-name="מדריכים"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: מדריכים"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      מדריכים
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/youtube/code_samples"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: דוגמאות"
+      
+        track-name="דוגמאות"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: דוגמאות"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      דוגמאות
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/youtube/terms/api-services-terms-of-service"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: מונחים"
+      
+        track-name="מונחים"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: מונחים"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      מונחים
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+          
+          
+        </ul>
+      
+    </div>
+    
+  </div>
+</nav>
+        
+      </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" id="main-content" class="devsite-main-content"
+            
+              
+              
+            >
+          
+          <devsite-content>
+            
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="devsite-article">
+  
+  
+  
+  
+  
+    <div class="devsite-banner devsite-banner-translated nocontent">
+      <div class="devsite-banner-message">
+        <div class="devsite-banner-message-text">
+          <img src="https://developers.google.com/_static/images/translated.svg?hl=he"
+               class="devsite-banner-translated-image invert"
+               alt="">
+          <span class="devsite-banner-translated-text">
+            
+            דף זה תורגם על ידי <a href="//cloud.google.com/translate/?hl=he">Cloud Translation API</a>.
+          </span>
+        </div>
+        <devsite-switch-to-english-button></devsite-switch-to-english-button>
+      </div>
+    </div>
+  
+
+  <div class="devsite-article-meta nocontent" role="navigation">
+    
+    
+    <ul class="devsite-breadcrumb-list"
+  
+    aria-label="נתיב ניווט">
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+  <a href="https://developers.google.com/?hl=he"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail=""
+      
+    >
+    
+        דף הבית
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://developers.google.com/products?hl=he"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="2"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="2"
+      
+        track-metadata-eventdetail=""
+      
+    >
+    
+        מוצרים
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://developers.google.com/youtube?hl=he"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="3"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="3"
+      
+        track-metadata-eventdetail="YouTube"
+      
+    >
+    
+        YouTube
+      
+  </a>
+  
+    
+  </li>
+  
+</ul>
+    
+  </div>
+  
+    
+  <div class="devsite-actions" data-nosnippet>
+    <devsite-feature-tooltip
+      ack-key="AckCollectionsBookmarkTooltipDismiss"
+      analytics-category="Site-Wide Custom Events"
+      analytics-action-show="Callout Profile displayed"
+      analytics-action-close="Callout Profile dismissed"
+      analytics-label="Create Collection Callout"
+      class="devsite-page-bookmark-tooltip nocontent"
+      dismiss-button="true"
+      id="devsite-collections-dropdown"
+      
+      dismiss-button-text="סגירה"
+
+      
+      close-button-text="הבנתי">
+
+    
+    <devsite-bookmark></devsite-bookmark>
+
+    <span slot="popout-heading">
+      
+      קל לארגן דפים בעזרת אוספים
+    </span>
+    <span slot="popout-contents">
+      
+      אפשר לשמור ולסווג תוכן על סמך ההעדפות שלך.
+    </span>
+  </devsite-feature-tooltip>
+  </div>
+  
+  
+
+  <devsite-toc class="devsite-nav"
+    depth="2"
+    devsite-toc-embedded
+    disabled>
+  </devsite-toc>
+  
+
+  
+
+
+
+
+
+
+<div class="devsite-article-body clearfix
+  devsite-no-page-title">
+
+  
+    
+  <section class="devsite-landing-row devsite-landing-row-2-up"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+      <header class="devsite-landing-row-header"
+              >
+
+        
+
+        
+        <div class="devsite-landing-row-header-text">
+
+          
+    <h2 id="-youtube"
+        data-text="לאפשר למשתמשים לצפות בתוכן ב-YouTube, למצוא אותו ולנהל אותו"
+        
+        tabindex="0">
+      
+    
+        לאפשר למשתמשים לצפות בתוכן ב-YouTube, למצוא אותו ולנהל אותו
+      
+  
+    </h2>
+  
+
+          
+        </div>
+        
+
+        
+      </header>
+      
+
+      
+      
+
+      
+
+        <div class="devsite-landing-row-group">
+        
+          <div class="devsite-landing-row-item"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+    
+<div class="devsite-landing-row-item-media
+            ">
+  
+    <figure class="devsite-landing-row-item-image">
+  
+  <a href="https://developers.google.com/youtube/iframe_api_reference?hl=he">
+    
+  
+  <picture>
+    
+    <img alt=""
+         
+         src="https://developers.google.com/static/youtube/images/youtube_home_page_player_api.png?hl=he"
+         srcset="https://developers.google.com/static/youtube/images/youtube_home_page_player_api_36.png?hl=he 36w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_48.png?hl=he 48w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_72.png?hl=he 72w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_96.png?hl=he 96w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_480.png?hl=he 480w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_720.png?hl=he 720w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_856.png?hl=he 856w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_960.png?hl=he 960w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_1440.png?hl=he 1440w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_1920.png?hl=he 1920w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_2880.png?hl=he 2880w"
+         
+         
+         sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px"
+         
+         
+         fetchpriority="high">
+  </picture>
+  
+  </a>
+  
+</figure>
+  
+</div>
+
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="-youtube"
+        data-text="הפעלת סרטונים ב-YouTube"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/youtube/iframe_api_reference?hl=he">
+    
+        הפעלת סרטונים ב-YouTube
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            שימוש בנגן מוטמע כדי להפעיל סרטונים ישירות באפליקציה ולהתאים אישית את חוויית ההפעלה.
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/youtube/iframe_api_reference?hl=he"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >IFrame</a>
+
+  
+  <a href="https://developers.google.com/youtube/v3/guides/ios_youtube_helper?hl=he"
+  
+    
+      class="button
+             button-white
+             button-lowercase"
+    
+    
+    >iOS</a>
+
+  
+  <a href="https://developers.google.com/youtube/player_parameters?hl=he"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >פרמטרים של נגן</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+          <div class="devsite-landing-row-item"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+    
+<div class="devsite-landing-row-item-media
+            ">
+  
+    <figure class="devsite-landing-row-item-image">
+  
+  <a href="https://developers.google.com/youtube/v3/getting-started?hl=he">
+    
+  
+  <picture>
+    
+    <img alt=""
+         
+         src="https://developers.google.com/static/youtube/images/youtube_home_page_data_api.png?hl=he"
+         srcset="https://developers.google.com/static/youtube/images/youtube_home_page_data_api_36.png?hl=he 36w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_48.png?hl=he 48w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_72.png?hl=he 72w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_96.png?hl=he 96w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_480.png?hl=he 480w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_720.png?hl=he 720w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_856.png?hl=he 856w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_960.png?hl=he 960w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_1440.png?hl=he 1440w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_1920.png?hl=he 1920w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_2880.png?hl=he 2880w"
+         
+         
+         sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px"
+         
+         
+         fetchpriority="high">
+  </picture>
+  
+  </a>
+  
+</figure>
+  
+</div>
+
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="-youtube"
+        data-text="הוספת נתונים מ-YouTube"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/youtube/v3/getting-started?hl=he">
+    
+        הוספת נתונים מ-YouTube
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            משתמשים יכולים לחפש תוכן ב-YouTube, להעלות סרטונים, ליצור ולנהל פלייליסטים ועוד.
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/youtube/v3/getting-started?hl=he"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >סקירה כללית</a>
+
+  
+  <a href="https://developers.google.com/youtube/v3/docs?hl=he"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >חומרי עזר</a>
+
+  
+  <a href="https://developers.google.com/youtube/v3/code_samples?hl=he"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >דוגמאות קוד</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+        </div>
+      
+
+    
+    </div>
+  </section>
+
+  <section class="devsite-landing-row devsite-landing-row-3-up"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+      <header class="devsite-landing-row-header"
+              >
+
+        
+
+        
+        <div class="devsite-landing-row-header-text">
+
+          
+    <h2 id="youtube"
+        data-text="הוספת תכונות נוספות של YouTube"
+        
+        tabindex="0">
+      
+    
+        הוספת תכונות נוספות של YouTube
+      
+  
+    </h2>
+  
+
+          
+        </div>
+        
+
+        
+      </header>
+      
+
+      
+      
+
+      
+
+        <div class="devsite-landing-row-group">
+        
+          <div class="devsite-landing-row-item"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+    
+<div class="devsite-landing-row-item-media
+            ">
+  
+    <figure class="devsite-landing-row-item-image">
+  
+  <a href="https://developers.google.com/youtube/reporting?hl=he">
+    
+  
+  <picture>
+    
+    <img alt=""
+         
+         src="https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api.png?hl=he"
+         srcset="https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_36.png?hl=he 36w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_48.png?hl=he 48w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_72.png?hl=he 72w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_96.png?hl=he 96w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_480.png?hl=he 480w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_720.png?hl=he 720w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_856.png?hl=he 856w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_960.png?hl=he 960w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_1440.png?hl=he 1440w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_1920.png?hl=he 1920w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_2880.png?hl=he 2880w"
+         
+         
+         sizes="(max-width: 840px) 50vw, 464px"
+         
+         loading="lazy"
+         >
+  </picture>
+  
+  </a>
+  
+</figure>
+  
+</div>
+
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="16DXmdeq15XXlyDXoNeq15XXoNeZ150g15XXk9eV15fXldeq"
+        data-text="ניתוח נתונים ודוחות"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/youtube/reporting?hl=he">
+    
+        ניתוח נתונים ודוחות
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            להבין את המשתמשים ואת האינטראקציה שלהם עם הערוץ והסרטונים שלכם.
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/youtube/reporting?hl=he"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >איך זה עובד</a>
+
+  
+  <a href="https://developers.google.com/youtube/reporting/v1/code_samples?hl=he"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >דוגמאות קוד</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+          <div class="devsite-landing-row-item"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+    
+<div class="devsite-landing-row-item-media
+            ">
+  
+    <figure class="devsite-landing-row-item-image">
+  
+  <a href="https://developers.google.com/youtube/youtube_subscribe_button?hl=he">
+    
+  
+  <picture>
+    
+    <img alt=""
+         
+         src="https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button.png?hl=he"
+         srcset="https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_36.png?hl=he 36w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_48.png?hl=he 48w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_72.png?hl=he 72w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_96.png?hl=he 96w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_480.png?hl=he 480w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_720.png?hl=he 720w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_856.png?hl=he 856w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_960.png?hl=he 960w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_1440.png?hl=he 1440w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_1920.png?hl=he 1920w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_2880.png?hl=he 2880w"
+         
+         
+         sizes="(max-width: 840px) 50vw, 464px"
+         
+         loading="lazy"
+         >
+  </picture>
+  
+  </a>
+  
+</figure>
+  
+</div>
+
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="15zXl9em16DXmSDXlNeo16nXnteU"
+        data-text="לחצני הרשמה"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/youtube/youtube_subscribe_button?hl=he">
+    
+        לחצני הרשמה
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            מאפשרים למשתמשים להירשם לערוץ YouTube שלכם בלחיצה אחת.
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/youtube/youtube_subscribe_button?hl=he"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >הוספת לחצן</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+          <div class="devsite-landing-row-item"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+    
+<div class="devsite-landing-row-item-media
+            ">
+  
+    <figure class="devsite-landing-row-item-image">
+  
+  <a href="https://developers.google.com/youtube/v3/live/getting-started?hl=he">
+    
+  
+  <picture>
+    
+    <img alt=""
+         
+         src="https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming.png?hl=he"
+         srcset="https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_36.png?hl=he 36w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_48.png?hl=he 48w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_72.png?hl=he 72w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_96.png?hl=he 96w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_480.png?hl=he 480w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_720.png?hl=he 720w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_856.png?hl=he 856w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_960.png?hl=he 960w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_1440.png?hl=he 1440w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_1920.png?hl=he 1920w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_2880.png?hl=he 2880w"
+         
+         
+         sizes="(max-width: 840px) 50vw, 464px"
+         
+         loading="lazy"
+         >
+  </picture>
+  
+  </a>
+  
+</figure>
+  
+</div>
+
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="157Xk9eZ15Qg15bXldeo157Xqg=="
+        data-text="מדיה זורמת"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/youtube/v3/live/getting-started?hl=he">
+    
+        מדיה זורמת
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            תזמון שידורים חיים ב-YouTube וניהול שידורי הווידאו של השידור.
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/youtube/v3/live/getting-started?hl=he"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >סקירה כללית</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+        </div>
+      
+
+    
+    </div>
+  </section>
+
+  
+
+  
+</div>
+
+  
+
+  
+
+  
+  <div class="devsite-floating-action-buttons">
+  
+  
+</div>
+</article>
+
+
+
+<devsite-notification
+>
+</devsite-notification>
+
+
+  
+<div class="devsite-content-data">
+  
+  
+    <template class="devsite-content-data-template">
+      [[["התוכן קל להבנה","easyToUnderstand","thumb-up"],["התוכן עזר לי לפתור בעיה","solvedMyProblem","thumb-up"],["סיבה אחרת","otherUp","thumb-up"]],[["חסרים לי מידע או פרטים","missingTheInformationINeed","thumb-down"],["התוכן מורכב מדי או עם יותר מדי שלבים","tooComplicatedTooManySteps","thumb-down"],["התוכן לא עדכני","outOfDate","thumb-down"],["בעיה בתרגום","translationIssue","thumb-down"],["בעיה בדוגמאות/בקוד","samplesCodeIssue","thumb-down"],["סיבה אחרת","otherDown","thumb-down"]],[],[],[]]
+    </template>
+  
+</div>
+            
+          </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+          
+            
+
+<nav class="devsite-footer-promos nocontent" aria-label="מבצעים">
+  <ul class="devsite-footer-promos-list">
+    
+    <li class="devsite-footer-promo">
+      <a href="https://blog.youtube"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+         
+         data-label="Footer Promo Link (index 1)"
+       
+       >
+        
+        
+        <picture>
+          
+          <img class="devsite-footer-promo-icon"
+                src="https://developers.google.com/static/site-assets/logo-youtube.svg?hl=he"
+                loading="lazy"
+                alt="בלוג">
+        </picture>
+        
+        <span class="devsite-footer-promo-label">
+          בלוג
+        </span>
+      </a>
+      <div class="devsite-footer-promo-description">החדשות האחרונות בבלוג של YouTube</div>
+    </li>
+    
+    <li class="devsite-footer-promo">
+      <a href="https://github.com/youtube/api-samples"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+         
+         data-label="Footer Promo Link (index 2)"
+       
+       >
+        
+        
+        <picture>
+          
+          <img class="devsite-footer-promo-icon"
+                src="https://developers.google.com/static/site-assets/logo-github.svg?hl=he"
+                loading="lazy"
+                alt="GitHub">
+        </picture>
+        
+        <span class="devsite-footer-promo-label">
+          GitHub
+        </span>
+      </a>
+      <div class="devsite-footer-promo-description">חיפוש דוגמאות של קודי API ופרויקטים אחרים ב-YouTube בקוד פתוח.</div>
+    </li>
+    
+    <li class="devsite-footer-promo">
+      <a href="https://issuetracker.google.com/issues/new?component=186600&amp%3Btemplate=874803&hl=he"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+         
+         data-label="Footer Promo Link (index 3)"
+       
+       >
+        
+        
+        <picture>
+          
+          <img class="devsite-footer-promo-icon"
+                src="https://developers.google.com/static/site-assets/developers_64dp.png?hl=he"
+                loading="lazy"
+                alt="מעקב אחר בעיות">
+        </picture>
+        
+        <span class="devsite-footer-promo-label">
+          מעקב אחר בעיות
+        </span>
+      </a>
+      <div class="devsite-footer-promo-description">משהו השתבש? שליחת דיווח על באג!</div>
+    </li>
+    
+    <li class="devsite-footer-promo">
+      <a href="http://stackoverflow.com/questions/ask?tags=youtube-api"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+         
+         data-label="Footer Promo Link (index 4)"
+       
+       >
+        
+        
+        <picture>
+          
+          <img class="devsite-footer-promo-icon"
+                src="https://developers.google.com/static/site-assets/logo-stack-overflow.svg?hl=he"
+                loading="lazy"
+                alt="Stack Overflow">
+        </picture>
+        
+        <span class="devsite-footer-promo-label">
+          Stack Overflow
+        </span>
+      </a>
+      <div class="devsite-footer-promo-description">פרסום שאלה בתג youtube-api</div>
+    </li>
+    
+    <li class="devsite-footer-promo">
+      <a href="https://research.youtube/"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+         
+         data-label="Footer Promo Link (index 5)"
+       
+       >
+        
+        
+        <picture>
+          
+          <img class="devsite-footer-promo-icon"
+                src="https://developers.google.com/static/site-assets/logo-youtube.svg?hl=he"
+                loading="lazy"
+                alt="תוכנית החוקרים של YouTube">
+        </picture>
+        
+        <span class="devsite-footer-promo-label">
+          תוכנית החוקרים של YouTube
+        </span>
+      </a>
+      <div class="devsite-footer-promo-description">לחוקרים שרוצים להשתמש בנתונים מה-API הגלובלי של YouTube</div>
+    </li>
+    
+  </ul>
+</nav>
+
+          
+        </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+          
+            
+<nav class="devsite-footer-linkboxes nocontent" aria-label="קישורים בכותרת התחתונה">
+  
+  <ul class="devsite-footer-linkboxes-list">
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">כלים</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://developers.google.com/apis-explorer/#p/"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            
+    Google APIs Explorer
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/youtube_player_demo"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            
+    הדגמה של נגן YouTube
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/youtube_subscribe_button"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+              
+              
+            
+          
+            
+    הגדרת לחצן הרשמה
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">מעקב אחר בעיות</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://issuetracker.google.com/issues/new?component=186600&amp;template=874803"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            
+    דיווח על באג
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://issuetracker.google.com/issues/new?component=186600&amp;template=874803"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            
+    בקש תכונה
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://issuetracker.google.com/issues?q=componentid:186600"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+              
+              
+            
+          
+            
+    ראה נושאים פתוחים
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">פרטי המוצר</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/terms/api-services-terms-of-service"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            
+    תנאים והגבלות
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/terms/developer-policies"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            
+    מדיניות למפתחים
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/terms/required-minimum-functionality"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+          
+            
+    פונקציונליות מינימלית נדרשת
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/terms/branding-guidelines"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 4)"
+            >
+            
+              
+              
+            
+          
+            
+    הנחיות מיתוג
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+  
+</nav>
+          
+        </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+          
+            
+
+<div class="devsite-footer-utility nocontent">
+  
+  
+  <nav class="devsite-footer-sites" aria-label="אתרים אחרים של Google Developers">
+    <a href="https://developers.google.com/?hl=he"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <picture>
+        
+        <img class="devsite-footer-sites-logo"
+             src="https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/images/lockup-google-for-developers.svg"
+             loading="lazy"
+             alt="Google Developers">
+      </picture>
+    </a>
+    <ul class="devsite-footer-sites-list">
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com?hl=he"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Android Link"
+         
+         >
+          Android
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home?hl=he"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Chrome Link"
+         
+         >
+          Chrome
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com?hl=he"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Firebase Link"
+         
+         >
+          Firebase
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com?hl=he"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Google Cloud Platform Link"
+         
+         >
+          Google Cloud Platform
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//ai.google.dev/?hl=he"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Google AI Link"
+         
+         >
+          Google AI
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="https://developers.google.com/products?hl=he"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer All products Link"
+         
+         >
+          כל המוצרים
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+  
+
+  
+  <nav class="devsite-footer-utility-links" aria-label="קישורי עזר">
+    
+    <ul class="devsite-footer-utility-list">
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="https://developers.google.com/terms/site-terms?hl=he"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          תנאים
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy?hl=he"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          פרטיות
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 glue-cookie-notification-bar-control">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="#"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Manage cookies link"
+         
+           aria-hidden="true"
+         >
+          Manage cookies
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+        
+        <span class="devsite-footer-utility-description">הרשמה לניוזלטר של Google for Developers</span>
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="https://developers.google.com/newsletter/subscribe?hl=he"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link"
+         >
+          הרשמה
+        </a>
+        
+      </li>
+      
+    </ul>
+    
+    
+<devsite-language-selector>
+  <ul role="presentation">
+    
+    
+    <li role="presentation">
+      <a role="menuitem" lang="en"
+        >English</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="de"
+        >Deutsch</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es"
+        >Español</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es_419"
+        >Español – América Latina</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fr"
+        >Français</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="id"
+        >Indonesia</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="it"
+        >Italiano</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pl"
+        >Polski</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt_br"
+        >Português – Brasil</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="vi"
+        >Tiếng Việt</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="tr"
+        >Türkçe</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ru"
+        >Русский</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="he"
+        >עברית</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ar"
+        >العربيّة</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fa"
+        >فارسی</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="hi"
+        >हिंदी</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="bn"
+        >বাংলা</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="th"
+        >ภาษาไทย</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_cn"
+        >中文 – 简体</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_tw"
+        >中文 – 繁體</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ja"
+        >日本語</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ko"
+        >한국어</a>
+    </li>
+    
+  </ul>
+</devsite-language-selector>
+
+  </nav>
+</div>
+          
+        </devsite-footer-utility>
+        <devsite-panel></devsite-panel>
+        
+          <devsite-concierge
+  
+  
+    data-info-panel
+  
+  
+    data-ai-panel
+  
+  
+  
+  
+    data-api-explorer-panel
+  >
+</devsite-concierge>
+        
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar></devsite-snackbar>
+    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+      
+        <script type="application/json" analytics>[{&#34;dimensions&#34;: {&#34;dimension11&#34;: true, &#34;dimension4&#34;: &#34;YouTube&#34;, &#34;dimension5&#34;: &#34;he&#34;, &#34;dimension6&#34;: &#34;he&#34;, &#34;dimension1&#34;: &#34;Signed out&#34;, &#34;dimension3&#34;: false}, &#34;gaid&#34;: &#34;UA-24532603-1&#34;, &#34;metrics&#34;: {&#34;ratings_value&#34;: &#34;metric1&#34;, &#34;ratings_count&#34;: &#34;metric2&#34;}, &#34;purpose&#34;: 1}]</script>
+<script type="application/json" tag-management>{&#34;at&#34;: &#34;True&#34;, &#34;ga4&#34;: [{&#34;id&#34;: &#34;G-272J68FCRF&#34;, &#34;purpose&#34;: 1}], &#34;ga4p&#34;: [{&#34;id&#34;: &#34;G-272J68FCRF&#34;, &#34;purpose&#34;: 1}], &#34;gtm&#34;: [], &#34;parameters&#34;: {&#34;internalUser&#34;: &#34;False&#34;, &#34;language&#34;: {&#34;machineTranslated&#34;: &#34;True&#34;, &#34;requested&#34;: &#34;he&#34;, &#34;served&#34;: &#34;he&#34;}, &#34;pageType&#34;: &#34;product&#34;, &#34;projectName&#34;: &#34;YouTube&#34;, &#34;signedIn&#34;: &#34;False&#34;, &#34;tenant&#34;: &#34;developers&#34;, &#34;recommendations&#34;: {&#34;sourcePage&#34;: &#34;&#34;, &#34;sourceType&#34;: 0, &#34;sourceRank&#34;: 0, &#34;sourceIdenticalDescriptions&#34;: 0, &#34;sourceTitleWords&#34;: 0, &#34;sourceDescriptionWords&#34;: 0, &#34;experiment&#34;: &#34;&#34;}, &#34;experiment&#34;: {&#34;ids&#34;: &#34;&#34;}}}</script>
+      
+    </devsite-analytics>
+    
+      <devsite-badger></devsite-badger>
+    
+    
+    
+<script nonce="fPjfLWmTjnu4aSCg1TAYQWv3uDuhrQ">
+  
+  (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/js/app_loader.js', '[1,"he",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692","https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers","https://developers-dot-devsite-v2-prod.appspot.com",1,null,["/_pwa/developers/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/images/favicon-new.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,116,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"AIzaSyAP-jjEJBzmIyKR4F-3XITp8yM9T1gEEI8","AIzaSyB6xiKGDR5O3Ak2okS4rLkauxGUG7XP0hg","developers.google.com","AIzaSyAQk0fBONSGUqCNznf6Krs82Ap1-NV6J4o","AIzaSyCCxcqdrZ_7QMeLCRY20bh_SXdAYqy70KY",null,null,null,["Cloud__enable_cloudx_ping","MiscFeatureFlags__emergency_css","TpcFeatures__enable_mirror_tenant_redirects","Cloud__enable_legacy_calculator_redirect","MiscFeatureFlags__enable_explain_this_code","Search__enable_page_map","Profiles__enable_awarding_url","Analytics__enable_clearcut_logging","Concierge__enable_actions_menu","MiscFeatureFlags__enable_variable_operator_index_yaml","Concierge__enable_key_takeaways","Experiments__reqs_query_experiments","Profiles__enable_dashboard_curated_recommendations","Profiles__enable_profile_collections","Profiles__enable_release_notes_notifications","Profiles__enable_complete_playlist_endpoint","CloudShell__cloud_shell_button","Concierge__enable_concierge","Cloud__enable_cloud_facet_chat","MiscFeatureFlags__enable_variable_operator","Cloud__enable_free_trial_server_call","Concierge__enable_concierge_restricted","DevPro__enable_devpro_offers","Search__enable_ai_search_summaries_restricted","Profiles__enable_recognition_badges","Profiles__enable_completequiz_endpoint","Cloud__enable_cloud_dlp_service","MiscFeatureFlags__enable_project_variables","Profiles__enable_public_developer_profiles","DevPro__enable_cloud_innovators_plus","Search__enable_ai_eligibility_checks","DevPro__enable_developer_subscriptions","MiscFeatureFlags__enable_framebox_badge_methods","Profiles__enable_join_program_group_endpoint","Profiles__enable_stripe_subscription_management","Profiles__require_profile_eligibility_for_signin","MiscFeatureFlags__developers_footer_image","EngEduTelemetry__enable_engedu_telemetry","CloudShell__cloud_code_overflow_menu","MiscFeatureFlags__developers_footer_dark_image","Profiles__enable_developer_profiles_callout","BookNav__enable_tenant_cache_key","MiscFeatureFlags__enable_view_transitions","Significatio__enable_by_tenant","Concierge__enable_pushui","Cloud__enable_cloud_shell","TpcFeatures__enable_unmirrored_page_left_nav","Search__enable_ai_search_summaries","Search__enable_suggestions_from_borg","Cloud__enable_cloudx_experiment_ids","Cloud__enable_llm_concierge_chat","Cloud__enable_cloud_shell_fte_user_flow","Profiles__enable_completecodelab_endpoint","Search__enable_dynamic_content_confidential_banner","MiscFeatureFlags__enable_firebase_utm","Profiles__enable_page_saving"],null,null,"AIzaSyBLEMok-5suZ67qRPzx0qUtbnLmyT_kCVE","https://developerscontentserving-pa.clients6.google.com","AIzaSyCM4QpTRSqP5qI4Dvjt4OAScIN8sOUlO-k","https://developerscontentsearch-pa.clients6.google.com",1,4,null,"https://developerprofiles-pa.clients6.google.com",[1,"developers","Google for Developers","developers.google.com",null,"developers-dot-devsite-v2-prod.appspot.com",null,null,[1,1,[1],null,null,null,null,null,null,null,null,[1],null,null,null,null,null,null,[1],[1,null,null,[1,20],"/recommendations/information"],null,null,null,[1,1,1],[1,1,null,1,1]],null,[null,null,null,null,null,null,"/images/lockup-new.svg","/images/touchicon-180-new.png",null,null,null,null,1,null,null,null,null,null,null,null,null,1,null,null,null,"/images/lockup-dark-theme-new.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,20,22,23,29,32,36],null,[[null,null,null,[3,7,10,2,39,17,4,32,24,11,12,13,34,15,25],null,null,[1,[["docType","Choose a content type",[["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"],["Guide",null,null,null,null,null,null,null,null,"Guide"],["Sample",null,null,null,null,null,null,null,null,"Sample"]]],["product","Choose a product",[["Android",null,null,null,null,null,null,null,null,"Android"],["ARCore",null,null,null,null,null,null,null,null,"ARCore"],["ChromeOS",null,null,null,null,null,null,null,null,"ChromeOS"],["Firebase",null,null,null,null,null,null,null,null,"Firebase"],["Flutter",null,null,null,null,null,null,null,null,"Flutter"],["Assistant",null,null,null,null,null,null,null,null,"Google Assistant"],["GoogleCloud",null,null,null,null,null,null,null,null,"Google Cloud"],["GoogleMapsPlatform",null,null,null,null,null,null,null,null,"Google Maps Platform"],["GooglePay",null,null,null,null,null,null,null,null,"Google Pay & Google Wallet"],["GooglePlay",null,null,null,null,null,null,null,null,"Google Play"],["Tensorflow",null,null,null,null,null,null,null,null,"TensorFlow"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"AI and Machine Learning"],["Data",null,null,null,null,null,null,null,null,"Data"],["Enterprise",null,null,null,null,null,null,null,null,"Enterprise"],["Gaming",null,null,null,null,null,null,null,null,"Gaming"],["Mobile",null,null,null,null,null,null,null,null,"Mobile"],["Web",null,null,null,null,null,null,null,null,"Web"]]]]]],[1,1],null,1],[[["UA-24532603-1"],["UA-22084204-5"],null,null,["UA-24532603-5"],null,null,[["G-272J68FCRF"],null,null,[["G-272J68FCRF",2]]],[["UA-24532603-1",2]],null,[["UA-24532603-5",2]],null,1],[[14,11],[15,12],[1,1],[11,8],[16,13],[6,5],[12,9],[4,3],[3,2],[13,10],[5,4]],[[2,2],[1,1]]],null,4,null,null,null,null,null,null,null,null,null,null,null,null,null,"developers.devsite.google"],null,"pk_live_5170syrHvgGVmSx9sBrnWtA5luvk9BwnVcvIi7HizpwauFG96WedXsuXh790rtij9AmGllqPtMLfhe2RSwD6Pn38V00uBCydV4m",1,null,"https://developerscontentinsights-pa.clients6.google.com","AIzaSyBJyPHP8SgojSj3JDDL8lu7pDB_mz-nQUc"]')
+  
+</script>
+
+    <devsite-a11y-announce></devsite-a11y-announce>
+  </body>
+</html>

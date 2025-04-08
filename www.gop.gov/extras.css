@@ -1,0 +1,14 @@
+/* This file is required for site administration. Do not delete. */
+svg {
+  display: initial;
+  margin: initial;
+}
+
+devsite-header .devsite-product-description-row {
+  flex-direction: column;
+  gap: 8px;
+}
+
+devsite-header .devsite-breadcrumb-list+.devsite-product-description {
+  margin-block: 0;
+}

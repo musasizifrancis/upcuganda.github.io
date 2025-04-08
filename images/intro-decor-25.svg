@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 543 583.9">
+  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #757a89;
+      }
+
+      .st1 {
+        fill: #fff;
+      }
+
+      .st2 {
+        fill: #b2182b;
+      }
+    </style>
+  </defs>
+  <g id="_Сгруппировать_12420" data-name="Сгруппировать_12420">
+    <path id="overley-2" class="st0" d="M544.4,283.7v202.7h-187"/>
+    <path class="st2" d="M490.3,0L0,533.6h313l177.3-192.3V0Z"/>
+    <path class="st1" d="M490.3,341.3v192.3h-177.3l-46.4,50.3h224.7v-243.6l-1,1Z"/>
+    <path class="st1" d="M490.3,341.3l-177.3,192.3h177.3v-192.3Z"/>
+  </g>
+</svg>

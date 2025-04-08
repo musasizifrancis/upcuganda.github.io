@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 408.5 427.8">
+  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #757a89;
+      }
+
+      .st1 {
+        fill: #fff;
+      }
+
+      .st2 {
+        fill: #b2182b;
+      }
+    </style>
+  </defs>
+  <g id="Group_12428">
+    <g id="Group_12412">
+      <path id="overley" class="st2" d="M359.3,0v391H0"/>
+      <path id="overley-2" class="st0" d="M397.9,207.9v148.6h-137"/>
+      <path id="overley-3" class="st1" d="M359.3,249.3v178.5h-164.7"/>
+    </g>
+    <rect id="Rectangle_1358" class="st1" x="348.5" y="356" width="60" height="36"/>
+  </g>
+</svg>

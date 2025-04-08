@@ -1,0 +1,2264 @@
+<!doctype html>
+<html 
+      lang="en"
+      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope"
+          content="profile email https://www.googleapis.com/auth/developerprofiles https://www.googleapis.com/auth/developerprofiles.award">
+    <meta property="og:site_name" content="Google for Developers">
+    <meta property="og:type" content="website"><meta name="theme-color" content="#ff0000"><meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="//apis.google.com" crossorigin>
+    <link rel="preconnect" href="//www.google-analytics.com" crossorigin><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap">
+      <link rel="stylesheet"
+            href="//fonts.googleapis.com/css2?family=Material+Icons&family=Material+Symbols+Outlined&display=block"><link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/css/app.css">
+      <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/images/favicon-new.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/images/touchicon-180-new.png"><link rel="canonical" href="https://developers.google.com/youtube/terms/required-minimum-functionality"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google for Developers" href="https://developers.google.com/s/opensearch.xml">
+      <link rel="alternate" hreflang="en"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality" /><link rel="alternate" hreflang="x-default" href="https://developers.google.com/youtube/terms/required-minimum-functionality" /><link rel="alternate" hreflang="ar"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=ar" /><link rel="alternate" hreflang="bn"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=bn" /><link rel="alternate" hreflang="zh-Hans"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=zh-cn" /><link rel="alternate" hreflang="zh-Hant"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=zh-tw" /><link rel="alternate" hreflang="fa"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=fa" /><link rel="alternate" hreflang="de"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=de" /><link rel="alternate" hreflang="he"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=he" /><link rel="alternate" hreflang="hi"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=hi" /><link rel="alternate" hreflang="id"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=id" /><link rel="alternate" hreflang="it"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=it" /><link rel="alternate" hreflang="ja"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=ja" /><link rel="alternate" hreflang="ko"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=ko" /><link rel="alternate" hreflang="pl"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=pl" /><link rel="alternate" hreflang="pt-BR"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=pt-br" /><link rel="alternate" hreflang="es-419"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=es-419" /><link rel="alternate" hreflang="th"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=th" /><link rel="alternate" hreflang="tr"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=tr" /><link rel="alternate" hreflang="vi"
+          href="https://developers.google.com/youtube/terms/required-minimum-functionality?hl=vi" /><title>YouTube API Services - Required Minimum Functionality &nbsp;|&nbsp; Google for Developers</title>
+
+<meta property="og:title" content="YouTube API Services - Required Minimum Functionality &nbsp;|&nbsp; Google for Developers"><meta property="og:url" content="https://developers.google.com/youtube/terms/required-minimum-functionality"><meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/images/opengraph/youtube-theme.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675"><meta property="og:locale" content="en"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    
+    "headline": "YouTube API Services - Required Minimum Functionality"
+  }
+</script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "YouTube",
+      "item": "https://developers.google.com/youtube"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "YouTube API Services - Required Minimum Functionality",
+      "item": "https://developers.google.com/youtube/terms/required-minimum-functionality"
+    }]
+  }
+  </script>
+  
+    
+    
+    
+  
+
+    
+      <link rel="stylesheet" href="/extras.css"></head>
+  <body class=""
+        template="page"
+        theme="youtube-theme"
+        type="article"
+        
+        
+        
+        layout="docs"
+        
+        
+        
+        
+          
+            concierge='closed'
+          
+        
+        display-toc
+        pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+  
+    <a href="#main-content" class="skip-link button">
+      
+      Skip to main content
+    </a>
+    <section class="devsite-wrapper">
+      <devsite-cookie-notification-bar></devsite-cookie-notification-bar><devsite-header role="banner">
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-header--inner" data-nosnippet>
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+
+  
+    
+  
+  <a href="https://developers.google.com/youtube">
+    
+  <div class="devsite-product-logo-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <picture>
+      
+      <img class="devsite-product-logo"
+           alt="YouTube"
+           src="https://developers.google.com/static/site-assets/logo-youtube.svg"
+           srcset=" /static/site-assets/logo-youtube.svg"
+           sizes="64px"
+           loading="lazy"
+           >
+    </picture>
+  
+  </div>
+  
+  </a>
+  
+
+  
+
+
+
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list"
+  >
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+      
+        
+  <a href="https://developers.google.com/youtube"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Upper Header"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail="YouTube"
+      
+    >
+    
+          YouTube
+        
+  </a>
+  
+      
+    
+  </li>
+  
+</ul>
+  </span>
+
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+            
+           </div>
+          
+<devsite-search
+    enable-signin
+    enable-search
+    enable-suggestions
+      enable-query-completion
+    
+    
+    project-name="YouTube"
+    tenant-name="Google for Developers"
+    project-scope="/youtube"
+    url-scoped="https://developers.google.com/s/results/youtube"
+    
+    
+    
+    >
+  <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
+    <div class="devsite-search-container">
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              
+              aria-label="Open search"></button>
+      <div class="devsite-searchbox">
+        <input
+          aria-activedescendant=""
+          aria-autocomplete="list"
+          
+          aria-label="Search"
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          autocomplete="off"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          
+          placeholder="Search"
+          role="combobox"
+          type="text"
+          value=""
+          >
+          <div class="devsite-search-image material-icons" aria-hidden="true">
+            
+          </div>
+          <div class="devsite-search-shortcut-icon-container" aria-hidden="true">
+            <kbd class="devsite-search-shortcut-icon">/</kbd>
+          </div>
+      </div>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          
+          aria-label="Close search"></button>
+</devsite-search>
+
+        </div>
+
+        
+
+          
+
+          
+
+          
+
+          
+<devsite-language-selector>
+  <ul role="presentation">
+    
+    
+    <li role="presentation">
+      <a role="menuitem" lang="en"
+        >English</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="de"
+        >Deutsch</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es"
+        >Español</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es_419"
+        >Español – América Latina</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fr"
+        >Français</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="id"
+        >Indonesia</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="it"
+        >Italiano</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pl"
+        >Polski</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt_br"
+        >Português – Brasil</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="vi"
+        >Tiếng Việt</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="tr"
+        >Türkçe</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ru"
+        >Русский</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="he"
+        >עברית</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ar"
+        >العربيّة</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fa"
+        >فارسی</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="hi"
+        >हिंदी</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="bn"
+        >বাংলা</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="th"
+        >ภาษาไทย</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_cn"
+        >中文 – 简体</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_tw"
+        >中文 – 繁體</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ja"
+        >日本語</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ko"
+        >한국어</a>
+    </li>
+    
+  </ul>
+</devsite-language-selector>
+
+
+          
+
+        
+
+        
+          <devsite-user 
+                        
+                        
+                          enable-profiles
+                        
+                        
+                          fp-auth
+                        
+                        id="devsite-user">
+            
+              
+              <span class="button devsite-top-button" aria-hidden="true" visually-hidden>Sign in</span>
+            
+        </devsite-user>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+      
+        
+      
+      
+        <div class="devsite-doc-set-nav-row">
+          
+          
+            
+            
+  <devsite-tabs class="lower-tabs">
+
+    <nav class="devsite-tabs-wrapper" aria-label="Lower tabs">
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/youtube"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://developers.google.com/youtube"
+    
+       track-type="nav"
+       track-metadata-position="nav - home"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Home"
+         
+           track-name="home"
+         
+       >
+    Home
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/youtube/documentation"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://developers.google.com/youtube/documentation"
+    
+       track-type="nav"
+       track-metadata-position="nav - guides"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Guides"
+         
+           track-name="guides"
+         
+       >
+    Guides
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/youtube/code_samples"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://developers.google.com/youtube/code_samples"
+    
+       track-type="nav"
+       track-metadata-position="nav - samples"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Samples"
+         
+           track-name="samples"
+         
+       >
+    Samples
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab  class="devsite-active">
+            
+    <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://developers.google.com/youtube/terms/api-services-terms-of-service"
+    
+       track-type="nav"
+       track-metadata-position="nav - terms"
+       track-metadata-module="primary nav"
+       aria-label="Terms, selected" 
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Terms"
+         
+           track-name="terms"
+         
+       >
+    Terms
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+    </nav>
+
+  </devsite-tabs>
+
+          
+          
+        </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+  
+</devsite-header>
+      <devsite-book-nav scrollbars >
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-book-nav-filter"
+     >
+  <span class="filter-list-icon material-icons" aria-hidden="true"></span>
+  <input type="text"
+         placeholder="Filter"
+         
+         aria-label="Type to filter"
+         role="searchbox">
+  
+  <span class="filter-clear-button hidden"
+        data-title="Clear filter"
+        aria-label="Clear filter"
+        role="button"
+        tabindex="0"></span>
+</div>
+
+<nav class="devsite-book-nav devsite-nav nocontent"
+     aria-label="Side menu">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+
+  
+    
+  
+  <a href="https://developers.google.com/youtube">
+    
+  <div class="devsite-product-logo-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <picture>
+      
+      <img class="devsite-product-logo"
+           alt="YouTube"
+           src="https://developers.google.com/static/site-assets/logo-youtube.svg"
+           srcset=" /static/site-assets/logo-youtube.svg"
+           sizes="64px"
+           loading="lazy"
+           >
+    </picture>
+  
+  </div>
+  
+  </a>
+  
+
+  
+
+
+  
+      <span class="devsite-product-name">
+        
+        
+        <ul class="devsite-breadcrumb-list"
+  >
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+      
+        
+  <a href="https://developers.google.com/youtube"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Upper Header"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail="YouTube"
+      
+    >
+    
+          YouTube
+        
+  </a>
+  
+      
+    
+  </li>
+  
+</ul>
+      </span>
+    
+
+</div>
+  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+      
+        <ul class="devsite-nav-list">
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/youtube"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Home"
+      
+        track-name="home"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Home"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Home
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/youtube/documentation"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Guides"
+      
+        track-name="guides"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Guides"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Guides
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/youtube/code_samples"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Samples"
+      
+        track-name="samples"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Samples"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Samples
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/youtube/terms/api-services-terms-of-service"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              devsite-nav-active"
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Terms"
+      
+        track-name="terms"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Terms"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Terms
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+          
+          
+        </ul>
+      
+    </div>
+    
+      <div class="devsite-mobile-nav-bottom">
+        
+          
+          <ul class="devsite-nav-list" menu="_book">
+            <li class="devsite-nav-item
+           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path">
+        <span class="devsite-nav-text" tooltip>YouTube API Services Terms of Service</span>
+      </div></li>
+
+  <li class="devsite-nav-item"><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip></span>
+      </div></li>
+
+  <li class="devsite-nav-item"><a href="/youtube/terms/api-services-terms-of-service"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /youtube/terms/api-services-terms-of-service"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/youtube/terms/api-services-terms-of-service"
+      ><span class="devsite-nav-text" tooltip>Terms of Service (Americas)</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/youtube/terms/api-services-terms-of-service-apac"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /youtube/terms/api-services-terms-of-service-apac"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/youtube/terms/api-services-terms-of-service-apac"
+      ><span class="devsite-nav-text" tooltip>Terms of Service (APAC)</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/youtube/terms/api-services-terms-of-service-emea"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /youtube/terms/api-services-terms-of-service-emea"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/youtube/terms/api-services-terms-of-service-emea"
+      ><span class="devsite-nav-text" tooltip>Terms of Service (EMEA)</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/youtube/terms/api-services-terms-of-service-ru"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /youtube/terms/api-services-terms-of-service-ru"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/youtube/terms/api-services-terms-of-service-ru"
+      ><span class="devsite-nav-text" tooltip>Terms of Service (Russia)</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/youtube/terms/developer-policies"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /youtube/terms/developer-policies"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/youtube/terms/developer-policies"
+      ><span class="devsite-nav-text" tooltip>Developer Policies</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/youtube/terms/required-minimum-functionality"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /youtube/terms/required-minimum-functionality"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/youtube/terms/required-minimum-functionality"
+      ><span class="devsite-nav-text" tooltip>Required Minimum Functionality</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/youtube/terms/subject-api-services"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /youtube/terms/subject-api-services"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/youtube/terms/subject-api-services"
+      ><span class="devsite-nav-text" tooltip>Subject API Services</span></a></li>
+
+  <li class="devsite-nav-item"><a href="/youtube/terms/branding-guidelines"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /youtube/terms/branding-guidelines"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/youtube/terms/branding-guidelines"
+      ><span class="devsite-nav-text" tooltip>Branding Guidelines</span></a></li>
+
+  <li class="devsite-nav-item"><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button">
+        <span class="devsite-nav-text" tooltip></span>
+      </div></li>
+
+  <li class="devsite-nav-item"><a href="/youtube/terms/revision-history"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /youtube/terms/revision-history"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/youtube/terms/revision-history"
+      ><span class="devsite-nav-text" tooltip>Revision History</span></a></li>
+
+  <li class="devsite-nav-item
+           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path">
+        <span class="devsite-nav-text" tooltip>Guides</span>
+      </div></li>
+
+  <li class="devsite-nav-item"><a href="/youtube/terms/developer-policies-guide"
+        class="devsite-nav-title gc-analytics-event"
+        data-category="Site-Wide Custom Events"
+        data-label="Book nav link, pathname: /youtube/terms/developer-policies-guide"
+        track-type="bookNav"
+        track-name="click"
+        track-metadata-eventdetail="/youtube/terms/developer-policies-guide"
+      ><span class="devsite-nav-text" tooltip>Complying with the YouTube Developer Policies</span></a></li>
+          </ul>
+        
+        
+        
+          
+    
+  
+    
+  
+    
+  
+    
+  
+        
+      </div>
+    
+  </div>
+</nav>
+        
+      </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" id="main-content" class="devsite-main-content"
+            
+              has-book-nav
+              
+            >
+          
+          <devsite-content>
+            
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="devsite-article">
+  
+  
+  
+  
+  
+
+  <div class="devsite-article-meta nocontent" role="navigation">
+    
+    
+    <ul class="devsite-breadcrumb-list"
+  
+    aria-label="Breadcrumb">
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+  <a href="https://developers.google.com/"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail=""
+      
+    >
+    
+        Home
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://developers.google.com/products"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="2"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="2"
+      
+        track-metadata-eventdetail=""
+      
+    >
+    
+        Products
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://developers.google.com/youtube"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="3"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="3"
+      
+        track-metadata-eventdetail="YouTube"
+      
+    >
+    
+        YouTube
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="4"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="4"
+      
+        track-metadata-eventdetail=""
+      
+    >
+    
+        Terms
+      
+  </a>
+  
+    
+  </li>
+  
+</ul>
+    
+      
+    <devsite-thumb-rating position="header">
+    </devsite-thumb-rating>
+  
+    
+  </div>
+  
+    <h1 class="devsite-page-title" tabindex="-1">
+      YouTube API Services - Required Minimum Functionality
+      
+  <div class="devsite-actions" data-nosnippet>
+    <devsite-feature-tooltip
+      ack-key="AckCollectionsBookmarkTooltipDismiss"
+      analytics-category="Site-Wide Custom Events"
+      analytics-action-show="Callout Profile displayed"
+      analytics-action-close="Callout Profile dismissed"
+      analytics-label="Create Collection Callout"
+      class="devsite-page-bookmark-tooltip nocontent"
+      dismiss-button="true"
+      id="devsite-collections-dropdown"
+      
+      dismiss-button-text="Dismiss"
+
+      
+      close-button-text="Got it">
+
+    
+    <devsite-bookmark></devsite-bookmark>
+
+    <span slot="popout-heading">
+      
+      Stay organized with collections
+    </span>
+    <span slot="popout-contents">
+      
+      Save and categorize content based on your preferences.
+    </span>
+  </devsite-feature-tooltip>
+  
+    <devsite-key-takeaways></devsite-key-takeaways>
+    </div>
+  
+    </h1>
+  <div class="devsite-page-title-meta"><devsite-view-release-notes></devsite-view-release-notes></div>
+  
+
+  <devsite-toc class="devsite-nav"
+    depth="2"
+    devsite-toc-embedded
+    >
+  </devsite-toc>
+  
+
+  
+
+
+
+
+
+
+<div class="devsite-article-body clearfix
+  ">
+
+  
+    
+
+<p class="note"><b>Note:</b> <a href="/youtube/terms/developer-policies-guide">Complying with the YouTube Developer Policies</a> provides guidance and examples to help you ensure that your API clients follow specific portions of the YouTube API Services <a href="/youtube/terms/api-services-terms-of-service">Terms</a> and <a href="/youtube/terms/developer-policies">Policies</a> (API TOS). The guide offers insight into how YouTube enforces certain aspects of the API TOS, but it does not replace any existing documents.</p>
+
+<p>This document defines minimum functional requirements for API clients that implement or provide access to specific features of YouTube API services ("API Clients").</p>
+
+<p>These requirements and guidelines ensure that API clients provide a consistent user experience that protects the interests of YouTube users, content owners, and advertisers. These rules are an integral part of the <a href="/youtube/terms">YouTube API Terms of Service</a> and must be followed in the development and implementation of any API Clients.</p>
+
+<p>You should expect the requirements in this document to change so that we can ensure better user experiences with existing YouTube features. They will also change in response to new and updated YouTube features. At times, such changes may require you to update your API Clients to address new requirements. The <a href="/youtube/terms/revision-history">Terms of Service revision history</a> will document any changes, so please check that document frequently, or subscribe to its <a href="/static/youtube/terms/feeds/api-services-terms-of-service-revision-history.xml">RSS feed</a>, to ensure that you can quickly learn about changes that may affect your API Clients.</p>
+
+<p>In addition to the requirements in this document, we highly recommend that you follow best practices described in the <a href="/youtube/terms/developer-policies">YouTube API Services Policies</a> and discussed elsewhere in YouTube API services' documentation. Even when not strictly required, these practices help your API Clients to recover more quickly from errors and to optimize their quota usage if they use YouTube API services that allocate quota. At the same time, these practices help to ensure the health of the YouTube ecosystem and, above all, to provide the best experience possible to users of your API Clients and of YouTube Applications.</p>
+
+<h2 id="youtube-embedded-player-and-video-playback" data-text="YouTube embedded player and video playback" tabindex="-1">YouTube embedded player and video playback</h2>
+
+<p>The requirements in this section relate specifically to embedded YouTube players. The YouTube API Services Policies also includes several policies relevant to API Clients that play YouTube audiovisual content.</p>
+
+<h3 id="embedded-youtube-player-size" data-text="Embedded YouTube Player size" tabindex="-1">Embedded YouTube Player size</h3>
+
+<p>Embedded players must have a viewport that is at least 200px by 200px. If the player displays controls, it must be large enough to fully display the controls without shrinking the viewport below the minimum size. We recommend 16:9 players be at least 480 pixels wide and 270 pixels tall.</p>
+
+<h3 id="autoplay-and-scripted-playbacks" data-text="Autoplay and scripted playbacks" tabindex="-1">Autoplay and scripted playbacks</h3>
+
+<p>This section covers automatic playbacks. It applies to YouTube embedded players that either use the <code translate="no" dir="ltr"><a href="/youtube/player_parameters#autoplay">autoplay</a></code> player parameter or programmatically initiate automatic playback using the YouTube IFrame Player API service or another YouTube API service.</p>
+
+<ul>
+  <li>
+    <p>Embedded players that automatically play a video should initiate playback immediately when the page loads or as soon as the embedded player is fully visible. However, an API Client must not initiate an automatic playback until the player is visible and more than half of the player is visible on the page or screen.</p>
+  </li>
+  <li>
+    <p>A page or screen must not have more than one YouTube player that automatically plays content simultaneously.</p>
+  </li>
+  <li>
+    <p>Any YouTube thumbnail that initiates a playback must be at least 120 pixels wide and 70 pixels tall.</p>
+  </li>
+</ul>
+
+
+<h3 id="youtube-player-attributes" data-text="YouTube Player attributes" tabindex="-1">YouTube Player attributes</h3>
+
+<p>Attributes and parameters of the YouTube player – including, for example, the appearance of YouTube branding in the player – are specified in YouTube API documentation and specifications (https://developers.google.com/youtube). You must not make changes to the YouTube player that are not explicitly described by the API documentation.</p>
+
+<h3 id="overlays-and-frames" data-text="Overlays and frames" tabindex="-1">Overlays and frames</h3>
+
+<p>You must not display overlays, frames, or other visual elements in front of any part of a YouTube embedded player, including player controls. Similarly, you must not use overlays, frames or other visual elements to obscure any part of an embedded player, including player controls.</p>
+
+<h3 id="mouseovers" data-text="Mouseovers" tabindex="-1">Mouseovers</h3>
+
+<p>You must not use mouseovers or touch events on a YouTube player to initiate any action on the user's behalf, such as opening a window or subscribing to a channel.</p>
+
+<h2 id="uploading-videos" data-text="Uploading videos" tabindex="-1">Uploading videos</h2>
+
+<p>If API Clients allow users to upload content to multiple platforms, users should be able to select and deselect the platforms to which they want to upload their videos.</p>
+
+<h3 id="data-requirements" data-text="Data requirements" tabindex="-1">Data requirements</h3>
+
+<p>API clients that enable users to upload videos to YouTube must enable <em>users</em> to set the values in the following list. Any properties that are not listed are optional.</p>
+
+<table>
+  <tr>
+    <th>&nbsp;</th>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr class="alt">
+    <td colspan="3"><b>Resource properties</b></td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr"><a href="/youtube/v3/docs/videos#snippet.title">snippet.title</a></code></td>
+    <td><b>Required</b>. The video's title. YouTube returns an error if the value exceeds 100 characters. YouTube supports all valid UTF-8 characters except <code translate="no" dir="ltr">&lt;</code> and <code translate="no" dir="ltr">&gt;</code>.</p>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr"><a href="/youtube/v3/docs/videos#snippet.description">snippet.description</a></code></td>
+    <td><b>Required</b>. The video's description. YouTube returns an error if the value exceeds 5000 bytes. YouTube supports all valid UTF-8 characters except <code translate="no" dir="ltr">&lt;</code> and <code translate="no" dir="ltr">&gt;</code>.</td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr"><a href="/youtube/v3/docs/videos#status.privacyStatus">status.privacyStatus</a></code></td>
+    <td><b>Required</b>. The video's <a href="https://support.google.com/youtube/answer/157177">privacy setting</a>. Users must be able to choose whether the uploaded video will be public, private, or unlisted.</td>
+  </tr>
+  <tr class="alt">
+    <td colspan="3"><b>Request parameters</b></td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr"><a href="/youtube/v3/docs/videos/insert#onBehalfOfContentOwnerChannel">onBehalfOfContentOwnerChannel</a></code></td>
+    <td><b>Conditionally required</b>. If the request's authorization credentials identify a content owner and the <code translate="no" dir="ltr"><a href="/youtube/v3/docs/videos/insert#onBehalfOfContentOwner">onBehalfOfContentOwner</a></code> parameter is set, the API user must also be able to specify the YouTube channel to which the video is being uploaded.</td>
+  </tr>
+</table>
+
+<h2 id="displaying-comments" data-text="Displaying comments" tabindex="-1">Displaying comments</h2>
+
+<table>
+  <tr>
+    <th>&nbsp;</th>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr class="alt">
+    <td colspan="3"><b>Resource properties</b></td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr"><a href="/youtube/v3/docs/comments#snippet.textDisplay">snippet.textDisplay</a></code></td>
+    <td><b>Required</b>. The comment's text. The API client must either (a) display the full text of a comment or comment reply, or (b) truncate the text and provide a way for the viewer to easily access the full text from the truncated version.<br><br>This requirement applies to all comments and comment replies, regardless of which type of resource the comments are associated with (videos, channels, etc.).<br><br>Note that the <code translate="no" dir="ltr"><a href="/youtube/v3/docs/commentThreads">commentThread</a></code> resource's <code translate="no" dir="ltr"><a href="/youtube/v3/docs/commentThreads#snippet.topLevelComment">snippet.topLevelComment</a></code> property value is a <code translate="no" dir="ltr">comment</code> resource and the <code translate="no" dir="ltr"><a href="/youtube/v3/docs/commentThreads#replies.comments[]">replies.comments[]</a></code> property is a list of <code translate="no" dir="ltr">comment</code> resources. As such, this requirement also applies to the <code translate="no" dir="ltr">snippet.topLevelComment.snippet.textDisplay</code> and <code translate="no" dir="ltr">replies.comments[].snippet.textDisplay</code> properties.</td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr"><a href="/youtube/v3/docs/channels#snippet.title">snippet.title</a></code><br>(<code translate="no" dir="ltr">channel</code>)</td>
+    <td><b>Required (suggestion)</b>. The channel's title.<ul><li>If the comment pertains to a channel, the API client must display the channel's name.</li><li>If the comment pertains to a video, the API client must display the name of the channel that uploaded the video.</li></ul></td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr"><a href="/youtube/v3/docs/videos#snippet.title">snippet.title</a></code><br>(<code translate="no" dir="ltr">video</code>)</td>
+    <td><b>Conditionally required (suggestion)</b>. The video's title. This value must be displayed if the comment pertains to a video.</td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr"><a href="/youtube/v3/docs/comments#snippet.moderationStatus">snippet.moderationStatus</a></code></td>
+    <td><b>Conditionally required</b>. If the <code translate="no" dir="ltr"><a href="/youtube/v3/docs/commentThreads/list#moderationStatus">moderationStatus</a></code> parameter value in the API request is <code translate="no" dir="ltr">heldForReview</code> or <code translate="no" dir="ltr">likelySpam</code>, the display must clearly identify that status using the property value, similar language (e.g. "This comment is being held for review"), a header (e.g. "Held for review"), or other unambiguous language. The <code translate="no" dir="ltr">commentThreads.list</code> method supports the ability to retrieve comments based on their moderation status.</td>
+  </tr>
+</table>
+
+<h2 id="adding-comments" data-text="Adding comments" tabindex="-1">Adding comments</h2>
+
+<table>
+  <tr>
+    <th>&nbsp;</th>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr class="alt">
+    <td colspan="3"><b>Resource properties</b></td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr"><a href="/youtube/v3/docs/channels#snippet.title">snippet.title</a></code><br>(<code translate="no" dir="ltr">channel</code>)</td>
+    <td><b>Required</b>. The channel's title.<ul><li>If the user is adding a comment about a channel, the API client must display the channel's name.</li><li>If the user is adding comment about a video, the API client must display the name of the channel that uploaded the video.</li></ul></td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr"><a href="/youtube/v3/docs/videos#snippet.title">snippet.title</a></code><br>(<code translate="no" dir="ltr">video</code>)</td>
+    <td><b>Required</b>. If the user is adding a comment about a video, the API client must display the video's title.</td>
+  </tr>
+  <tr class="alt">
+    <td colspan="3"><b>Other requirements</b></td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr">Comment author's channel name</code></td>
+    <td><b>Required</b>. The API client must clearly identify the YouTube user account to which the comment will be attributed. If the request's authorization credentials identify a content owner and the <code translate="no" dir="ltr"><a href="/youtube/v3/docs/videos/insert#onBehalfOfContentOwner">onBehalfOfContentOwner</a></code> parameter is set, the API user must also be able to specify the YouTube channel to which the comment will be attributed.</td>
+  </tr>
+</table>
+
+<h2 id="adding-comment-replies" data-text="Adding comment replies" tabindex="-1">Adding comment replies</h2>
+
+<table>
+  <tr>
+    <th>&nbsp;</th>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr class="alt">
+    <td colspan="3"><b>Resource properties</b></td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr"><a href="/youtube/v3/docs/comments#snippet.textDisplay">snippet.textDisplay</a></code></td>
+    <td><b>Required</b>. The comment's text. The API client must display the text of the comment that the user is replying to in accordance with the rules defined in the <a href="#display-comments">Displaying comments</a> section of this document.</td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr"><a href="/youtube/v3/docs/channels#snippet.title">snippet.title</a></code><br>(<code translate="no" dir="ltr">channel</code>)</td>
+    <td><b>Required</b>. The channel's title.<ul><li>If the user is replying to a comment about a channel, the API client must display the channel's name.</li><li>If the user is replying to a comment about a video, the API client must display the name of the channel that uploaded the video.</li></ul></td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr"><a href="/youtube/v3/docs/videos#snippet.title">snippet.title</a></code><br>(<code translate="no" dir="ltr">video</code>)</td>
+    <td><b>Required</b>. If the user is replying to a comment about a video, the API client must display the video's title.</td>
+  </tr>
+  <tr class="alt">
+    <td colspan="3"><b>Other requirements</b></td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr">Comment author's channel name</code></td>
+    <td><b>Required</b>. The API client must clearly identify the YouTube user account to which the comment reply will be attributed. If the request's authorization credentials identify a content owner and the <code translate="no" dir="ltr"><a href="/youtube/v3/docs/videos/insert#onBehalfOfContentOwner">onBehalfOfContentOwner</a></code> parameter is set, the API user must also be able to specify the YouTube channel to which the comment reply will be attributed.</td>
+  </tr>
+</table>
+
+<h2 id="editing-or-deleting-comment-replies" data-text="Editing or deleting comment replies" tabindex="-1">Editing or deleting comment replies</h2>
+
+<table>
+  <tr>
+    <th>&nbsp;</th>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr class="alt">
+    <td colspan="3"><b>Resource properties</b></td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr"><a href="/youtube/v3/docs/comments#snippet.textDisplay">snippet.textDisplay</a></code></td>
+    <td><b>Required</b>. The comment's text. The API client must display the text of the comment that the user is editing or deleting in accordance with the rules defined in the <a href="#display-comments">Displaying comments</a> section of this document.</td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr"><a href="/youtube/v3/docs/channels#snippet.title">snippet.title</a></code><br>(<code translate="no" dir="ltr">channel</code>)</td>
+    <td><b>Required</b>. The channel's title.<ul><li>If the user is editing or deleting a comment about a channel, the API client must display the channel's name.</li><li>If the user is editing or deleting a comment about a video, the API client must display the name of the channel that uploaded the video.</li></ul></td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr"><a href="/youtube/v3/docs/videos#snippet.title">snippet.title</a></code><br>(<code translate="no" dir="ltr">video</code>)</td>
+    <td><b>Required</b>. If the user is editing or deleting a comment about a video, the API client must display the video's title.</td>
+  </tr>
+  <tr class="alt">
+    <td colspan="3"><b>Other requirements</b></td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr">Comment author's channel name</code></td>
+    <td><b>Required</b>. The API client must clearly identify the YouTube user account to which the comment is attributed.</td>
+  </tr>
+</table>
+
+<h2 id="banning-a-user-from-live-chat-or-removing-a-ban" data-text="Banning a user from live chat (or removing a ban)" tabindex="-1">Banning a user from live chat (or removing a ban)</h2>
+
+<table>
+  <tr>
+    <th>&nbsp;</th>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr class="alt">
+    <td colspan="3"><b>Resource properties</b></td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td><code translate="no" dir="ltr"><a href="/youtube/v3/docs/channels#snippet.title">snippet.title</a></code><br>(<code translate="no" dir="ltr">channel</code>)</td>
+    <td><b>Required</b>. The name of the YouTube channel that is being banned or unbanned. In addition, the name must link to the channel or the channel URL must also be displayed.</td>
+  </tr>
+  <tr class="alt">
+    <td colspan="3"><b>Other requirements</b></td>
+  </tr>
+  <tr>
+    <td><span class="compare-yes"></span></td>
+    <td>Comment author's channel name</td>
+    <td><b>Required</b>. The API client must clearly identify the YouTube user account being used to add or remove the ban.</td>
+  </tr>
+</table>
+
+
+  
+
+  
+</div>
+
+  
+
+  
+    
+      <devsite-recommendations display="in-page" hidden yield>
+      </devsite-recommendations>
+    
+    
+      
+    <devsite-thumb-rating position="footer">
+    </devsite-thumb-rating>
+  
+       
+    
+    
+      <devsite-recommendations id="recommendations-link" yield></devsite-recommendations>
+    
+  
+
+  
+  <div class="devsite-floating-action-buttons">
+  
+  
+</div>
+</article>
+
+
+<devsite-content-footer class="nocontent">
+  <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
+  <p>Last updated 2025-01-23 UTC.</p>
+</devsite-content-footer>
+
+
+<devsite-notification
+>
+</devsite-notification>
+
+
+  
+<div class="devsite-content-data">
+  
+  
+    <template class="devsite-content-data-template">
+      [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2025-01-23 UTC."],[[["This document outlines the minimum functional requirements for API clients accessing YouTube API services, ensuring a consistent user experience for users, content owners, and advertisers."],["API clients using embedded YouTube players must adhere to specific size constraints, automatic playback rules, and restrictions on overlays or modifications to the player's appearance."],["When allowing video uploads, API clients must enable users to define specific properties, such as the video's title, description, and privacy settings."],["API clients must provide full or truncated comment text, display channel or video titles depending on the content of the comment and be able to identify when comments are held for moderation."],["API clients must clearly identify the YouTube account associated with any comment or action such as adding a ban to a user."]]],["API clients using YouTube's API must adhere to specific functional requirements. Embedded players need a minimum size (200x200px) and must not auto-play until visible. Overlays on players are prohibited, and mouseovers cannot trigger user actions. When uploading, users must set video title, description, and privacy. For displaying, adding, editing, or deleting comments/replies, the API client must show the comment text, video title, and channel name, as well as any moderation status. When banning a user, the client must display the channel's name.\n"]]
+    </template>
+  
+</div>
+            
+          </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+          
+            
+
+<nav class="devsite-footer-promos nocontent" aria-label="Promotions">
+  <ul class="devsite-footer-promos-list">
+    
+    <li class="devsite-footer-promo">
+      <a href="https://blog.youtube"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+         
+         data-label="Footer Promo Link (index 1)"
+       
+       >
+        
+        
+        <picture>
+          
+          <img class="devsite-footer-promo-icon"
+                src="/static/site-assets/logo-youtube.svg"
+                loading="lazy"
+                alt="Blog">
+        </picture>
+        
+        <span class="devsite-footer-promo-label">
+          Blog
+        </span>
+      </a>
+      <div class="devsite-footer-promo-description">The latest news on the YouTube blog</div>
+    </li>
+    
+    <li class="devsite-footer-promo">
+      <a href="https://github.com/youtube/api-samples"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+         
+         data-label="Footer Promo Link (index 2)"
+       
+       >
+        
+        
+        <picture>
+          
+          <img class="devsite-footer-promo-icon"
+                src="/static/site-assets/logo-github.svg"
+                loading="lazy"
+                alt="GitHub">
+        </picture>
+        
+        <span class="devsite-footer-promo-label">
+          GitHub
+        </span>
+      </a>
+      <div class="devsite-footer-promo-description">Find API code samples and other YouTube open-source projects.</div>
+    </li>
+    
+    <li class="devsite-footer-promo">
+      <a href="https://issuetracker.google.com/issues/new?component=186600&amp;template=874803"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+         
+         data-label="Footer Promo Link (index 3)"
+       
+       >
+        
+        
+        <picture>
+          
+          <img class="devsite-footer-promo-icon"
+                src="/static/site-assets/developers_64dp.png"
+                loading="lazy"
+                alt="Issue Tracker">
+        </picture>
+        
+        <span class="devsite-footer-promo-label">
+          Issue Tracker
+        </span>
+      </a>
+      <div class="devsite-footer-promo-description">Something wrong? Send us a bug report!</div>
+    </li>
+    
+    <li class="devsite-footer-promo">
+      <a href="http://stackoverflow.com/questions/ask?tags=youtube-api"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+         
+         data-label="Footer Promo Link (index 4)"
+       
+       >
+        
+        
+        <picture>
+          
+          <img class="devsite-footer-promo-icon"
+                src="/static/site-assets/logo-stack-overflow.svg"
+                loading="lazy"
+                alt="Stack Overflow">
+        </picture>
+        
+        <span class="devsite-footer-promo-label">
+          Stack Overflow
+        </span>
+      </a>
+      <div class="devsite-footer-promo-description">Ask a question under the youtube-api tag</div>
+    </li>
+    
+    <li class="devsite-footer-promo">
+      <a href="https://research.youtube/"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+         
+         data-label="Footer Promo Link (index 5)"
+       
+       >
+        
+        
+        <picture>
+          
+          <img class="devsite-footer-promo-icon"
+                src="/static/site-assets/logo-youtube.svg"
+                loading="lazy"
+                alt="YouTube Researcher Program">
+        </picture>
+        
+        <span class="devsite-footer-promo-label">
+          YouTube Researcher Program
+        </span>
+      </a>
+      <div class="devsite-footer-promo-description">For researchers interested in using data from YouTube’s global API</div>
+    </li>
+    
+  </ul>
+</nav>
+
+          
+        </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+          
+            
+<nav class="devsite-footer-linkboxes nocontent" aria-label="Footer links">
+  
+  <ul class="devsite-footer-linkboxes-list">
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Tools</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://developers.google.com/apis-explorer/#p/"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            Google APIs Explorer
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/youtube_player_demo"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            YouTube Player Demo
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/youtube_subscribe_button"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+              
+              
+            
+          
+            Configure a Subscribe Button
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Issue Tracker</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://issuetracker.google.com/issues/new?component=186600&amp;template=874803"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            File a bug
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://issuetracker.google.com/issues/new?component=186600&amp;template=874803"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            Request a feature
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://issuetracker.google.com/issues?q=componentid:186600"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+              
+              
+            
+          
+            See open issues
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Product Info</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/terms/api-services-terms-of-service"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            Terms of Service
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/terms/developer-policies"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            Developer Policies
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/terms/required-minimum-functionality"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+          
+            Required Minimum Functionality
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/terms/branding-guidelines"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 4)"
+            >
+            
+              
+              
+            
+          
+            Branding Guidelines
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+  
+</nav>
+          
+        </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+          
+            
+
+<div class="devsite-footer-utility nocontent">
+  
+  
+  <nav class="devsite-footer-sites" aria-label="Other Google Developers websites">
+    <a href="https://developers.google.com/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <picture>
+        
+        <img class="devsite-footer-sites-logo"
+             src="https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/images/lockup-google-for-developers.svg"
+             loading="lazy"
+             alt="Google Developers">
+      </picture>
+    </a>
+    <ul class="devsite-footer-sites-list">
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Android Link"
+         
+         >
+          Android
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Chrome Link"
+         
+         >
+          Chrome
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Firebase Link"
+         
+         >
+          Firebase
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Google Cloud Platform Link"
+         
+         >
+          Google Cloud Platform
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//ai.google.dev/"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Google AI Link"
+         
+         >
+          Google AI
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer All products Link"
+         
+         >
+          All products
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+  
+
+  
+  <nav class="devsite-footer-utility-links" aria-label="Utility links">
+    
+    <ul class="devsite-footer-utility-list">
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          Terms
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          Privacy
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 glue-cookie-notification-bar-control">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="#"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Manage cookies link"
+         
+           aria-hidden="true"
+         >
+          Manage cookies
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+        
+        <span class="devsite-footer-utility-description">Sign up for the Google for Developers newsletter</span>
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/newsletter/subscribe"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link"
+         >
+          Subscribe
+        </a>
+        
+      </li>
+      
+    </ul>
+    
+    
+<devsite-language-selector>
+  <ul role="presentation">
+    
+    
+    <li role="presentation">
+      <a role="menuitem" lang="en"
+        >English</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="de"
+        >Deutsch</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es"
+        >Español</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es_419"
+        >Español – América Latina</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fr"
+        >Français</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="id"
+        >Indonesia</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="it"
+        >Italiano</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pl"
+        >Polski</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt_br"
+        >Português – Brasil</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="vi"
+        >Tiếng Việt</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="tr"
+        >Türkçe</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ru"
+        >Русский</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="he"
+        >עברית</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ar"
+        >العربيّة</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fa"
+        >فارسی</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="hi"
+        >हिंदी</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="bn"
+        >বাংলা</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="th"
+        >ภาษาไทย</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_cn"
+        >中文 – 简体</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_tw"
+        >中文 – 繁體</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ja"
+        >日本語</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ko"
+        >한국어</a>
+    </li>
+    
+  </ul>
+</devsite-language-selector>
+
+  </nav>
+</div>
+          
+        </devsite-footer-utility>
+        <devsite-panel></devsite-panel>
+        
+          <devsite-concierge
+  
+  
+    data-info-panel
+  
+  
+    data-ai-panel
+  
+  
+  
+  
+    data-api-explorer-panel
+  >
+</devsite-concierge>
+        
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar></devsite-snackbar>
+    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+      
+        <script type="application/json" analytics>[{&#34;dimensions&#34;: {&#34;dimension4&#34;: &#34;YouTube&#34;, &#34;dimension6&#34;: &#34;en&#34;, &#34;dimension1&#34;: &#34;Signed out&#34;, &#34;dimension5&#34;: &#34;en&#34;, &#34;dimension11&#34;: false, &#34;dimension3&#34;: false}, &#34;gaid&#34;: &#34;UA-24532603-1&#34;, &#34;metrics&#34;: {&#34;ratings_count&#34;: &#34;metric2&#34;, &#34;ratings_value&#34;: &#34;metric1&#34;}, &#34;purpose&#34;: 1}]</script>
+<script type="application/json" tag-management>{&#34;at&#34;: &#34;True&#34;, &#34;ga4&#34;: [{&#34;id&#34;: &#34;G-272J68FCRF&#34;, &#34;purpose&#34;: 1}], &#34;ga4p&#34;: [{&#34;id&#34;: &#34;G-272J68FCRF&#34;, &#34;purpose&#34;: 1}], &#34;gtm&#34;: [], &#34;parameters&#34;: {&#34;internalUser&#34;: &#34;False&#34;, &#34;language&#34;: {&#34;machineTranslated&#34;: &#34;False&#34;, &#34;requested&#34;: &#34;en&#34;, &#34;served&#34;: &#34;en&#34;}, &#34;pageType&#34;: &#34;article&#34;, &#34;projectName&#34;: &#34;YouTube&#34;, &#34;signedIn&#34;: &#34;False&#34;, &#34;tenant&#34;: &#34;developers&#34;, &#34;recommendations&#34;: {&#34;sourcePage&#34;: &#34;&#34;, &#34;sourceType&#34;: 0, &#34;sourceRank&#34;: 0, &#34;sourceIdenticalDescriptions&#34;: 0, &#34;sourceTitleWords&#34;: 0, &#34;sourceDescriptionWords&#34;: 0, &#34;experiment&#34;: &#34;&#34;}, &#34;experiment&#34;: {&#34;ids&#34;: &#34;&#34;}}}</script>
+      
+    </devsite-analytics>
+    
+      <devsite-badger></devsite-badger>
+    
+    
+    
+<script nonce="NRl8Y2xFP7x3eFxOhxs4ELZ1bMt1bj">
+  
+  (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/js/app_loader.js', '[1,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692","https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers","https://developers-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/developers/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/images/favicon-new.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,116,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"AIzaSyAP-jjEJBzmIyKR4F-3XITp8yM9T1gEEI8","AIzaSyB6xiKGDR5O3Ak2okS4rLkauxGUG7XP0hg","developers.google.com","AIzaSyAQk0fBONSGUqCNznf6Krs82Ap1-NV6J4o","AIzaSyCCxcqdrZ_7QMeLCRY20bh_SXdAYqy70KY",null,null,null,["Concierge__enable_concierge_restricted","Analytics__enable_clearcut_logging","Cloud__enable_cloud_dlp_service","EngEduTelemetry__enable_engedu_telemetry","Profiles__enable_profile_collections","Profiles__enable_page_saving","Cloud__enable_cloud_facet_chat","TpcFeatures__enable_unmirrored_page_left_nav","Search__enable_ai_eligibility_checks","MiscFeatureFlags__enable_firebase_utm","Cloud__enable_free_trial_server_call","MiscFeatureFlags__enable_variable_operator","Profiles__require_profile_eligibility_for_signin","Search__enable_page_map","Search__enable_dynamic_content_confidential_banner","Search__enable_suggestions_from_borg","Profiles__enable_completecodelab_endpoint","Concierge__enable_key_takeaways","Cloud__enable_cloudx_experiment_ids","Cloud__enable_cloud_shell","Search__enable_ai_search_summaries","Concierge__enable_concierge","BookNav__enable_tenant_cache_key","Profiles__enable_release_notes_notifications","Profiles__enable_complete_playlist_endpoint","MiscFeatureFlags__emergency_css","Profiles__enable_public_developer_profiles","Cloud__enable_legacy_calculator_redirect","MiscFeatureFlags__enable_explain_this_code","Significatio__enable_by_tenant","CloudShell__cloud_shell_button","CloudShell__cloud_code_overflow_menu","Profiles__enable_awarding_url","Search__enable_ai_search_summaries_restricted","Concierge__enable_pushui","TpcFeatures__enable_mirror_tenant_redirects","MiscFeatureFlags__enable_view_transitions","DevPro__enable_developer_subscriptions","Profiles__enable_recognition_badges","MiscFeatureFlags__developers_footer_image","MiscFeatureFlags__developers_footer_dark_image","Cloud__enable_llm_concierge_chat","Cloud__enable_cloudx_ping","Profiles__enable_completequiz_endpoint","MiscFeatureFlags__enable_framebox_badge_methods","Profiles__enable_join_program_group_endpoint","MiscFeatureFlags__enable_project_variables","Concierge__enable_actions_menu","Profiles__enable_dashboard_curated_recommendations","Profiles__enable_developer_profiles_callout","Experiments__reqs_query_experiments","Profiles__enable_stripe_subscription_management","DevPro__enable_cloud_innovators_plus","DevPro__enable_devpro_offers","MiscFeatureFlags__enable_variable_operator_index_yaml","Cloud__enable_cloud_shell_fte_user_flow"],null,null,"AIzaSyBLEMok-5suZ67qRPzx0qUtbnLmyT_kCVE","https://developerscontentserving-pa.clients6.google.com","AIzaSyCM4QpTRSqP5qI4Dvjt4OAScIN8sOUlO-k","https://developerscontentsearch-pa.clients6.google.com",1,4,null,"https://developerprofiles-pa.clients6.google.com",[1,"developers","Google for Developers","developers.google.com",null,"developers-dot-devsite-v2-prod.appspot.com",null,null,[1,1,[1],null,null,null,null,null,null,null,null,[1],null,null,null,null,null,null,[1],[1,null,null,[1,20],"/recommendations/information"],null,null,null,[1,1,1],[1,1,null,1,1]],null,[null,null,null,null,null,null,"/images/lockup-new.svg","/images/touchicon-180-new.png",null,null,null,null,1,null,null,null,null,null,null,null,null,1,null,null,null,"/images/lockup-dark-theme-new.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,20,22,23,29,32,36],null,[[null,null,null,[3,7,10,2,39,17,4,32,24,11,12,13,34,15,25],null,null,[1,[["docType","Choose a content type",[["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"],["Guide",null,null,null,null,null,null,null,null,"Guide"],["Sample",null,null,null,null,null,null,null,null,"Sample"]]],["product","Choose a product",[["Android",null,null,null,null,null,null,null,null,"Android"],["ARCore",null,null,null,null,null,null,null,null,"ARCore"],["ChromeOS",null,null,null,null,null,null,null,null,"ChromeOS"],["Firebase",null,null,null,null,null,null,null,null,"Firebase"],["Flutter",null,null,null,null,null,null,null,null,"Flutter"],["Assistant",null,null,null,null,null,null,null,null,"Google Assistant"],["GoogleCloud",null,null,null,null,null,null,null,null,"Google Cloud"],["GoogleMapsPlatform",null,null,null,null,null,null,null,null,"Google Maps Platform"],["GooglePay",null,null,null,null,null,null,null,null,"Google Pay & Google Wallet"],["GooglePlay",null,null,null,null,null,null,null,null,"Google Play"],["Tensorflow",null,null,null,null,null,null,null,null,"TensorFlow"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"AI and Machine Learning"],["Data",null,null,null,null,null,null,null,null,"Data"],["Enterprise",null,null,null,null,null,null,null,null,"Enterprise"],["Gaming",null,null,null,null,null,null,null,null,"Gaming"],["Mobile",null,null,null,null,null,null,null,null,"Mobile"],["Web",null,null,null,null,null,null,null,null,"Web"]]]]]],[1,1],null,1],[[["UA-24532603-1"],["UA-22084204-5"],null,null,["UA-24532603-5"],null,null,[["G-272J68FCRF"],null,null,[["G-272J68FCRF",2]]],[["UA-24532603-1",2]],null,[["UA-24532603-5",2]],null,1],[[15,12],[1,1],[5,4],[13,10],[16,13],[11,8],[14,11],[4,3],[6,5],[3,2],[12,9]],[[1,1],[2,2]]],null,4,null,null,null,null,null,null,null,null,null,null,null,null,null,"developers.devsite.google"],null,"pk_live_5170syrHvgGVmSx9sBrnWtA5luvk9BwnVcvIi7HizpwauFG96WedXsuXh790rtij9AmGllqPtMLfhe2RSwD6Pn38V00uBCydV4m",1,null,"https://developerscontentinsights-pa.clients6.google.com","AIzaSyBJyPHP8SgojSj3JDDL8lu7pDB_mz-nQUc"]')
+  
+</script>
+
+    <devsite-a11y-announce></devsite-a11y-announce>
+  </body>
+</html>

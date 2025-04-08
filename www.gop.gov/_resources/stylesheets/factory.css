@@ -1,0 +1,174 @@
+.filterbar .navbar-form { border:0; margin-left:0; margin-right:0; padding:0 10px; margin-bottom:2px; }
+.filterbar .form-control { margin-bottom:5px; }
+.filterbar .btn { margin-bottom:5px; }
+/*
+@media (min-width: 768px) {
+	.filterbar .form-control { margin-bottom:0; }
+}
+*/
+
+/* ******* */
+/* PAGES */
+.element_pagetypes ul li .list-group-item-image { float:left; margin-right:20px; display:block; }
+.element_pagetypes ul li .list-group-item-text { overflow:hidden; zoom:1; }
+
+/* ******* */
+/* POSTS */
+
+.permalink { word-wrap: break-word; border: 1px solid #ccc; padding: 10px 15px; background: #f7f7f7; margin-top: 10px; }
+
+.plugin_youtube { margin:15px 0; }
+.plugin_youtube video { max-width:100%; }
+
+.post-image { margin: 0 12px 8px 0; width: 45%; }
+.post-image img { border-radius: 6px; width: 100%; height:auto; }
+.post-image-modal { border-radius: 0; top:10%; }
+.post-image-modal img { width: 100%; display:block; }
+
+.posttypelayout_list table .recordListImage .no-image {
+	display: inline-block;
+	border-bottom: 16px solid #ccc;
+	vertical-align: middle;
+	width: 100%;
+}
+
+@media (max-width: 640px) {
+	.post-image { float: none; margin: 12px 0; width: 100%; }
+}
+
+@media (min-width: 768px) {
+	.post-image-modal img { max-width: 764px; margin:0 auto; }
+}
+
+/* temp fix for post inline images */
+article.post div.content > img, article.post div.content > p > img { border-radius: 6px; clear: both; display: block; margin: .5em ; }
+
+/* LINKS */
+.links-layout-buttons ul li { margin-bottom:11px; }
+.links-layout-buttons ul li .btn { text-align:left; padding:0 15px; line-height:2.5; }
+
+/* TEXTBLOCKS */
+
+/* VIDEOS */
+.mejs__container { margin:0 auto; }
+.mejs__container-fullscreen { z-index:1000!important; }
+
+/* CALENDAR */
+.calendar { margin: 1.33em 0 }
+/* header */
+/*table.cal-header { font-size: 0.8em; line-height: 1.25em; width: 100%; }_NO__DOTCOMMA__AFTER__*/
+.calendar th, .calendar td { /*padding: 0;*/ vertical-align: top; }
+/*.cal-header-steps, .cal-header-layouts { width: 25%; }_NO__DOTCOMMA__AFTER__*/
+/*.cal-header-steps table { float: left; }_NO__DOTCOMMA__AFTER__*/
+.cal-header-title { font-size: 20px; line-height: 33px; margin:0; padding: 0; text-align: center; white-space: nowrap; }
+@media (min-width:641px) {
+	.cal-header { position:relative; }
+	.cal-header-title { position:absolute; top:0; left:0; right:0; }
+}
+/*.cal-header-title table { margin: 0 auto; }_NO__DOTCOMMA__AFTER__*/
+/*.cal-header-title { margin: 0; padding: 0.25em 0; }_NO__DOTCOMMA__AFTER__*/
+/*.cal-header-layouts table { float: right; }_NO__DOTCOMMA__AFTER__*/
+/* .cal-header-title, .cal-header-steps, .cal-header-layouts { margin-left:-15px; margin-right:-15px; } */
+
+.cal-header-space { padding-left: 10px }
+/* buttons */
+.cal-header .cal-state-default, .cal-header .ui-state-default { margin-bottom: 1em; cursor: pointer; }
+.cal-header .cal-state-default { border-width: 1px 0; padding: 0 1px; }
+.cal-header .cal-state-default, .cal-header .cal-state-default a { border-style: solid }
+.cal-header .cal-state-default a { display: block; border-width: 0 1px; margin: 0 -1px; width: 100%; text-decoration: none; }
+.cal-header .cal-state-default span { display: block; border-style: solid; border-width: 1px 0 1px 1px; height: 1.25em; padding: 3px 5px; }
+.cal-header .ui-state-default { padding: 4px 6px }
+.cal-header .cal-state-default span, .cal-header .ui-state-default span { white-space: nowrap }
+.cal-header .cal-no-right { padding-right: 0 }
+.cal-header .cal-no-right a { margin-right: 0; border-right: 0; }
+.cal-header .ui-no-right { border-right: 0 }
+.cal-header .cal-corner-left { margin-left: 1px; padding-left: 0; }
+.cal-header .cal-corner-right { margin-right: 1px; padding-right: 0; }
+.cal-header .cal-state-default, .cal-header .cal-state-default a { border-color: #777; /* outer border */ color: #333; }
+.cal-header .cal-state-default span { border-color: #fff #fff #d1d1d1; /* inner border */ background: #e8e8e8; }
+.cal-header .cal-state-active a { color: #fff }
+.cal-header .cal-state-down span, .cal-header .cal-state-active span { background: #888; border-color: #808080 #808080 #909090; /* inner border */ }
+.cal-header .cal-state-disabled a { color: #999; cursor: default; }
+.cal-header .cal-state-disabled, .cal-header .cal-state-disabled a { border-color: #ccc; /* outer border */ }
+.cal-header .cal-state-disabled span { border-color: #fff #fff #f0f0f0; /* inner border */ background: #f0f0f0; }
+.calendar .recordList { padding: 0.5em 0; width: 100%; }
+.calendar table.recordList { padding: 0.5em 1em }
+/* calendar layout */
+.cal-month table { background-color: #ccc; border-collapse: separate; border-spacing: 1px; table-layout:fixed; word-wrap: break-word; font-size: 75%; line-height: 1.25em; }
+.cal-month table th { background-color:#3e3e3e; color:white; text-align:center; font-size:16px; line-height:3; box-shadow: 0 0 0px 1px rgba(62,62,62,1); }
+.cal-month table td.cal-day { background-color: #fff; cursor: pointer; height: 7em; padding: 0 !important; }
+.cal-month table td div.cal-date { background-color: transparent; cursor: pointer; padding: 0 0.33em; text-align: left; }
+.cal-month table td div.cal-date a { color: #212427; }
+.cal-month table td div.cal-event { /* background-color: #a94130; */ cursor: pointer; margin: 2px; padding: 2px 4px 4px; -moz-border-radius: 3px; }
+.cal-month table td div.cal-event a { color: inherit }
+.cal-month table td.cal-day-now { border-color: #ccc; background-color: #f2f2f2; }
+.cal-month table td.cal-day-now div.cal-date {  }
+.cal-month table td.cal-day-now div.cal-date a {  }
+.cal-month table td.cal-day-prevnext { /*background-color: #f7f7f7;*/  }
+.cal-month table td.cal-day-prevnext div.cal-date { background-color: transparent; color: #ccc; }
+.cal-month table td.cal-day-prevnext div.cal-date a { color: #767676; }
+
+@media (max-width:480px) {
+	.cal-month table { font-size:60%; }
+}
+/* list layout */
+.calendar .recordList .list-month { border:1px solid #ccc; padding:20px; background:#f7f7f7; margin-bottom:15px; }
+.calendar .recordList .list-month h4 { color:#333; font-weight:bold; margin:0 0 10px; padding-bottom:10px; border-bottom:1px solid #ccc; }
+.calendar .recordList .list-month table tr { border-bottom:1px dashed #ccc; }
+.calendar .recordList .list-month table tr td { padding-top:5px; padding-bottom:5px; }
+.calendar .recordList .recordListDate  { text-align: left; padding-left: 0; width: 150px; }
+/* day view */
+.calendar .article { border:1px solid #ccc; padding:0 20px 20px; background:#f7f7f7; margin-bottom:15px; }
+.calendar .article h1.title { border-bottom:1px solid #ccc; padding-bottom:10px; }
+.calendar .article h1.title a {  }
+.calendar .article h1.title a:hover { text-decoration:none; }
+/* */
+
+.cal-event-type-1 { background-color: #cdf6f3 !important }
+.cal-event-type-2 { background-color: #d6f5cd !important }
+.cal-event-type-3 { background-color: #fff7d7 !important }
+.cal-event-type-4 { background-color: #ffd8d8 !important }
+.cal-event-type-5 { background-color: #d7f2ff !important }
+.cal-event-type-6 { background-color: #d7deff !important }
+.cal-event-type-7 { background-color: #e9d7ff !important }
+.cal-event-type-8 { background-color: #ffd7fe !important }
+.event-type-legend { background-color:#3e3e3e; padding:5px 15px; }
+.event-type-legend div { border:none; color: #000; display: inline; float: left; font-size: 12px; margin:5px 15px 5px 0; margin-left: 0; padding: 0.33em 0.66em; }
+
+.pagegroup_eventtypes .eventtypelayout_list .event-items .event-item {
+	border-bottom: 1px solid #ccc;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+/* phonebanks */
+.phonebanklist {  }
+.phonebanklist ul { margin-left:0; }
+.phonebanklist ul li { margin:1em 0; border-bottom:1px solid #E0E4E7; }
+.phonebanklist ul li.last { border-bottom:0; }
+.phonebanklist .title { float:left; width:50%; font-weight:bold; font-size:1.3em; }
+.phonebanklist .counts { float:left; width:50%; clear:both; }
+.phonebanklist .banklink { float:right;  width:40%; margin-left:15px; }
+.phonebanklist .callbetween { float:right; width:40%; margin-left:15px; }
+.phonebanklist .callbetween .callbetween-value { white-space:nowrap; }
+.phonebanklist .abstract {}
+
+@keyframes phonebankpulse { 
+  50% { background-color: #FFFFE0 }
+}
+
+.phonebankrecords ul { margin:0 }
+.phonebankrecords li {  }
+.phonebankrecords .phonebankrecord { border:1px solid #E0E4E7; padding:1em; animation: phonebankpulse 1s ease-out 2; }
+.phonebankrecords .phonebankrecord .fullname { font-weight: bold; font-size:1.5em; display:block; }
+.phonebankrecords .phonebankrecord .phonenumber { display:block; }
+.phonebankrecords .phonebankrecord form {  }
+.phonebankrecords .phonebankrecord form .recordstatus { margin:1em 0; }
+.phonebankrecords .phonebankrecord form .recordcomment { margin:1em 0; }
+.phonebankrecords .phonebankrecord form .recordcomment label { font-weight:bold; display:block; }
+.phonebankrecords .phonebankrecord form .recordcomment textarea { width:100%;  display:block; }
+
+@media (min-width:641px) {
+	.phonebankrecords { width:50%; float:right; margin-left:2em; }
+	.phonebankrecords .phonebankrecord { margin:0 1em; }
+}

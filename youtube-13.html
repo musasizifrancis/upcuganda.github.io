@@ -1,0 +1,2484 @@
+<!doctype html>
+<html 
+      lang="ko-x-mtfrom-en"
+      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope"
+          content="profile email https://www.googleapis.com/auth/developerprofiles https://www.googleapis.com/auth/developerprofiles.award">
+    <meta property="og:site_name" content="Google for Developers">
+    <meta property="og:type" content="website"><meta name="theme-color" content="#ff0000"><meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="//apis.google.com" crossorigin>
+    <link rel="preconnect" href="//www.google-analytics.com" crossorigin><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap">
+      <link rel="stylesheet"
+            href="//fonts.googleapis.com/css2?family=Material+Icons&family=Material+Symbols+Outlined&display=block"><link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanskr.css"><link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/css/app.css">
+      <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/images/favicon-new.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/images/touchicon-180-new.png"><link rel="canonical" href="https://developers.google.com/youtube?hl=ko"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google for Developers" href="https://developers.google.com/s/opensearch.xml?hl=ko">
+      <link rel="alternate" hreflang="en"
+          href="https://developers.google.com/youtube" /><link rel="alternate" hreflang="x-default" href="https://developers.google.com/youtube" /><link rel="alternate" hreflang="ar"
+          href="https://developers.google.com/youtube?hl=ar" /><link rel="alternate" hreflang="bn"
+          href="https://developers.google.com/youtube?hl=bn" /><link rel="alternate" hreflang="zh-Hans"
+          href="https://developers.google.com/youtube?hl=zh-cn" /><link rel="alternate" hreflang="zh-Hant"
+          href="https://developers.google.com/youtube?hl=zh-tw" /><link rel="alternate" hreflang="fa"
+          href="https://developers.google.com/youtube?hl=fa" /><link rel="alternate" hreflang="fr"
+          href="https://developers.google.com/youtube?hl=fr" /><link rel="alternate" hreflang="de"
+          href="https://developers.google.com/youtube?hl=de" /><link rel="alternate" hreflang="he"
+          href="https://developers.google.com/youtube?hl=he" /><link rel="alternate" hreflang="hi"
+          href="https://developers.google.com/youtube?hl=hi" /><link rel="alternate" hreflang="id"
+          href="https://developers.google.com/youtube?hl=id" /><link rel="alternate" hreflang="it"
+          href="https://developers.google.com/youtube?hl=it" /><link rel="alternate" hreflang="ja"
+          href="https://developers.google.com/youtube?hl=ja" /><link rel="alternate" hreflang="ko"
+          href="https://developers.google.com/youtube?hl=ko" /><link rel="alternate" hreflang="pl"
+          href="https://developers.google.com/youtube?hl=pl" /><link rel="alternate" hreflang="pt-BR"
+          href="https://developers.google.com/youtube?hl=pt-br" /><link rel="alternate" hreflang="ru"
+          href="https://developers.google.com/youtube?hl=ru" /><link rel="alternate" hreflang="es-419"
+          href="https://developers.google.com/youtube?hl=es-419" /><link rel="alternate" hreflang="th"
+          href="https://developers.google.com/youtube?hl=th" /><link rel="alternate" hreflang="tr"
+          href="https://developers.google.com/youtube?hl=tr" /><link rel="alternate" hreflang="vi"
+          href="https://developers.google.com/youtube?hl=vi" /><title>YouTube &nbsp;|&nbsp; Google for Developers</title>
+
+<meta property="og:title" content="YouTube &nbsp;|&nbsp; Google for Developers"><meta name="description" content="사이트 및 앱에 YouTube 기능을 추가하세요.">
+  <meta property="og:description" content="사이트 및 앱에 YouTube 기능을 추가하세요."><meta property="og:url" content="https://developers.google.com/youtube?hl=ko"><meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/images/opengraph/youtube-theme.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675"><meta property="og:locale" content="ko"><meta name="twitter:card" content="summary_large_image"><link rel="alternate machine-translated-from" hreflang="en"
+        href="https://developers.google.com/youtube?hl=en">
+    
+      <link rel="stylesheet" href="/extras.css"></head>
+  <body class=""
+        template="landing"
+        theme="youtube-theme"
+        type="product"
+        
+        
+        
+        layout="full"
+        
+        
+        
+        
+          
+            concierge='hide'
+          
+        
+        
+        pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+  
+    <a href="#main-content" class="skip-link button">
+      
+      기본 콘텐츠로 건너뛰기
+    </a>
+    <section class="devsite-wrapper">
+      <devsite-cookie-notification-bar></devsite-cookie-notification-bar><devsite-header role="banner">
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-header--inner" data-nosnippet>
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="메뉴 열기">
+        </button>
+        <div class="devsite-product-name-wrapper">
+
+  
+    
+  
+  <a href="https://developers.google.com/youtube?hl=ko">
+    
+  <div class="devsite-product-logo-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <picture>
+      
+      <img class="devsite-product-logo"
+           alt="YouTube"
+           src="https://developers.google.com/static/site-assets/logo-youtube.svg?hl=ko"
+           srcset=" /static/site-assets/logo-youtube.svg"
+           sizes="64px"
+           loading="lazy"
+           >
+    </picture>
+  
+  </div>
+  
+  </a>
+  
+
+  
+
+
+
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list"
+  >
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+      
+        
+  <a href="https://developers.google.com/youtube?hl=ko"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Upper Header"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail="YouTube"
+      
+    >
+    
+          <h1 class="devsite-product-name">YouTube</h1>
+        
+  </a>
+  
+      
+    
+  </li>
+  
+</ul>
+  </span>
+
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+            
+           </div>
+          
+<devsite-search
+    enable-signin
+    enable-search
+    enable-suggestions
+      enable-query-completion
+    
+    
+    project-name="YouTube"
+    tenant-name="Google for Developers"
+    project-scope="/youtube"
+    url-scoped="https://developers.google.com/s/results/youtube?hl=ko"
+    
+    
+    
+    >
+  <form class="devsite-search-form" action="https://developers.google.com/s/results?hl=ko" method="GET">
+    <div class="devsite-search-container">
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              
+              aria-label="검색 열기"></button>
+      <div class="devsite-searchbox">
+        <input
+          aria-activedescendant=""
+          aria-autocomplete="list"
+          
+          aria-label="검색"
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          autocomplete="off"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          
+          placeholder="검색"
+          role="combobox"
+          type="text"
+          value=""
+          >
+          <div class="devsite-search-image material-icons" aria-hidden="true">
+            
+          </div>
+          <div class="devsite-search-shortcut-icon-container" aria-hidden="true">
+            <kbd class="devsite-search-shortcut-icon">/</kbd>
+          </div>
+      </div>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          
+          aria-label="검색 닫기"></button>
+</devsite-search>
+
+        </div>
+
+        
+
+          
+
+          
+
+          
+
+          
+<devsite-language-selector>
+  <ul role="presentation">
+    
+    
+    <li role="presentation">
+      <a role="menuitem" lang="en"
+        >English</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="de"
+        >Deutsch</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es"
+        >Español</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es_419"
+        >Español – América Latina</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fr"
+        >Français</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="id"
+        >Indonesia</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="it"
+        >Italiano</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pl"
+        >Polski</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt_br"
+        >Português – Brasil</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="vi"
+        >Tiếng Việt</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="tr"
+        >Türkçe</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ru"
+        >Русский</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="he"
+        >עברית</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ar"
+        >العربيّة</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fa"
+        >فارسی</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="hi"
+        >हिंदी</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="bn"
+        >বাংলা</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="th"
+        >ภาษาไทย</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_cn"
+        >中文 – 简体</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_tw"
+        >中文 – 繁體</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ja"
+        >日本語</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ko"
+        >한국어</a>
+    </li>
+    
+  </ul>
+</devsite-language-selector>
+
+
+          
+
+        
+
+        
+          <devsite-user 
+                        
+                        
+                          enable-profiles
+                        
+                        
+                          fp-auth
+                        
+                        id="devsite-user">
+            
+              
+              <span class="button devsite-top-button" aria-hidden="true" visually-hidden>로그인</span>
+            
+        </devsite-user>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+      
+        
+          <div class="devsite-product-id-row"
+           >
+            <div class="devsite-product-description-row">
+              
+                
+              
+              
+              <div class="devsite-product-description">
+                사이트 및 앱에 YouTube 기능을 추가하세요.
+              </div>
+              
+            </div>
+            
+          </div>
+          
+        
+      
+      
+        <div class="devsite-doc-set-nav-row">
+          
+          
+            
+            
+  <devsite-tabs class="lower-tabs">
+
+    <nav class="devsite-tabs-wrapper" aria-label="하단 탭">
+      
+        
+          <tab  class="devsite-active">
+            
+    <a href="https://developers.google.com/youtube?hl=ko"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://developers.google.com/youtube?hl=ko"
+    
+       track-type="nav"
+       track-metadata-position="nav - home"
+       track-metadata-module="primary nav"
+       aria-label="홈, selected" 
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: 홈"
+         
+           track-name="home"
+         
+       >
+    홈
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/youtube/documentation?hl=ko"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://developers.google.com/youtube/documentation?hl=ko"
+    
+       track-type="nav"
+       track-metadata-position="nav - 가이드"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: 가이드"
+         
+           track-name="가이드"
+         
+       >
+    가이드
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/youtube/code_samples?hl=ko"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://developers.google.com/youtube/code_samples?hl=ko"
+    
+       track-type="nav"
+       track-metadata-position="nav - 샘플"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: 샘플"
+         
+           track-name="샘플"
+         
+       >
+    샘플
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service?hl=ko"
+    class="devsite-tabs-content gc-analytics-event "
+      track-metadata-eventdetail="https://developers.google.com/youtube/terms/api-services-terms-of-service?hl=ko"
+    
+       track-type="nav"
+       track-metadata-position="nav - 약관"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: 약관"
+         
+           track-name="약관"
+         
+       >
+    약관
+  
+    </a>
+    
+  
+          </tab>
+        
+      
+    </nav>
+
+  </devsite-tabs>
+
+          
+          
+        </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+  
+</devsite-header>
+      <devsite-book-nav scrollbars hidden>
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-book-nav-filter"
+     hidden>
+  <span class="filter-list-icon material-icons" aria-hidden="true"></span>
+  <input type="text"
+         placeholder="필터"
+         
+         aria-label="입력하여 필터링"
+         role="searchbox">
+  
+  <span class="filter-clear-button hidden"
+        data-title="필터 지우기"
+        aria-label="필터 지우기"
+        role="button"
+        tabindex="0"></span>
+</div>
+
+<nav class="devsite-book-nav devsite-nav nocontent"
+     aria-label="사이드 메뉴">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="탐색 메뉴 닫기">
+    </button>
+    <div class="devsite-product-name-wrapper">
+
+  
+    
+  
+  <a href="https://developers.google.com/youtube?hl=ko">
+    
+  <div class="devsite-product-logo-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <picture>
+      
+      <img class="devsite-product-logo"
+           alt="YouTube"
+           src="https://developers.google.com/static/site-assets/logo-youtube.svg?hl=ko"
+           srcset=" /static/site-assets/logo-youtube.svg"
+           sizes="64px"
+           loading="lazy"
+           >
+    </picture>
+  
+  </div>
+  
+  </a>
+  
+
+  
+
+
+  
+      <span class="devsite-product-name">
+        
+        
+        <ul class="devsite-breadcrumb-list"
+  >
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+      
+        
+  <a href="https://developers.google.com/youtube?hl=ko"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Upper Header"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail="YouTube"
+      
+    >
+    
+          YouTube
+        
+  </a>
+  
+      
+    
+  </li>
+  
+</ul>
+      </span>
+    
+
+</div>
+  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+      
+        <ul class="devsite-nav-list">
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/youtube"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              devsite-nav-active"
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: 홈"
+      
+        track-name="home"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 홈"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      홈
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/youtube/documentation"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: 가이드"
+      
+        track-name="가이드"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 가이드"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      가이드
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/youtube/code_samples"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: 샘플"
+      
+        track-name="샘플"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 샘플"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      샘플
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/youtube/terms/api-services-terms-of-service"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: 약관"
+      
+        track-name="약관"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 약관"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      약관
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+          
+          
+        </ul>
+      
+    </div>
+    
+  </div>
+</nav>
+        
+      </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" id="main-content" class="devsite-main-content"
+            
+              
+              
+            >
+          
+          <devsite-content>
+            
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="devsite-article">
+  
+  
+  
+  
+  
+    <div class="devsite-banner devsite-banner-translated nocontent">
+      <div class="devsite-banner-message">
+        <div class="devsite-banner-message-text">
+          <img src="https://developers.google.com/_static/images/translated.svg?hl=ko"
+               class="devsite-banner-translated-image invert"
+               alt="">
+          <span class="devsite-banner-translated-text">
+            
+            이 페이지는 <a href="//cloud.google.com/translate/?hl=ko">Cloud Translation API</a>를 통해 번역되었습니다.
+          </span>
+        </div>
+        <devsite-switch-to-english-button></devsite-switch-to-english-button>
+      </div>
+    </div>
+  
+
+  <div class="devsite-article-meta nocontent" role="navigation">
+    
+    
+    <ul class="devsite-breadcrumb-list"
+  
+    aria-label="탐색경로">
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+  <a href="https://developers.google.com/?hl=ko"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail=""
+      
+    >
+    
+        홈
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://developers.google.com/products?hl=ko"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="2"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="2"
+      
+        track-metadata-eventdetail=""
+      
+    >
+    
+        제품
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://developers.google.com/youtube?hl=ko"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="3"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="3"
+      
+        track-metadata-eventdetail="YouTube"
+      
+    >
+    
+        YouTube
+      
+  </a>
+  
+    
+  </li>
+  
+</ul>
+    
+  </div>
+  
+    
+  <div class="devsite-actions" data-nosnippet>
+    <devsite-feature-tooltip
+      ack-key="AckCollectionsBookmarkTooltipDismiss"
+      analytics-category="Site-Wide Custom Events"
+      analytics-action-show="Callout Profile displayed"
+      analytics-action-close="Callout Profile dismissed"
+      analytics-label="Create Collection Callout"
+      class="devsite-page-bookmark-tooltip nocontent"
+      dismiss-button="true"
+      id="devsite-collections-dropdown"
+      
+      dismiss-button-text="닫기"
+
+      
+      close-button-text="확인">
+
+    
+    <devsite-bookmark></devsite-bookmark>
+
+    <span slot="popout-heading">
+      
+      컬렉션을 사용해 정리하기
+    </span>
+    <span slot="popout-contents">
+      
+      내 환경설정을 기준으로 콘텐츠를 저장하고 분류하세요.
+    </span>
+  </devsite-feature-tooltip>
+  </div>
+  
+  
+
+  <devsite-toc class="devsite-nav"
+    depth="2"
+    devsite-toc-embedded
+    disabled>
+  </devsite-toc>
+  
+
+  
+
+
+
+
+
+
+<div class="devsite-article-body clearfix
+  devsite-no-page-title">
+
+  
+    
+  <section class="devsite-landing-row devsite-landing-row-2-up"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+      <header class="devsite-landing-row-header"
+              >
+
+        
+
+        
+        <div class="devsite-landing-row-header-text">
+
+          
+    <h2 id="youtube"
+        data-text="사용자가 YouTube 콘텐츠를 시청, 검색, 관리할 수 있도록 허용"
+        
+        tabindex="0">
+      
+    
+        사용자가 YouTube 콘텐츠를 시청, 검색, 관리할 수 있도록 허용
+      
+  
+    </h2>
+  
+
+          
+        </div>
+        
+
+        
+      </header>
+      
+
+      
+      
+
+      
+
+        <div class="devsite-landing-row-group">
+        
+          <div class="devsite-landing-row-item"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+    
+<div class="devsite-landing-row-item-media
+            ">
+  
+    <figure class="devsite-landing-row-item-image">
+  
+  <a href="https://developers.google.com/youtube/iframe_api_reference?hl=ko">
+    
+  
+  <picture>
+    
+    <img alt=""
+         
+         src="https://developers.google.com/static/youtube/images/youtube_home_page_player_api.png?hl=ko"
+         srcset="https://developers.google.com/static/youtube/images/youtube_home_page_player_api_36.png?hl=ko 36w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_48.png?hl=ko 48w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_72.png?hl=ko 72w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_96.png?hl=ko 96w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_480.png?hl=ko 480w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_720.png?hl=ko 720w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_856.png?hl=ko 856w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_960.png?hl=ko 960w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_1440.png?hl=ko 1440w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_1920.png?hl=ko 1920w,https://developers.google.com/static/youtube/images/youtube_home_page_player_api_2880.png?hl=ko 2880w"
+         
+         
+         sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px"
+         
+         
+         fetchpriority="high">
+  </picture>
+  
+  </a>
+  
+</figure>
+  
+</div>
+
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="youtube"
+        data-text="YouTube 동영상 재생"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/youtube/iframe_api_reference?hl=ko">
+    
+        YouTube 동영상 재생
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            삽입된 플레이어를 사용하여 앱에서 직접 동영상을 재생하고 재생 환경을 맞춤설정하세요.
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/youtube/iframe_api_reference?hl=ko"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >IFrame</a>
+
+  
+  <a href="https://developers.google.com/youtube/v3/guides/ios_youtube_helper?hl=ko"
+  
+    
+      class="button
+             button-white
+             button-lowercase"
+    
+    
+    >iOS</a>
+
+  
+  <a href="https://developers.google.com/youtube/player_parameters?hl=ko"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >플레이어 매개변수</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+          <div class="devsite-landing-row-item"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+    
+<div class="devsite-landing-row-item-media
+            ">
+  
+    <figure class="devsite-landing-row-item-image">
+  
+  <a href="https://developers.google.com/youtube/v3/getting-started?hl=ko">
+    
+  
+  <picture>
+    
+    <img alt=""
+         
+         src="https://developers.google.com/static/youtube/images/youtube_home_page_data_api.png?hl=ko"
+         srcset="https://developers.google.com/static/youtube/images/youtube_home_page_data_api_36.png?hl=ko 36w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_48.png?hl=ko 48w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_72.png?hl=ko 72w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_96.png?hl=ko 96w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_480.png?hl=ko 480w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_720.png?hl=ko 720w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_856.png?hl=ko 856w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_960.png?hl=ko 960w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_1440.png?hl=ko 1440w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_1920.png?hl=ko 1920w,https://developers.google.com/static/youtube/images/youtube_home_page_data_api_2880.png?hl=ko 2880w"
+         
+         
+         sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px"
+         
+         
+         fetchpriority="high">
+  </picture>
+  
+  </a>
+  
+</figure>
+  
+</div>
+
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="youtube"
+        data-text="YouTube 데이터 추가"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/youtube/v3/getting-started?hl=ko">
+    
+        YouTube 데이터 추가
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            사용자가 YouTube 콘텐츠를 검색하고, 동영상을 업로드하고, 재생목록을 만들고 관리하는 등의 작업을 할 수 있도록 지원합니다.
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/youtube/v3/getting-started?hl=ko"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >개요</a>
+
+  
+  <a href="https://developers.google.com/youtube/v3/docs?hl=ko"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >참조</a>
+
+  
+  <a href="https://developers.google.com/youtube/v3/code_samples?hl=ko"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >코드 샘플</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+        </div>
+      
+
+    
+    </div>
+  </section>
+
+  <section class="devsite-landing-row devsite-landing-row-3-up"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+      <header class="devsite-landing-row-header"
+              >
+
+        
+
+        
+        <div class="devsite-landing-row-header-text">
+
+          
+    <h2 id="youtube"
+        data-text="YouTube 기능 추가"
+        
+        tabindex="0">
+      
+    
+        YouTube 기능 추가
+      
+  
+    </h2>
+  
+
+          
+        </div>
+        
+
+        
+      </header>
+      
+
+      
+      
+
+      
+
+        <div class="devsite-landing-row-group">
+        
+          <div class="devsite-landing-row-item"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+    
+<div class="devsite-landing-row-item-media
+            ">
+  
+    <figure class="devsite-landing-row-item-image">
+  
+  <a href="https://developers.google.com/youtube/reporting?hl=ko">
+    
+  
+  <picture>
+    
+    <img alt=""
+         
+         src="https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api.png?hl=ko"
+         srcset="https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_36.png?hl=ko 36w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_48.png?hl=ko 48w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_72.png?hl=ko 72w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_96.png?hl=ko 96w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_480.png?hl=ko 480w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_720.png?hl=ko 720w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_856.png?hl=ko 856w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_960.png?hl=ko 960w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_1440.png?hl=ko 1440w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_1920.png?hl=ko 1920w,https://developers.google.com/static/youtube/images/youtube_home_page_analytics_api_2880.png?hl=ko 2880w"
+         
+         
+         sizes="(max-width: 840px) 50vw, 464px"
+         
+         loading="lazy"
+         >
+  </picture>
+  
+  </a>
+  
+</figure>
+  
+</div>
+
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="4YSH4YWu4Yar4YSJ4YWl4YaoIOGEhuGFteGGviDhhIfhhanhhIDhhak="
+        data-text="분석 및 보고"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/youtube/reporting?hl=ko">
+    
+        분석 및 보고
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            사용자를 이해하고 사용자가 내 채널과 동영상과 상호작용하는 방식을 파악하세요.
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/youtube/reporting?hl=ko"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >작동 방식</a>
+
+  
+  <a href="https://developers.google.com/youtube/reporting/v1/code_samples?hl=ko"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >코드 샘플</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+          <div class="devsite-landing-row-item"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+    
+<div class="devsite-landing-row-item-media
+            ">
+  
+    <figure class="devsite-landing-row-item-image">
+  
+  <a href="https://developers.google.com/youtube/youtube_subscribe_button?hl=ko">
+    
+  
+  <picture>
+    
+    <img alt=""
+         
+         src="https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button.png?hl=ko"
+         srcset="https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_36.png?hl=ko 36w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_48.png?hl=ko 48w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_72.png?hl=ko 72w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_96.png?hl=ko 96w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_480.png?hl=ko 480w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_720.png?hl=ko 720w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_856.png?hl=ko 856w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_960.png?hl=ko 960w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_1440.png?hl=ko 1440w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_1920.png?hl=ko 1920w,https://developers.google.com/static/youtube/images/youtube_home_page_subscribe_button_2880.png?hl=ko 2880w"
+         
+         
+         sizes="(max-width: 840px) 50vw, 464px"
+         
+         loading="lazy"
+         >
+  </picture>
+  
+  </a>
+  
+</figure>
+  
+</div>
+
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="4YSA4YWu4YSD4YWp4YaoIOGEh-GFpeGEkOGFs-GGqw=="
+        data-text="구독 버튼"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/youtube/youtube_subscribe_button?hl=ko">
+    
+        구독 버튼
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            사용자가 클릭 한 번으로 YouTube 채널을 구독할 수 있도록 지원하세요.
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/youtube/youtube_subscribe_button?hl=ko"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >버튼 추가</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+          <div class="devsite-landing-row-item"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+    
+<div class="devsite-landing-row-item-media
+            ">
+  
+    <figure class="devsite-landing-row-item-image">
+  
+  <a href="https://developers.google.com/youtube/v3/live/getting-started?hl=ko">
+    
+  
+  <picture>
+    
+    <img alt=""
+         
+         src="https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming.png?hl=ko"
+         srcset="https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_36.png?hl=ko 36w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_48.png?hl=ko 48w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_72.png?hl=ko 72w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_96.png?hl=ko 96w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_480.png?hl=ko 480w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_720.png?hl=ko 720w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_856.png?hl=ko 856w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_960.png?hl=ko 960w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_1440.png?hl=ko 1440w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_1920.png?hl=ko 1920w,https://developers.google.com/static/youtube/images/youtube_home_page_live_streaming_2880.png?hl=ko 2880w"
+         
+         
+         sizes="(max-width: 840px) 50vw, 464px"
+         
+         loading="lazy"
+         >
+  </picture>
+  
+  </a>
+  
+</figure>
+  
+</div>
+
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="4YSF4YWh4YSL4YW14YSH4YWzIOGEieGFs-GEkOGFs-GEheGFteGEhuGFteGGvA=="
+        data-text="라이브 스트리밍"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/youtube/v3/live/getting-started?hl=ko">
+    
+        라이브 스트리밍
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            YouTube 라이브 방송을 예약하고 방송 동영상 스트림을 관리하세요.
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/youtube/v3/live/getting-started?hl=ko"
+  
+    
+      class="button
+             button-white
+             "
+    
+    
+    >개요</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+        </div>
+      
+
+    
+    </div>
+  </section>
+
+  
+
+  
+</div>
+
+  
+
+  
+
+  
+  <div class="devsite-floating-action-buttons">
+  
+  
+</div>
+</article>
+
+
+
+<devsite-notification
+>
+</devsite-notification>
+
+
+  
+<div class="devsite-content-data">
+  
+  
+    <template class="devsite-content-data-template">
+      [[["이해하기 쉬움","easyToUnderstand","thumb-up"],["문제가 해결됨","solvedMyProblem","thumb-up"],["기타","otherUp","thumb-up"]],[["필요한 정보가 없음","missingTheInformationINeed","thumb-down"],["너무 복잡함/단계 수가 너무 많음","tooComplicatedTooManySteps","thumb-down"],["오래됨","outOfDate","thumb-down"],["번역 문제","translationIssue","thumb-down"],["샘플/코드 문제","samplesCodeIssue","thumb-down"],["기타","otherDown","thumb-down"]],[],[],[]]
+    </template>
+  
+</div>
+            
+          </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+          
+            
+
+<nav class="devsite-footer-promos nocontent" aria-label="프로모션">
+  <ul class="devsite-footer-promos-list">
+    
+    <li class="devsite-footer-promo">
+      <a href="https://blog.youtube"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+         
+         data-label="Footer Promo Link (index 1)"
+       
+       >
+        
+        
+        <picture>
+          
+          <img class="devsite-footer-promo-icon"
+                src="https://developers.google.com/static/site-assets/logo-youtube.svg?hl=ko"
+                loading="lazy"
+                alt="블로그">
+        </picture>
+        
+        <span class="devsite-footer-promo-label">
+          블로그
+        </span>
+      </a>
+      <div class="devsite-footer-promo-description">YouTube 블로그의 최신 뉴스</div>
+    </li>
+    
+    <li class="devsite-footer-promo">
+      <a href="https://github.com/youtube/api-samples"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+         
+         data-label="Footer Promo Link (index 2)"
+       
+       >
+        
+        
+        <picture>
+          
+          <img class="devsite-footer-promo-icon"
+                src="https://developers.google.com/static/site-assets/logo-github.svg?hl=ko"
+                loading="lazy"
+                alt="GitHub">
+        </picture>
+        
+        <span class="devsite-footer-promo-label">
+          GitHub
+        </span>
+      </a>
+      <div class="devsite-footer-promo-description">API 코드 샘플 및 기타 YouTube 오픈소스 프로젝트를 찾습니다.</div>
+    </li>
+    
+    <li class="devsite-footer-promo">
+      <a href="https://issuetracker.google.com/issues/new?component=186600&amp%3Btemplate=874803&hl=ko"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+         
+         data-label="Footer Promo Link (index 3)"
+       
+       >
+        
+        
+        <picture>
+          
+          <img class="devsite-footer-promo-icon"
+                src="https://developers.google.com/static/site-assets/developers_64dp.png?hl=ko"
+                loading="lazy"
+                alt="Issue Tracker">
+        </picture>
+        
+        <span class="devsite-footer-promo-label">
+          Issue Tracker
+        </span>
+      </a>
+      <div class="devsite-footer-promo-description">문제가 발생한 경우 버그를 신고해 주세요.</div>
+    </li>
+    
+    <li class="devsite-footer-promo">
+      <a href="http://stackoverflow.com/questions/ask?tags=youtube-api"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+         
+         data-label="Footer Promo Link (index 4)"
+       
+       >
+        
+        
+        <picture>
+          
+          <img class="devsite-footer-promo-icon"
+                src="https://developers.google.com/static/site-assets/logo-stack-overflow.svg?hl=ko"
+                loading="lazy"
+                alt="Stack Overflow">
+        </picture>
+        
+        <span class="devsite-footer-promo-label">
+          Stack Overflow
+        </span>
+      </a>
+      <div class="devsite-footer-promo-description">youtube-api 태그 아래에 질문하기</div>
+    </li>
+    
+    <li class="devsite-footer-promo">
+      <a href="https://research.youtube/"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+       
+         
+         data-label="Footer Promo Link (index 5)"
+       
+       >
+        
+        
+        <picture>
+          
+          <img class="devsite-footer-promo-icon"
+                src="https://developers.google.com/static/site-assets/logo-youtube.svg?hl=ko"
+                loading="lazy"
+                alt="YouTube 연구원 프로그램">
+        </picture>
+        
+        <span class="devsite-footer-promo-label">
+          YouTube 연구원 프로그램
+        </span>
+      </a>
+      <div class="devsite-footer-promo-description">YouTube의 글로벌 API 데이터를 사용하는 데 관심이 있는 연구자</div>
+    </li>
+    
+  </ul>
+</nav>
+
+          
+        </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+          
+            
+<nav class="devsite-footer-linkboxes nocontent" aria-label="바닥글 링크">
+  
+  <ul class="devsite-footer-linkboxes-list">
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">도구</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://developers.google.com/apis-explorer/#p/"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            
+    Google API 탐색기
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/youtube_player_demo"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            
+    YouTube 플레이어 데모
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/youtube_subscribe_button"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+              
+              
+            
+          
+            
+    구독 버튼 구성
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Issue Tracker</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://issuetracker.google.com/issues/new?component=186600&amp;template=874803"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            
+    버그 신고
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://issuetracker.google.com/issues/new?component=186600&amp;template=874803"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            
+    기능 요청
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://issuetracker.google.com/issues?q=componentid:186600"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+              
+              
+            
+          
+            
+    공개된 문제 보기
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">제품 정보</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/terms/api-services-terms-of-service"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            
+    서비스 약관
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/terms/developer-policies"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            
+    개발자 정책
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/terms/required-minimum-functionality"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+          
+            
+    최소 필수 기능
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/youtube/terms/branding-guidelines"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 4)"
+            >
+            
+              
+              
+            
+          
+            
+    브랜드 가이드라인
+  
+
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+  
+</nav>
+          
+        </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+          
+            
+
+<div class="devsite-footer-utility nocontent">
+  
+  
+  <nav class="devsite-footer-sites" aria-label="기타 Google Developers 웹사이트">
+    <a href="https://developers.google.com/?hl=ko"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <picture>
+        
+        <img class="devsite-footer-sites-logo"
+             src="https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/images/lockup-google-for-developers.svg"
+             loading="lazy"
+             alt="Google Developers">
+      </picture>
+    </a>
+    <ul class="devsite-footer-sites-list">
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com?hl=ko"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Android Link"
+         
+         >
+          Android
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home?hl=ko"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Chrome Link"
+         
+         >
+          Chrome
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com?hl=ko"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Firebase Link"
+         
+         >
+          Firebase
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com?hl=ko"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Google Cloud Platform Link"
+         
+         >
+          Google Cloud Platform
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//ai.google.dev/?hl=ko"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Google AI Link"
+         
+         >
+          Google AI
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="https://developers.google.com/products?hl=ko"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer All products Link"
+         
+         >
+          모든 제품
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+  
+
+  
+  <nav class="devsite-footer-utility-links" aria-label="유틸리티 링크">
+    
+    <ul class="devsite-footer-utility-list">
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="https://developers.google.com/terms/site-terms?hl=ko"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          약관
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy?hl=ko"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          개인정보처리방침
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 glue-cookie-notification-bar-control">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="#"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Manage cookies link"
+         
+           aria-hidden="true"
+         >
+          Manage cookies
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+        
+        <span class="devsite-footer-utility-description">Google Developers 뉴스레터 신청</span>
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="https://developers.google.com/newsletter/subscribe?hl=ko"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link"
+         >
+          구독
+        </a>
+        
+      </li>
+      
+    </ul>
+    
+    
+<devsite-language-selector>
+  <ul role="presentation">
+    
+    
+    <li role="presentation">
+      <a role="menuitem" lang="en"
+        >English</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="de"
+        >Deutsch</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es"
+        >Español</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es_419"
+        >Español – América Latina</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fr"
+        >Français</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="id"
+        >Indonesia</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="it"
+        >Italiano</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pl"
+        >Polski</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt_br"
+        >Português – Brasil</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="vi"
+        >Tiếng Việt</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="tr"
+        >Türkçe</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ru"
+        >Русский</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="he"
+        >עברית</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ar"
+        >العربيّة</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fa"
+        >فارسی</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="hi"
+        >हिंदी</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="bn"
+        >বাংলা</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="th"
+        >ภาษาไทย</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_cn"
+        >中文 – 简体</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_tw"
+        >中文 – 繁體</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ja"
+        >日本語</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ko"
+        >한국어</a>
+    </li>
+    
+  </ul>
+</devsite-language-selector>
+
+  </nav>
+</div>
+          
+        </devsite-footer-utility>
+        <devsite-panel></devsite-panel>
+        
+          <devsite-concierge
+  
+  
+    data-info-panel
+  
+  
+    data-ai-panel
+  
+  
+  
+  
+    data-api-explorer-panel
+  >
+</devsite-concierge>
+        
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar></devsite-snackbar>
+    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+      
+        <script type="application/json" analytics>[{&#34;dimensions&#34;: {&#34;dimension3&#34;: false, &#34;dimension5&#34;: &#34;ko&#34;, &#34;dimension4&#34;: &#34;YouTube&#34;, &#34;dimension6&#34;: &#34;ko&#34;, &#34;dimension1&#34;: &#34;Signed out&#34;, &#34;dimension11&#34;: true}, &#34;gaid&#34;: &#34;UA-24532603-1&#34;, &#34;metrics&#34;: {&#34;ratings_value&#34;: &#34;metric1&#34;, &#34;ratings_count&#34;: &#34;metric2&#34;}, &#34;purpose&#34;: 1}]</script>
+<script type="application/json" tag-management>{&#34;at&#34;: &#34;True&#34;, &#34;ga4&#34;: [{&#34;id&#34;: &#34;G-272J68FCRF&#34;, &#34;purpose&#34;: 1}], &#34;ga4p&#34;: [{&#34;id&#34;: &#34;G-272J68FCRF&#34;, &#34;purpose&#34;: 1}], &#34;gtm&#34;: [], &#34;parameters&#34;: {&#34;internalUser&#34;: &#34;False&#34;, &#34;language&#34;: {&#34;machineTranslated&#34;: &#34;True&#34;, &#34;requested&#34;: &#34;ko&#34;, &#34;served&#34;: &#34;ko&#34;}, &#34;pageType&#34;: &#34;product&#34;, &#34;projectName&#34;: &#34;YouTube&#34;, &#34;signedIn&#34;: &#34;False&#34;, &#34;tenant&#34;: &#34;developers&#34;, &#34;recommendations&#34;: {&#34;sourcePage&#34;: &#34;&#34;, &#34;sourceType&#34;: 0, &#34;sourceRank&#34;: 0, &#34;sourceIdenticalDescriptions&#34;: 0, &#34;sourceTitleWords&#34;: 0, &#34;sourceDescriptionWords&#34;: 0, &#34;experiment&#34;: &#34;&#34;}, &#34;experiment&#34;: {&#34;ids&#34;: &#34;&#34;}}}</script>
+      
+    </devsite-analytics>
+    
+      <devsite-badger></devsite-badger>
+    
+    
+    
+<script nonce="bRfE0FOr2t5LoWDTrZ3CyZW+RRLh2B">
+  
+  (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/js/app_loader.js', '[1,"ko",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692","https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers","https://developers-dot-devsite-v2-prod.appspot.com",1,null,["/_pwa/developers/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v1c43259e491a2af2272be031aab6f7713a1b5287c753937874e72435623bc692/developers/images/favicon-new.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,116,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"AIzaSyAP-jjEJBzmIyKR4F-3XITp8yM9T1gEEI8","AIzaSyB6xiKGDR5O3Ak2okS4rLkauxGUG7XP0hg","developers.google.com","AIzaSyAQk0fBONSGUqCNznf6Krs82Ap1-NV6J4o","AIzaSyCCxcqdrZ_7QMeLCRY20bh_SXdAYqy70KY",null,null,null,["Search__enable_page_map","MiscFeatureFlags__developers_footer_dark_image","Search__enable_ai_search_summaries_restricted","Cloud__enable_cloudx_experiment_ids","Profiles__enable_dashboard_curated_recommendations","Cloud__enable_cloud_facet_chat","MiscFeatureFlags__enable_variable_operator_index_yaml","Profiles__enable_profile_collections","CloudShell__cloud_code_overflow_menu","Cloud__enable_legacy_calculator_redirect","Profiles__enable_join_program_group_endpoint","MiscFeatureFlags__emergency_css","Profiles__enable_complete_playlist_endpoint","Profiles__enable_completequiz_endpoint","Cloud__enable_cloud_shell","MiscFeatureFlags__enable_variable_operator","Profiles__enable_page_saving","Cloud__enable_cloud_shell_fte_user_flow","Cloud__enable_llm_concierge_chat","Profiles__enable_release_notes_notifications","TpcFeatures__enable_mirror_tenant_redirects","Concierge__enable_concierge_restricted","CloudShell__cloud_shell_button","Experiments__reqs_query_experiments","MiscFeatureFlags__enable_project_variables","TpcFeatures__enable_unmirrored_page_left_nav","DevPro__enable_cloud_innovators_plus","Profiles__enable_public_developer_profiles","DevPro__enable_devpro_offers","DevPro__enable_developer_subscriptions","Concierge__enable_pushui","Profiles__enable_stripe_subscription_management","Significatio__enable_by_tenant","Profiles__enable_awarding_url","Profiles__enable_completecodelab_endpoint","BookNav__enable_tenant_cache_key","Profiles__enable_recognition_badges","Search__enable_suggestions_from_borg","Concierge__enable_key_takeaways","MiscFeatureFlags__enable_framebox_badge_methods","MiscFeatureFlags__developers_footer_image","MiscFeatureFlags__enable_view_transitions","Search__enable_dynamic_content_confidential_banner","Cloud__enable_cloud_dlp_service","Concierge__enable_actions_menu","Cloud__enable_cloudx_ping","Cloud__enable_free_trial_server_call","Analytics__enable_clearcut_logging","Search__enable_ai_search_summaries","Profiles__require_profile_eligibility_for_signin","MiscFeatureFlags__enable_firebase_utm","Profiles__enable_developer_profiles_callout","Concierge__enable_concierge","EngEduTelemetry__enable_engedu_telemetry","MiscFeatureFlags__enable_explain_this_code","Search__enable_ai_eligibility_checks"],null,null,"AIzaSyBLEMok-5suZ67qRPzx0qUtbnLmyT_kCVE","https://developerscontentserving-pa.clients6.google.com","AIzaSyCM4QpTRSqP5qI4Dvjt4OAScIN8sOUlO-k","https://developerscontentsearch-pa.clients6.google.com",1,4,null,"https://developerprofiles-pa.clients6.google.com",[1,"developers","Google for Developers","developers.google.com",null,"developers-dot-devsite-v2-prod.appspot.com",null,null,[1,1,[1],null,null,null,null,null,null,null,null,[1],null,null,null,null,null,null,[1],[1,null,null,[1,20],"/recommendations/information"],null,null,null,[1,1,1],[1,1,null,1,1]],null,[null,null,null,null,null,null,"/images/lockup-new.svg","/images/touchicon-180-new.png",null,null,null,null,1,null,null,null,null,null,null,null,null,1,null,null,null,"/images/lockup-dark-theme-new.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,20,22,23,29,32,36],null,[[null,null,null,[3,7,10,2,39,17,4,32,24,11,12,13,34,15,25],null,null,[1,[["docType","Choose a content type",[["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"],["Guide",null,null,null,null,null,null,null,null,"Guide"],["Sample",null,null,null,null,null,null,null,null,"Sample"]]],["product","Choose a product",[["Android",null,null,null,null,null,null,null,null,"Android"],["ARCore",null,null,null,null,null,null,null,null,"ARCore"],["ChromeOS",null,null,null,null,null,null,null,null,"ChromeOS"],["Firebase",null,null,null,null,null,null,null,null,"Firebase"],["Flutter",null,null,null,null,null,null,null,null,"Flutter"],["Assistant",null,null,null,null,null,null,null,null,"Google Assistant"],["GoogleCloud",null,null,null,null,null,null,null,null,"Google Cloud"],["GoogleMapsPlatform",null,null,null,null,null,null,null,null,"Google Maps Platform"],["GooglePay",null,null,null,null,null,null,null,null,"Google Pay & Google Wallet"],["GooglePlay",null,null,null,null,null,null,null,null,"Google Play"],["Tensorflow",null,null,null,null,null,null,null,null,"TensorFlow"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"AI and Machine Learning"],["Data",null,null,null,null,null,null,null,null,"Data"],["Enterprise",null,null,null,null,null,null,null,null,"Enterprise"],["Gaming",null,null,null,null,null,null,null,null,"Gaming"],["Mobile",null,null,null,null,null,null,null,null,"Mobile"],["Web",null,null,null,null,null,null,null,null,"Web"]]]]]],[1,1],null,1],[[["UA-24532603-1"],["UA-22084204-5"],null,null,["UA-24532603-5"],null,null,[["G-272J68FCRF"],null,null,[["G-272J68FCRF",2]]],[["UA-24532603-1",2]],null,[["UA-24532603-5",2]],null,1],[[4,3],[6,5],[1,1],[12,9],[11,8],[3,2],[5,4],[16,13],[14,11],[13,10],[15,12]],[[2,2],[1,1]]],null,4,null,null,null,null,null,null,null,null,null,null,null,null,null,"developers.devsite.google"],null,"pk_live_5170syrHvgGVmSx9sBrnWtA5luvk9BwnVcvIi7HizpwauFG96WedXsuXh790rtij9AmGllqPtMLfhe2RSwD6Pn38V00uBCydV4m",1,null,"https://developerscontentinsights-pa.clients6.google.com","AIzaSyBJyPHP8SgojSj3JDDL8lu7pDB_mz-nQUc"]')
+  
+</script>
+
+    <devsite-a11y-announce></devsite-a11y-announce>
+  </body>
+</html>

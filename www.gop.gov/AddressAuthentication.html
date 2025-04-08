@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" sizes="96x96" href="/images/favicon.ico">
+    <title>AddressAuthentication - The House of Reps</title>
+
+    
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="x-stylesheet-fallback-test" content="" class="sr-only"><script>!function(a,b,c,d){var e,f=document,g=f.getElementsByTagName("SCRIPT"),h=g[g.length-1].previousElementSibling,i=f.defaultView&&f.defaultView.getComputedStyle?f.defaultView.getComputedStyle(h):h.currentStyle;if(i&&i[a]!==b)for(e=0;e<c.length;e++)f.write('<link href="'+c[e]+'" '+d+"/>")}("position","absolute",["/lib/bootstrap/dist/css/bootstrap.min.css"], "rel=\u0022stylesheet\u0022 ");</script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/main/site.min.css?v=4u48GpK-vKREm1jA6feY1sGmwNled99KKTplE-c-Q9o">
+        <link href="/lib/select2/css/select2.min.css" rel="stylesheet">
+
+    
+    <link href="/lib/select2/css/select2.min.css" rel="stylesheet">
+
+    <script src='recaptcha/api.js'></script>
+  
+
+</head>
+<body>
+    
+
+
+    <div class="container body-content thor-main-panel">
+        
+<div class="thor-alert-wrapper">
+</div>
+        
+
+
+<div class="thor-center thor-page__header">
+        <img src="/images/240px-thor.svg.png" alt="House of Reps" class="thor-seal">
+        <h1>Office of Representative Lisa C McClain</h1>
+        <h1>Digital Privacy Release Form</h1>
+</div>
+<div class="addressLookupForm">
+    <div style="margin-left:40px;">
+        <div class="thor-const-authorization">
+            <h3>
+                Address Lookup
+                <hr>
+            </h3>           
+        </div>
+        <div class="thor-dis">
+            <p>
+                Please enter your address to verify residency and go to the next step.
+            </p>
+        </div>
+    </div>
+    <form id="AddressAuthenticationForm" method="post" enctype="multipart/form-data" class="form-horizontal" role="form" action="">
+
+        <div style="margin-left:40px;">
+            <div class="flex-container">
+                <div class="flex-item address-row">
+                    <label class="caption thor-cap-fields" for="StreetAddressLine1">Address Line 1</label><span class="thor-req-fields">*</span>
+                    <input class="form-control thor-input__addr" tabindex="1" type="text" data-val="true" data-val-length="Address cannot be greater then 50 characters" data-val-length-max="50" data-val-regex="Address Line 1 is Required" data-val-regex-pattern="^(?=.*\S).&#x2B;$" data-val-required="Address Line 1 is Required" id="StreetAddressLine1" maxlength="50" name="StreetAddressLine1" value="">
+                    <span class="text-danger field-validation-valid" data-valmsg-for="StreetAddressLine1" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item address-row">
+                    <label class="caption thor-cap-fields" for="StreetAddressLine2">Address Line 2</label>
+                    <input class="form-control thor-input__addr" tabindex="2" type="text" data-val="true" data-val-length="Address cannot be greater then 20 characters" data-val-length-max="20" id="StreetAddressLine2" maxlength="20" name="StreetAddressLine2" value="">
+                    <span class="text-danger field-validation-valid" data-valmsg-for="StreetAddressLine2" data-valmsg-replace="true"></span>
+
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item city-row">
+                    <label class="caption thor-cap-fields" for="City">City</label><span class="thor-req-fields">*</span>
+                    <input class="form-control thor-input__city" tabindex="3" maxlength="50" type="text" data-val="true" data-val-length="City cannot be greater then 50 characters" data-val-length-max="50" data-val-regex="City is Required" data-val-regex-pattern="^(?=.*\S).&#x2B;$" data-val-required="City is Required" id="City" name="City" value="">
+                    <span class="text-danger field-validation-valid" data-valmsg-for="City" data-valmsg-replace="true"></span>
+                </div>
+                <div class="flex-item state-row">
+                    <label class="caption thor-cap-fields" for="State">State</label>
+                    <input class="form-control thor-input__state" tabindex="4" readonly="" type="text" data-val="true" data-val-length="State cannot be greater then 20 characters" data-val-length-max="20" id="State" maxlength="20" name="State" value="MI">
+                    <span class="text-danger field-validation-valid" data-valmsg-for="State" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+
+            <input type="hidden" id="OfficeId" name="OfficeId" value="MI09">
+            <div id="thor-btn__wrapper" class="thor-form__btn">
+                <div class="thor-btn__flex-item">
+                    <input type="submit" class="thor-submit__btn btn btn-success btn-block" value="Go To Next Step" tabindex="4" formaction="/AddressAuthentication?handler=Post">
+                </div>
+            </div>
+        </div>
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8LlQH23l_z9EhVvPdn4jqbfy9fOcz8SNcXNmcglxSU60nBV4M4DIwt-nls82c6nG6wQzhL2eX_ZdioKu2Npv2q7q-iKY8rza87ZSVDjSebayYbKY6ONcSlYHDP7dWHagpmaWoMoE22jkJhO8BaedJQo"></form>
+</div>
+
+
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+    
+    
+            <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.6.0.min.js" crossorigin="anonymous" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK">
+            </script>
+<script>(window.jQuery||document.write("\u003Cscript src=\u0022/lib/jquery/jquery.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK\u0022\u003E\u003C/script\u003E"));</script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.60/inputmask/jquery.inputmask.js"></script>
+            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+            <script src="/js/site.min.js?v=F2-lzcb2Q4o3NlRcZn38J--_Dstx-lOic_NX1uKNO9w"></script>
+            <script src="/js/flashcanvas.js"></script>
+            <script src="/js/jSignature.min.js"></script>
+            <script src="/lib/jquery-validate/jquery.validate.js"></script>
+            <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+            <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js" crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+            </script>
+<script>(window.jQuery && window.jQuery.fn && window.jQuery.fn.modal||document.write("\u003Cscript src=\u0022/lib/bootstrap/dist/js/bootstrap.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa\u0022\u003E\u003C/script\u003E"));</script>
+            <script src="/lib/jqueryui/jquery-ui.js"></script>
+            <script src="/lib/select2/js/select2.min.js"></script>
+    
+    
+</body>
+</html>

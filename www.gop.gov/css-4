@@ -1,0 +1,6 @@
+﻿@font-face {
+  font-family: 'Ephesis';
+  font-style: normal;
+  font-weight: 400;
+  src: url(s/ephesis/v9/uU9PCBUS8IerL2VG3xTR2g.ttf) format('truetype');
+}
